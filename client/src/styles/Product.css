@@ -1,0 +1,38 @@
+
+
+.product  {
+    width: 210px;
+    height: 365px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.product:hover{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+    
+.product img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        justify-content: space-between;
+}
+    
+.product h1 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+    
+.product h2 {
+    font-size: 1em;
+    color: #007bff;
+    margin: 5px 0;
+}
+    
+.product p {
+    font-size: 0.9em;
+    color: #666;
+}

@@ -1,0 +1,39 @@
+
+.homeCat{
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+}
+
+.homeCat > *{
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.category a {
+    text-decoration: none;
+    color: #000;
+    font-size: large ;
+}
+.newProduct{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 760px) {
+    .category{
+        display: none;
+        
+    }
+
+    .HomeCat{
+        grid-template-columns: 1fr;
+    }
+}
