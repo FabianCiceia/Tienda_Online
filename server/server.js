@@ -24,4 +24,7 @@ app.use("/api/product", ProductRouter);
 const UserRouter = require("./routes/user.routes");
 app.use("/api/auth", UserRouter);
 
+
+
+
 app.listen(8000, () => console.log(`Listening on port: 8000`));

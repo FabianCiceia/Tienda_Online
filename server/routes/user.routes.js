@@ -1,7 +1,6 @@
-
+const { authenticate } = require("../config/jwt.config");
 const express = require("express");
 const UserController = require("../controllers/user.controller");
-
 const UserRouter = express.Router();
 
 ///api/auth

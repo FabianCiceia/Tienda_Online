@@ -6,7 +6,7 @@ import PublicRoute from './components/PublicRoute'
 import PrivateRoute from './components/PrivateRoute'
 import Add from './views/Add'
 import Navbar from './views/Navbar'
-import Card from './views/Card'
+import ShCart from './views/ShCart'
 import Home from './views/Home'
 import Product from './views/Product'
 
@@ -51,7 +51,7 @@ const App = () => {
                         </PrivateRoute>
                         
                     }>
-                        <Route path='card' element={<Card/>}/>
+                        <Route path='cart' element={<ShCart/>}/>
                     </Route>
                 </Routes>
             </div>

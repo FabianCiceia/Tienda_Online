@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Axios from "../hooks/useAxios";
 // import { Link } from 'react-router-dom';
 
-import Product from './Product';
+import Card from './Card';
 import '../styles/CategoryProducts.css'
 function categoryProducts({ category, name }) {
     const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/category/${category}`);
@@ -38,7 +38,7 @@ function categoryProducts({ category, name }) {
             {
                 data.products.slice(currentPage * productsPerPage, (currentPage + 1) * productsPerPage).map((product, i) => (
                     <div key={i}>
-                        <Product
+                        <Card
                             imageUrl={product.imageUrl}
                             name={product.name}
                             price={product.price}

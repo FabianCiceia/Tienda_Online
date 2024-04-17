@@ -1,7 +1,14 @@
 const { ProductModel } = require("../models/product.model");
 
-
 module.exports = {
+    getOneProductById: (req, res) => {
+        ProductModel.findOne({ _id: req.params.id })
+            .then((oneSingleProduct) => res.status(200).json({ product: oneSingleProduct }))
+            .catch((err) =>
+                res.status(400).json({ message: "Something went wrong", error: err })
+            );
+    },
+
     searchProducts: (req, res) => {
         const searchTerm = req.query.searchTerm; // Obtiene el término de búsqueda del parámetro de consulta de la solicitud
     
@@ -32,13 +39,6 @@ module.exports = {
     getAllProducts: (req, res) => {
         ProductModel.find()
             .then((allProducts) => res.status(200).json(allProducts))
-            .catch((err) =>
-                res.status(400).json({ message: "Something went wrong", error: err })
-            );
-    },
-    getOneProductById: (req, res) => {
-        ProductModel.findOne({ _id: req.params.id })
-            .then((oneSingleProduct) => res.status(200).json({ product: oneSingleProduct }))
             .catch((err) =>
                 res.status(400).json({ message: "Something went wrong", error: err })
             );
@@ -115,22 +115,22 @@ module.exports = {
                 res.status(400).json({ message: "Something went wrong", error: err })
             );
     },
-    updateGamesProductById: (req, res) => {
-        ProductModel.findOne({ _id: req.params.id })
-        .then((oneSingleProduct) => {
+    // updateGamesProductById: (req, res) => {
+    //     ProductModel.findOne({ _id: req.params.id })
+    //     .then((oneSingleProduct) => {
 
-            console.log("GAME:", req.params.game) // 0
-            console.log("BODY",  req.body) //{ status: 'Playing' }
+    //         console.log("GAME:", req.params.game) // 0
+    //         console.log("BODY",  req.body) //{ status: 'Playing' }
 
-            oneSingleProduct.games[req.params.game] = req.body.status
-            oneSingleProduct.save()
+    //         oneSingleProduct.games[req.params.game] = req.body.status
+    //         oneSingleProduct.save()
 
-            return res.status(200).json({ product: oneSingleProduct })
-        })
-        .catch((err) =>
-            res.status(400).json({ message: "Something went wrong", error: err })
-        );
-    },
+    //         return res.status(200).json({ product: oneSingleProduct })
+    //     })
+    //     .catch((err) =>
+    //         res.status(400).json({ message: "Something went wrong", error: err })
+    //     );
+    // },
     deleteOneProductById: (req, res) => {
         ProductModel.deleteOne({ _id: req.params.id })
             .then((result) => res.status(200).json({ result: result }))

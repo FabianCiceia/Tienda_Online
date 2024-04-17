@@ -4,6 +4,9 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 module.exports = {
+
+
+
     register: (req, res) => {
         const user = new UserModel(req.body);
         user

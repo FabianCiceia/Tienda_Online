@@ -19,7 +19,7 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: [true, "La categoría del producto es requerida"],
     },
-    stock: {
+    stock: { 
         type: Number,
         required: [true, "El stock del producto es requerido"],
         min: [0, "El stock del producto no puede ser negativo"],

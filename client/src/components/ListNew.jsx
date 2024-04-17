@@ -2,8 +2,8 @@ import React from 'react'
 import Axios from "../hooks/useAxios"
 import { Link } from 'react-router-dom';
 import Not_image from '../assets/Not_image.jpg'
-import Product from './Product';
-import '../styles/Product.css'
+import Card from './Card';
+import '../styles/Card.css'
 function ListNew() {
     const { data, isLoading, error, setData } = Axios("http://localhost:8000/api/product/newest");
     if (isLoading){
@@ -24,7 +24,7 @@ function ListNew() {
             {
                 data.products.map((product, i) => (
                     <div key={i}>
-                        <Product
+                        <Card
                             imageUrl={product.imageUrl} 
                             name={product.name}
                             price={product.price}

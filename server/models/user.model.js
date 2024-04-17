@@ -3,6 +3,19 @@ const mongoose = require('mongoose');
 const uniqueValidator = require("mongoose-unique-validator");
 const bcrypt = require('bcrypt');
 
+const CardSchema = new mongoose.Schema(
+    {
+        product: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Product' // Referencia al modelo de producto
+        },
+        quantity: {
+            type: Number,
+            default: 1 // Cantidad predeterminada
+        }
+    }
+);
+
 
 const UserSchema = new mongoose.Schema({
     firstName: {
@@ -39,7 +52,9 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: [true, "Password is required"],
         minlength: [8, "Password must be 8 characters or longer"]
-    }
+    },
+    Card: [CardSchema],
+    
 }, { timestamps: true });
 
 UserSchema.virtual('confirmPassword')

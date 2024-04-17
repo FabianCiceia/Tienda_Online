@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Card() {
+function ShCart() {
     return (
         <div>
-        Card
+        Cart
         </div>
     )
 }
 
-export default Card
+export default ShCart

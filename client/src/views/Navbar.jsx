@@ -33,7 +33,7 @@ function Navbar() {
                 <a href="#" className='navbarSelect'>Contacto</a>
             </div>
             <div className='navbarPerfil' >
-                <CiShoppingCart onClick={()=>link("./user/card")} className='navbarCart' />
+                <CiShoppingCart onClick={()=>link("./user/cart")} className='navbarCart' />
                 <CiUser onClick={()=>link("./user/perfile")}  className='navbarUser'/>
             </div>
         </div>
