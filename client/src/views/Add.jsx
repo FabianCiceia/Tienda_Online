@@ -1,92 +1,101 @@
-import React from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
-import axios from "axios";
-import Swal from 'sweetalert2'
-import InputForm from '../components/InputForm';
-import { useNavigate, Link} from "react-router-dom";
+import React, { useState } from 'react';
+import axios from 'axios';
+import '../styles/add.css'
+const baseURL = "http://localhost:8000/api/product";
 
-function Add() {
-    const navigate = useNavigate(); 
-    const baseURL ="http://localhost:8000/api/product";
-    function addData(pront) {
-        axios
-        .post(`${baseURL}`, pront, { withCredentials: true })
-        .then(() => {
-            Swal.fire({
-                icon: "success",
-                title: `fue cargado correctamente`,
-            });
-            // navigate("");
-        })
-        .catch(err => {
-            Swal.fire({
-                icon: "error",
-                title: `Ha ocurrido un error`,
-            });
-            // console.log(err.response.data);
-        })
+const ProductForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    description: '',
+    price: 0,
+    category: '',
+    stock: 0,
+    image: null // Nuevo estado para almacenar el archivo de imagen
+  });
+
+  const handleChange = (e) => {
+    if (e.target.name === 'image') {
+      setFormData({
+        ...formData,
+        image: e.target.files[0] // Guardar el archivo de imagen
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+      });
     }
+  };
 
-    const initialValues = {
-        name: 'Samsung 49-Inch CHG90 144Hz',
-        description: "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-        price: '1500000',
-        category: 'monitor',
-        stock: '10',
-        imageUrl: 'https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg',
-    };
-    const onSubmit = (values,  { resetForm }) => {
-        resetForm();
-        addData(values)
-    };
-    const validationSchema = Yup.object({
-    name: Yup.string().required().min(3),
-    description: Yup.string().required(),
-    price: Yup.number().required().min(0),
-    category: Yup.string().required(),
-    stock: Yup.number().required().min(0),
-    imageUrl: Yup.string().required()
-    });
-    return (
-        <div className='container'>
-        <Formik
-        initialValues={initialValues}
-        onSubmit={onSubmit}
-        validationSchema={validationSchema}
-        >   
-        {/* <div class="row g-3 align-items-center">
-        <div class="col-auto">
-            <label for="inputPassword6" class="col-form-label">Password</label>
-        </div>
-        <div class="col-auto">
-            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-        </div>
-        <div class="col-auto">
-            <span id="passwordHelpInline" class="form-text">
-            Must be 8-20 characters long.
-            </span>
-        </div>
-        </div> */}
-            <Form className="form">
-                <div className='row g-3 align-items-center'>
-                <h1>Add player</h1>
-                    <InputForm  name="name" />
-                    <InputForm name="description" />
-                    <InputForm  name="price" />
-                    <InputForm name="category" />
-                    <InputForm  name="stock" />
-                    <InputForm name="imageUrl" />
-                    <InputForm  name="name" />
-                    <div>
-                        <button className="" type="submit">Add</button>
-                    </div>
-                </div>
-            </Form>
-        </Formik>
-        </div>
-    )
-}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('description', formData.description);
+      formDataToSend.append('price', formData.price);
+      formDataToSend.append('category', formData.category);
+      formDataToSend.append('stock', formData.stock);
+      formDataToSend.append('image', formData.image); // Agregar la imagen al FormData
 
-export default Add
+      const response = await axios.post(baseURL, formDataToSend, { withCredentials: true });
+      console.log('Product created:', response.data);
+      // Aquí puedes agregar lógica adicional, como mostrar un mensaje de éxito o redirigir a otra página.
+    } catch (error) {
+      console.error('Error creating product:', error);
+      // Aquí puedes manejar el error, mostrar un mensaje al usuario, etc.
+    }
+  };
 
+  return (
+    <div className='add'>
+        <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Nombre del producto"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="description"
+          placeholder="Descripción del producto"
+          value={formData.description}
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          name="price"
+          placeholder="Precio"
+          value={formData.price}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="category"
+          placeholder="Categoría"
+          value={formData.category}
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          name="stock"
+          placeholder="Stock"
+          value={formData.stock}
+          onChange={handleChange}
+        />
+        <input
+          type="file"
+          name="image"
+          accept="image/*"
+          onChange={handleChange}
+        />
+        <button type="submit">Crear Producto</button>
+      </form>
+    </div>
+    
+  );
+};
+
+export default ProductForm;

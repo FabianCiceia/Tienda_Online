@@ -3,6 +3,8 @@ import HomeListCategory from '../components/HomeListCategory';
 import CategoryProducts from '../components/HomeCategoryProducts';
 import ListNew from '../components/ListNew';
 import '../styles/Home.css';
+import { SlSocialFacebook ,SlSocialInstagram, SlSocialTwitter , SlSocialPintarest} from "react-icons/sl";
+// import Footer from './Footer';
 
 function Home() {
     return (

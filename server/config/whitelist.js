@@ -8,6 +8,7 @@ const secret = process.env.JWT_SECRET;
 
 module.exports.whitelist = (req, res, next) => {
     if (list.includes(getEmailFromToken(req.cookies.usertoken,secret))) {
+        console.log("correo valido para guardar datos");
         next();
     } else {
         // Si el correo electrónico del usuario no está en la lista blanca, devuelve un error de autorización

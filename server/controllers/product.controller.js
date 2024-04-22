@@ -11,11 +11,17 @@ module.exports = {
 
     searchProducts: (req, res) => {
         const searchTerm = req.query.searchTerm; // Obtiene el término de búsqueda del parámetro de consulta de la solicitud
+        const page = parseInt(req.query.page) || 1; // Obtiene el número de página de la consulta de la solicitud, si no se proporciona, se establece en 1
+        const pageSize = 15; // Tamaño de página (número de resultados por página)
     
         // Verifica si se proporcionó un término de búsqueda
         if (!searchTerm || searchTerm.trim() === '') {
             return res.status(400).json({ message: "Search term is required" });
         }
+    
+        // Calcula el índice de inicio y el límite de resultados para la página actual
+        const startIndex = (page - 1) * pageSize;
+        const endIndex = page * pageSize;
     
         // Realiza la búsqueda de productos en tiempo real utilizando una expresión regular para buscar en el campo de nombre o descripción
         ProductModel.find({
@@ -25,16 +31,18 @@ module.exports = {
             ]
         })
         .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
-        .limit(15) // Limita la cantidad de resultados devueltos a 15
+        .skip(startIndex) // Omite los resultados anteriores a la página actual
+        .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
         .then(products => {
             // Envía los productos encontrados como respuesta al cliente
-            res.status(200).json({ products: products });
+            res.status(200).json({ products: products, currentPage: page, totalPages: Math.ceil(products.length / pageSize) });
         })
         .catch(err => {
             // Maneja los errores de la base de datos
             res.status(500).json({ message: "Error searching products", error: err });
         });
     },
+    
     
     getAllProducts: (req, res) => {
         ProductModel.find()
@@ -50,7 +58,7 @@ module.exports = {
     getProductsByCategory: (req, res) => {
         const category = req.params.category; // Obtiene la categoría del parámetro de la solicitud
         const page = req.query.page || 1; // Obtiene el número de página de la consulta (valor predeterminado: 1)
-        const perPage = 10; // Define la cantidad de productos por página
+        const perPage = 15; // Define la cantidad de productos por página
 
         // Calcula el desplazamiento basado en el número de página
         const offset = (page - 1) * perPage;
@@ -102,11 +110,44 @@ module.exports = {
             });
     },
     createNewProduct: (req, res) => {
-        ProductModel.create(req.body)
+        if (!req.file) {
+            return res.status(400).json({ message: 'No se proporcionó ninguna imagen' });
+        }
+        const imageName = req.file.filename;
+        const newProduct = new ProductModel({
+            name: req.body.name,
+            description: req.body.description,
+            price: req.body.price,
+            category: req.body.category,
+            stock: req.body.stock,
+            imageUrl: `http://localhost:8000/uploads/${imageName}` // Asignar el nombre de la imagen a req.body.imageUrl
+        });
+        console.log(newProduct);
+        ProductModel.create(newProduct)
             .then((newlyCreatedProduct) => res.status(201).json({ product: newlyCreatedProduct }))
             .catch((err) =>
                 res.status(400).json({ message: "Something went wrong", error: err })
             );
+    },
+    getProductImage: (req, res) => {
+        try {
+            // Obtener el nombre de la imagen solicitada desde los parámetros de la URL
+            const imageName = req.params.imageName;
+            
+            // Ruta completa de la imagen
+            const imagePath = path.join(__dirname, '..', 'storage', 'imgs', imageName);
+    
+            // Verificar si la imagen existe
+            if (!fs.existsSync(imagePath)) {
+                return res.status(404).json({ message: 'La imagen no fue encontrada' });
+            }
+    
+            // Devolver la imagen como una respuesta
+            res.sendFile(imagePath);
+        } catch (error) {
+            console.error('Error fetching image:', error);
+            res.status(500).json({ message: 'Error interno del servidor' });
+        }
     },
     updateOneProductById: (req, res) => {
         ProductModel.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })

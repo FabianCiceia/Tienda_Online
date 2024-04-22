@@ -6,8 +6,7 @@ const bcrypt = require('bcrypt');
 const CardSchema = new mongoose.Schema(
     {
         product: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Product' // Referencia al modelo de producto
+            type: String,
         },
         quantity: {
             type: Number,
@@ -54,6 +53,9 @@ const UserSchema = new mongoose.Schema({
         minlength: [8, "Password must be 8 characters or longer"]
     },
     Card: [CardSchema],
+    total: {
+        type: Number
+    },
     
 }, { timestamps: true });
 

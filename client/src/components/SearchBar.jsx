@@ -5,9 +5,7 @@ function SearchBar() {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const navigate = useNavigate();
-    useEffect(() => {
-        // Función para realizar la solicitud al servidor y obtener los resultados de la búsqueda
-        const fetchSearchResults = async () => {
+    const fetchSearchResults = async () => {
         try {
             const response = await fetch(`http://localhost:8000/api/product/search?searchTerm=${searchTerm}`);
             if (response.ok) {
@@ -21,24 +19,41 @@ function SearchBar() {
             console.error('Error fetching search results:', error);
         }
         };
+        const search = () => {
 
-        // Realiza la solicitud al servidor solo si el término de búsqueda no está vacío
-        if (searchTerm.trim() !== '') {
-        fetchSearchResults();
-        } else {
-        setSearchResults([]);
         }
-    }, [searchTerm]);
-
-    const handleChange = (event) => {
-        setSearchTerm(event.target.value);
-    };
+        const handleChange = (event) => {
+            setSearchTerm(event.target.value);
+        };
+        const handleKeyDown = (event) => {
+            if (event.key === 'Enter') {
+                navigate(`../store/search/${searchTerm}`);
+                setSearchResults([]);
+            }
+        };
+        const handleBlur = () => {
+            setSearchResults([]);
+        };
+        useEffect(() => {
+            if (searchTerm.trim() !== '') {
+                fetchSearchResults();
+            } else {
+                setSearchResults([]);
+            }
+        }, [searchTerm]);
 
     return (
         <div className="searchContainer">
             <div className="navbarSearch">
                 <div className="input">
-                <input type="text" value={searchTerm} onChange={handleChange} placeholder='Buscar producto'/>
+                <input 
+                    onKeyDown={handleKeyDown}
+                    onClick={() =>{fetchSearchResults()}} 
+                    type="text" 
+                    value={searchTerm} 
+                    onChange={handleChange} 
+                    // onBlur={handleBlur} 
+                    placeholder='Buscar producto'/>
                 </div> 
                 <CiSearch className='icon' />
             </div>

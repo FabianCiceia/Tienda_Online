@@ -26,14 +26,21 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-@media screen and (max-width: 760px) {
+.categorys{
+    margin: 5px;
+}
+@media only screen and (max-width: 950px) {
     .category{
-        display: none;
-        
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .category *{
+        padding-right: 5px;
     }
 
-    .HomeCat{
-        grid-template-columns: 1fr;
+    .homeCat{
+        display: flex;
+        flex-direction: column;
     }
 }

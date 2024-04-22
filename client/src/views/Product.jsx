@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import Axios from "../hooks/useAxios"
 import Not_image from '../assets/Not_image.jpg';
 import { CiHeart } from "react-icons/ci";
+import AddCart from '../components/AddCart'
+
 import '../styles/Product.css'
 function Product() {
     const { id } = useParams(); 
@@ -10,7 +12,7 @@ function Product() {
     const[like, setLike] = useState(false);
     const cliklike = ()=>{
         setLike(!like);
-        console.log(like)
+        // console.log(like)
     }
 
     const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/${id}`);
@@ -24,6 +26,7 @@ function Product() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
+
     const handleChange = (event) => {
         ((event.target.value) < 0  || (event.target.value) > Number(data.product.stock))?null:setCant(Number(event.target.value));
     };
@@ -48,7 +51,8 @@ function Product() {
                         <button className='ButtonCant'  onClick={()=>{(cant>= Number(data.product.stock))?null:setCant(cant+1)}}>+</button>
                     </div>
                     <div className='buttonsAddFavor'>
-                        <button className='addCart'>Agregar al carrito</button>
+                        <AddCart productId={id} quantity={cant} />
+                        
                         <button onClick={cliklike}  className={like ? 'favorCart redColor' : 'favorCart blackColor'}><CiHeart /></button>
                     </div>
                 </div>
@@ -74,17 +78,17 @@ function Product() {
         </div>
     )
 }
-const data = {
-    "product": {
-        "_id": "661dba5d2e8f7c1b9a4ee0b9",
-        "name": "ESP8266",
-        "description": "Módulo de Wi-Fi de bajo costo y alto rendimiento para conectar dispositivos a Internet de forma inalámbrica.",
-        "price": 5.99,
-        "category": "microcontrolador",
-        "stock": 100,
-        "imageUrl": "https://m.media-amazon.com/images/I/617T2JKnxiL._AC_UF1000,1000_QL80_.jpg",
-        "createdAt": "2024-04-14T00:00:00.000Z",
-        "updatedAt": "2024-04-14T00:00:00.000Z"
-    }
-}
+// const data = {
+//     "product": {
+//         "_id": "661dba5d2e8f7c1b9a4ee0b9",
+//         "name": "ESP8266",
+//         "description": "Módulo de Wi-Fi de bajo costo y alto rendimiento para conectar dispositivos a Internet de forma inalámbrica.",
+//         "price": 5.99,
+//         "category": "microcontrolador",
+//         "stock": 100,
+//         "imageUrl": "https://m.media-amazon.com/images/I/617T2JKnxiL._AC_UF1000,1000_QL80_.jpg",
+//         "createdAt": "2024-04-14T00:00:00.000Z",
+//         "updatedAt": "2024-04-14T00:00:00.000Z"
+//     }
+// }
 export default Product

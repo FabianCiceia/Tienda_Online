@@ -1,0 +1,29 @@
+.containerSearchProduct{
+    margin-bottom: 10px;
+}
+
+.searchProductList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+.searchProduct{
+    background-color: #fcfcfca4;
+    border-radius: 20px;
+    width: min-content;
+}
+.cart:hover{
+    border-radius: 20px;
+}
+.pagination{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.pagination a{
+    font-size: large;
+    cursor: pointer;
+}
