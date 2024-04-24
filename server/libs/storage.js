@@ -11,7 +11,7 @@ const storage = multer.diskStorage({
         // Obtener la extensión del archivo original
         const ext = file.originalname.split('.').pop();
         // Concatenar la extensión al nombre del archivo
-        cb(null, `${file.fieldname}  '-'  ${uniqueSuffix} '.'  ${ext}`);
+        cb(null, `${file.fieldname}-${uniqueSuffix}.${ext}`);
     
     }
 })

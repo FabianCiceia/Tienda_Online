@@ -122,7 +122,7 @@ module.exports = {
             stock: req.body.stock,
             imageUrl: `http://localhost:8000/uploads/${imageName}` // Asignar el nombre de la imagen a req.body.imageUrl
         });
-        console.log(newProduct);
+        // console.log(newProduct);
         ProductModel.create(newProduct)
             .then((newlyCreatedProduct) => res.status(201).json({ product: newlyCreatedProduct }))
             .catch((err) =>

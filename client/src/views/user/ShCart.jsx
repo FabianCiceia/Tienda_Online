@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Axios from "../hooks/useAxios"
-import CardCart from '../components/CartCard';
-import '../styles/Cart.css'
+import Axios from "../../hooks/useAxios"
+import CardCart from '../../components/CartCard';
+import '../../styles/Cart.css'
 import axios from 'axios';
 function ShCart() {
     const[total, setTotal] = useState()

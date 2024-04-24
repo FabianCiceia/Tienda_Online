@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 import { useContext } from "react";
 import UserContext from '../context/UserContext';
 
-const PrivateRoute = (props) => {
-    const { user } = useContext(UserContext);
-    console.log(user);
+const AdminRoute = (props) => {
+    const {  user } = useContext(UserContext);
+    console.log(user.role);
     const { redirectPath = "/login", children } = props;
-    return <>{!user ? <Navigate to={redirectPath} replace /> : children}</>;
+    // return (<div>Hola</div>)
+    return <>{(user.role === 'user') ? <Navigate to={redirectPath} replace /> : children}</>;
 };
 
-PrivateRoute.propTypes = {
+AdminRoute.propTypes = {
     user: PropTypes.object,
     redirectPath: PropTypes.string,
     children: PropTypes.node
 }
 
-export default PrivateRoute
+export default AdminRoute

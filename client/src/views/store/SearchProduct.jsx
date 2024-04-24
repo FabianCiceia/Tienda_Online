@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Axios from "../hooks/useAxios"
-import Card from '../components/Card';
-import '../styles/SearchProduct.css'
+import Axios from "../../hooks/useAxios"
+import Card from '../../components/Card';
+import '../../styles/SearchProduct.css'
 function SearchProduct() {
     const { search } = useParams();
     const[paguina, setPaguina] = useState(0);

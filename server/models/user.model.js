@@ -34,7 +34,7 @@ const UserSchema = new mongoose.Schema({
             message: "Please enter a valid email"
         }
     },
-    rule:{
+    role:{
         type: String,
         default: "user",
         required: false

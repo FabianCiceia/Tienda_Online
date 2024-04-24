@@ -1,16 +1,25 @@
 import { Navigate, Route, Routes, Outlet } from 'react-router-dom'
-import LoginRegister from './views/LoginRegister'
 import { useState } from 'react'
 import UserContext from './context/UserContext'
+
 import PublicRoute from './components/PublicRoute'
-import PrivateRoute from './components/PrivateRoute'
-import Add from './views/Add'
 import Navbar from './views/Navbar'
-import ShCart from './views/ShCart'
-import Home from './views/Home'
-import Product from './views/Product'
-import SearchProduct from './views/SearchProduct'
-import Category from './views/Category'
+import LoginRegister from './views/LoginRegister'
+import Home from './views/store/Home'
+import Product from './views/store/Product'
+import SearchProduct from './views/store/SearchProduct'
+import Category from './views/store/Category'
+import PruebaComponente from './views/PruebaComponente'
+
+import PrivateRoute from './components/PrivateRoute'
+import Profile from './views/user/Profile'
+import ShCart from './views/user/ShCart'
+
+import AdminRoute from './components/AdminRoute'
+import Add from './views/admin/Add'
+import Panel from './views/admin/Panel'
+
+
 const App = () => {
 
     const userDetails = JSON.parse(localStorage.getItem("user"));
@@ -31,21 +40,27 @@ const App = () => {
             <div className='container'>
                 <Navbar/>
                 <Routes>
+
                     <Route path="/" element={<Navigate to="/store/home" />} />
                     <Route path="/login" element={
                         <PublicRoute>
                             <LoginRegister />
                         </PublicRoute>
                     } />
+
+                    {/* Parte de la tienda todo publico */}
                     <Route path='/store' element={
                         <Outlet/>
                     }>
                         <Route path="home" element={<Home/>} />
                         <Route path="search/:search" element={<SearchProduct/> } />
                         <Route path="category/:category" element={<Category/> } />
-                        <Route path="add" element={<Add/>} />
+                        
                         <Route path="product/:id" element={<Product/>} />
+                        <Route path='prueba' element={<PruebaComponente/> }/>
                     </Route>
+
+                    {/* Parte del usuario solo para cuando se logea */}
                     <Route path="/user/" element={
                         <PrivateRoute>
                             <Outlet/>
@@ -53,7 +68,20 @@ const App = () => {
                         
                     }>
                         <Route path='cart' element={<ShCart/>}/>
+                        <Route path='profile' element={<Profile/> }/>
                     </Route>
+
+                    {/* Parte para administrador solo admins */}
+                    <Route path="/admin/" element={
+                        <AdminRoute>
+                            <Outlet/>
+                        </AdminRoute>
+                        
+                    }>
+                        <Route path='panel' element={<Panel/> } />
+                        <Route path="add" element={<Add/>} />
+                    </Route>
+                    
                 </Routes>
             </div>
         </UserContext.Provider>

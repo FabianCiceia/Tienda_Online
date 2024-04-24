@@ -163,13 +163,13 @@ module.exports = {
                             if (passwordIsValid) {
                                 const userInfo = {
                                     _id: user._id,
+                                    role: user.role,
                                     firstName: user.firstName,
                                     lastName: user.lastName,
                                     email: user.email,
                                 };
                                 console.log("userInfo: ", userInfo);
-/***************************************    *************************************************** */
-                                
+/*************************************************************************************************************************/
                                 const newJWT = jwt.sign(userInfo,  process.env.JWT_SECRET)
                                 console.log("newJWT: ", newJWT);
                                 res

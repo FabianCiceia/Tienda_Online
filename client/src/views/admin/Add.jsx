@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../styles/add.css'
+import '../../styles/add.css'
 const baseURL = "http://localhost:8000/api/product";
 
 const ProductForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     description: '',
-    price: 0,
+    price: '',
     category: '',
-    stock: 0,
+    stock: '',
     image: null // Nuevo estado para almacenar el archivo de imagen
   });
 

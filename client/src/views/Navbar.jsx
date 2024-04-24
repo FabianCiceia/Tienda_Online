@@ -62,30 +62,12 @@ console.log()
                         <RiCloseFill />
                     </div>
                 </div>
-                {/* <select className='navbarSelect'>
-                    <option value=""disabled hidden>Opciones</option>
-                    <option className='navbarOption' value=""></option>
-                    <option className='navbarOption' value=""></option>
-                    <option classN  ame='navbarOption' value=""></option>
-                    <option className='navbarOption' value=""></option>
-                </select> */}
             </div>
             <SearchBar/>
             <div className='navbarLinks'>
-                {/* <Logout/> */}
                 <Link className='navbarSelect' to={"../store/home"}>Inicio</Link>
-                {/* <select className="navbarSelect" defaultValue="">
-                    <optgroup label="Categoría 1">
-                        <option value="1">One</option>
-                    </optgroup>
-                    <optgroup label="Categoría 2">
-                        <option value="2">Two</option>
-                    </optgroup>
-                    <optgroup label="Categoría 3">
-                        <option value="3">Three</option>
-                    </optgroup>
-                </select> */}
                 <a href="#" className='navbarSelect'>Contacto</a>
+                <Logout/>
             </div>
             <div className='navbarPerfil' >
                 <CiShoppingCart onClick={()=>link("./user/cart")} className='navbarCart' />

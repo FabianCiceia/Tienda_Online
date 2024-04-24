@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Axios from "../hooks/useAxios"
-import Not_image from '../assets/Not_image.jpg';
+import Axios from "../../hooks/useAxios"
+import Not_image from '../../assets/Not_image.jpg';
 import { CiHeart } from "react-icons/ci";
-import AddCart from '../components/AddCart'
+import AddCart from '../../components/AddCart'
 
-import '../styles/Product.css'
+import '../../styles/Product.css'
 function Product() {
     const { id } = useParams(); 
     const[cant, setCant] =useState(1);

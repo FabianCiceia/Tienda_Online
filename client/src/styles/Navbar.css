@@ -73,10 +73,11 @@
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    padding: 0px 5px;
 }
 .navbarSelect select {
-    display: none; /*hide original SELECT element: */
-  }z
+    display: none; 
+}
 .navbarSelect:hover{
     color: #f0f0f0;
 }
