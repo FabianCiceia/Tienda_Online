@@ -1,0 +1,887 @@
+[{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0ac"
+  },
+  "name": "Resistencia 8.2Ω",
+  "description": "Resistencia de 8.2 ohmios (Ω), adecuada para limitar la corriente en circuitos electrónicos de baja potencia.",
+  "price": 0.15,
+  "category": "resistencia",
+  "stock": 200,
+  "imageUrl": "https://m.media-amazon.com/images/I/71jVZ0SkGdL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0ad"
+  },
+  "name": "imagen",
+  "description": "Resistencia de 10 ohmios (Ω), utilizada para limitar la corriente y ajustar el voltaje en circuitos electrónicos.",
+  "price": 0.18,
+  "category": "resistencia",
+  "stock": 180,
+  "imageUrl": "http://localhost:8000/api/poduct/image/image-1713808438826-650631914.png",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0ae"
+  },
+  "name": "Resistencia 22Ω",
+  "description": "Resistencia de 22 ohmios (Ω), ideal para limitar la corriente y la caída de voltaje en circuitos electrónicos de baja potencia.",
+  "price": 0.22,
+  "category": "resistencia",
+  "stock": 160,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0af"
+  },
+  "name": "Resistencia 33Ω",
+  "description": "Resistencia de 33 ohmios (Ω), adecuada para limitar la corriente y la disipación de potencia en circuitos electrónicos.",
+  "price": 0.25,
+  "category": "resistencia",
+  "stock": 150,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b0"
+  },
+  "name": "Resistencia 47Ω",
+  "description": "Resistencia de 47 ohmios (Ω), utilizada para limitar la corriente y ajustar la tensión en circuitos electrónicos.",
+  "price": 0.28,
+  "category": "resistencia",
+  "stock": 140,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b1"
+  },
+  "name": "Resistencia 56 Ω",
+  "description": "Resistencia de 56 ohmios (Ω), ideal para limitar la corriente y la caída de voltaje en circuitos electrónicos de baja potencia.",
+  "price": 0.32,
+  "category": "resistencia",
+  "stock": 130,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b2"
+  },
+  "name": "Resistencia 68 Ω",
+  "description": "Resistencia de 68 ohmios (Ω), adecuada para limitar la corriente y la disipación de potencia en circuitos electrónicos.",
+  "price": 0.35,
+  "category": "resistencia",
+  "stock": 120,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b3"
+  },
+  "name": "Resistencia 82 Ω",
+  "description": "Resistencia de 82 ohmios (Ω), utilizada para limitar la corriente y ajustar la tensión en circuitos electrónicos.",
+  "price": 0.38,
+  "category": "resistencia",
+  "stock": 110,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b4"
+  },
+  "name": "Resistencia 100 Ω",
+  "description": "Resistencia de 100 ohmios (Ω), ideal para limitar la corriente y la caída de voltaje en circuitos electrónicos de baja potencia.",
+  "price": 0.42,
+  "category": "resistencia",
+  "stock": 100,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b5"
+  },
+  "name": "Resistencia 220 Ω",
+  "description": "Resistencia de 220 ohmios (Ω), adecuada para limitar la corriente y la disipación de potencia en circuitos electrónicos.",
+  "price": 0.48,
+  "category": "resistencia",
+  "stock": 90,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b6"
+  },
+  "name": "Resistencia 330 Ω",
+  "description": "Resistencia de 330 ohmios (Ω), utilizada para limitar la corriente y ajustar la tensión en circuitos electrónicos.",
+  "price": 0.55,
+  "category": "resistencia",
+  "stock": 80,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b7"
+  },
+  "name": "Resistencia 470 Ω",
+  "description": "Resistencia de 470 ohmios (Ω), ideal para limitar la corriente y la caída de voltaje en circuitos electrónicos de baja potencia.",
+  "price": 0.62,
+  "category": "resistencia",
+  "stock": 70,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b8"
+  },
+  "name": "Resistencia 560 Ω",
+  "description": "Resistencia de 560 ohmios (Ω), adecuada para limitar la corriente y la disipación de potencia en circuitos electrónicos.",
+  "price": 0.68,
+  "category": "resistencia",
+  "stock": 60,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Resistor_typen.jpg/800px-Resistor_typen.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0b9"
+  },
+  "name": "ESP8266",
+  "description": "Módulo de Wi-Fi de bajo costo y alto rendimiento para conectar dispositivos a Internet de forma inalámbrica.",
+  "price": 5.99,
+  "category": "microcontrolador",
+  "stock": 100,
+  "imageUrl": "https://m.media-amazon.com/images/I/617T2JKnxiL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0ba"
+  },
+  "name": "Arduino",
+  "description": "Plataforma de hardware y software de código abierto para prototipado electrónico, ideal para una variedad de proyectos.",
+  "price": 9.99,
+  "category": "microcontrolador",
+  "stock": 50,
+  "imageUrl": "https://m.media-amazon.com/images/I/61AvdQOxFzL.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0bb"
+  },
+  "name": "Arduino UNO R3",
+  "description": "Versión mejorada del popular microcontrolador Arduino UNO, con mayor capacidad de E/S y rendimiento.",
+  "price": 14.99,
+  "category": "microcontrolador",
+  "stock": 30,
+  "imageUrl": "https://m.media-amazon.com/images/I/71z22cRPeeL.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0bc"
+  },
+  "name": "Arduino Nano 3.0 Atmega328 Type-C",
+  "description": "Microcontrolador compacto y versátil, perfecto para proyectos donde el espacio es limitado, equipado con puerto USB Type-C.",
+  "price": 7.99,
+  "category": "microcontrolador",
+  "stock": 20,
+  "imageUrl": "https://m.media-amazon.com/images/I/61yjNeMjdkL.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0bd"
+  },
+  "name": "Capacitor cerámico 68pf",
+  "description": "Capacitor cerámico de 68 picofaradios (pF), ideal para aplicaciones de acoplamiento, desacoplamiento y filtrado en circuitos electrónicos.",
+  "price": 0.25,
+  "category": "capacitor",
+  "stock": 200,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0be"
+  },
+  "name": "Capacitor cerámico 75pf",
+  "description": "Capacitor cerámico de 75 picofaradios (pF), utilizado en aplicaciones de alta frecuencia y baja pérdida en circuitos electrónicos.",
+  "price": 0.29,
+  "category": "capacitor",
+  "stock": 150,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0bf"
+  },
+  "name": "Capacitor cerámico 82pf",
+  "description": "Capacitor cerámico de 82 picofaradios (pF), adecuado para aplicaciones de filtrado, acoplamiento y sintonización en circuitos electrónicos.",
+  "price": 0.32,
+  "category": "capacitor",
+  "stock": 180,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c0"
+  },
+  "name": "Capacitor cerámico 100pf",
+  "description": "Capacitor cerámico de 100 picofaradios (pF), utilizado en aplicaciones de bypass, desacoplamiento y acoplamiento en circuitos electrónicos.",
+  "price": 0.35,
+  "category": "capacitor",
+  "stock": 160,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c1"
+  },
+  "name": "Capacitor cerámico 150pf",
+  "description": "Capacitor cerámico de 150 picofaradios (pF), ideal para aplicaciones de sintonización, desacoplamiento y acoplamiento en circuitos electrónicos.",
+  "price": 0.42,
+  "category": "capacitor",
+  "stock": 140,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c2"
+  },
+  "name": "Capacitor cerámico 220pf",
+  "description": "Capacitor cerámico de 220 picofaradios (pF), utilizado en aplicaciones de desacoplamiento, filtrado y acoplamiento en circuitos electrónicos de alta frecuencia.",
+  "price": 0.49,
+  "category": "capacitor",
+  "stock": 120,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c3"
+  },
+  "name": "Capacitor cerámico 330pf",
+  "description": "Capacitor cerámico de 330 picofaradios (pF), adecuado para aplicaciones de acoplamiento, desacoplamiento y filtrado en circuitos electrónicos de baja potencia.",
+  "price": 0.55,
+  "category": "capacitor",
+  "stock": 100,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c4"
+  },
+  "name": "Capacitor cerámico 470pf",
+  "description": "Capacitor cerámico de 470 picofaradios (pF), ideal para aplicaciones de acoplamiento, filtrado y sintonización en circuitos electrónicos de baja frecuencia.",
+  "price": 0.62,
+  "category": "capacitor",
+  "stock": 90,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c5"
+  },
+  "name": "Capacitor cerámico 680pf",
+  "description": "Capacitor cerámico de 680 picofaradios (pF), utilizado en aplicaciones de desacoplamiento, acoplamiento y filtrado en circuitos electrónicos.",
+  "price": 0.75,
+  "category": "capacitor",
+  "stock": 80,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c6"
+  },
+  "name": "Capacitor cerámico 1nf",
+  "description": "Capacitor cerámico de 1 nanofaradio (nF), ideal para aplicaciones de desacoplamiento, filtrado y acoplamiento en circuitos electrónicos de baja frecuencia.",
+  "price": 0.85,
+  "category": "capacitor",
+  "stock": 70,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661dba5d2e8f7c1b9a4ee0c7"
+  },
+  "name": "Capacitor cerámico 1.5nf",
+  "description": "Capacitor cerámico de 1.5 nanofaradios (nF), adecuado para aplicaciones de acoplamiento, desacoplamiento y filtrado en circuitos electrónicos de baja frecuencia.",
+  "price": 0.95,
+  "category": "capacitor",
+  "stock": 60,
+  "imageUrl": "https://m.media-amazon.com/images/I/41croBzzQhL._AC_UF1000,1000_QL80_.jpg",
+  "createdAt": "2024-04-14T00:00:00Z",
+  "updatedAt": "2024-04-14T00:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "661eabbc0d2dd71ceb3eb63c"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-16T16:47:56.904Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-16T16:47:56.904Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661f173767d27c476c3766ee"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-17T00:26:31.639Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-17T00:26:31.639Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662002dcf04c38664f3fee6a"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-17T17:11:56.413Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-17T17:11:56.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662003133b59463b7034b120"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-17T17:12:51.390Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-17T17:12:51.390Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6620034df3f966086bcdaad9"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-17T17:13:49.948Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-17T17:13:49.948Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662091199f6a630002eddb93"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-18T03:18:49.168Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-18T03:18:49.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6625b19cee7dd49f4375b1bc"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJoopBF6qu4xB7smiKQNv3DR2lrjw3gDgCJ0RU6WlWjg&s",
+  "createdAt": {
+    "$date": "2024-04-22T00:38:52.795Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T00:38:52.795Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268c16a6f656f6bf752e60"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:11:02.580Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:11:02.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268c64a6f656f6bf752e62"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:12:20.031Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:12:20.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268d09a6f656f6bf752e64"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:15:05.582Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:15:05.582Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268d16a6f656f6bf752e66"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:15:18.806Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:15:18.806Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268d74cd552b222052a66a"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:16:52.049Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:16:52.049Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268da78d592a3a13cd5856"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:17:43.854Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:17:43.854Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268e3664c24314883a7bfc"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:20:06.410Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:20:06.410Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268e6c7a6404543841c74f"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:21:00.947Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:21:00.947Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66268f6a7a6404543841c751"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:25:14.345Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:25:14.345Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6626929bbb3f65d8f7c6afc1"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:38:51.356Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:38:51.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662692c3bb3f65d8f7c6afc3"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:39:31.483Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:39:31.483Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6626951abb3f65d8f7c6afc5"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:49:30.805Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:49:30.805Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6626954cbb3f65d8f7c6afc9"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:50:20.555Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:50:20.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66269749bb3f65d8f7c6afcb"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T16:58:49.422Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T16:58:49.422Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662697dfbb3f65d8f7c6afce"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:01:19.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:01:19.333Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66269811f869f9772cb302e9"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:02:09.200Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:02:09.200Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66269849f869f9772cb302ff"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:03:05.231Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:03:05.231Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66269867dbb1ba1d0c15e297"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:03:35.565Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:03:35.565Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6626986fdbb1ba1d0c15e299"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:03:43.793Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:03:43.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6626987d7e523b50a4e46fe9"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:03:57.432Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:03:57.432Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662698c155b80ec32cf3d0a5"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:05:05.323Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:05:05.323Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66269b4adf95db34fae9ea71"
+  },
+  "name": "Samsung 49-Inch CHG90 144Hz",
+  "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+  "price": 1500000,
+  "category": "monitor",
+  "stock": 10,
+  "imageUrl": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+  "createdAt": {
+    "$date": "2024-04-22T17:15:54.547Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-22T17:15:54.547Z"
+  },
+  "__v": 0
+}
+]
