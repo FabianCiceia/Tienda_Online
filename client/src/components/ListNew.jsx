@@ -16,9 +16,6 @@ function ListNew() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-    // if(data){
-    //     console.log(data)
-    // }
     return (
         <div className='newProduct'>
             {

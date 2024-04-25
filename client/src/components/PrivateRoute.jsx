@@ -5,7 +5,6 @@ import UserContext from '../context/UserContext';
 
 const PrivateRoute = (props) => {
     const { user } = useContext(UserContext);
-    console.log(user);
     const { redirectPath = "/login", children } = props;
     return <>{!user ? <Navigate to={redirectPath} replace /> : children}</>;
 };

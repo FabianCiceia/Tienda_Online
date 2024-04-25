@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate} from "react-router-dom";
-function Panel() {
+function PanelControl() {
     const navigate = useNavigate(); 
     const link = (link)=>{
         navigate(link)
@@ -13,4 +13,4 @@ function Panel() {
     );
 }
 
-export default Panel;
+export default PanelControl;

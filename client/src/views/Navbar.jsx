@@ -13,8 +13,12 @@ function Navbar() {
     const link = (link)=>{
         navigate(link)
     }
-console.log()
-
+    console.log(user)
+    const admin = () => {
+        if (user && user.role === 'admin') {
+            return <div onClick={()=>link("./admin/panel")} className='navbarSelect'>Admin</div>;
+        }
+    }
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -24,8 +28,6 @@ console.log()
         
         <div className='navbar'>
             <div onClick={()=>navigate("./store/home")} className='navbarIcon'>
-                {/* <CiMenuBurger/> */}
-
                 <div  className='menuBurgerButton' onClick={toggleMenu}>
                     <div></div>
                     <div></div>
@@ -41,7 +43,7 @@ console.log()
                 
                 <div  className={`menuBurger ${menuOpen ? 'open' : ''}`}>
                     <div onBlur={toggleMenu} className='menuBurgerlinks'>
-                            <div className='menuBurgerUser' 
+                        <div className='menuBurgerUser' 
                             onClick={()=>{
                                 if(user){
                                     link("../user/perfile");
@@ -67,6 +69,7 @@ console.log()
             <div className='navbarLinks'>
                 <Link className='navbarSelect' to={"../store/home"}>Inicio</Link>
                 <a href="#" className='navbarSelect'>Contacto</a>
+                {admin()}
                 <Logout/>
             </div>
             <div className='navbarPerfil' >

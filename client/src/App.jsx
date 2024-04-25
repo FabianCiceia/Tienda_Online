@@ -4,7 +4,7 @@ import UserContext from './context/UserContext'
 
 import PublicRoute from './components/PublicRoute'
 import Navbar from './views/Navbar'
-import LoginRegister from './views/LoginRegister'
+import LoginRegister from './views/user/LoginRegister'
 import Home from './views/store/Home'
 import Product from './views/store/Product'
 import SearchProduct from './views/store/SearchProduct'
@@ -16,9 +16,12 @@ import Profile from './views/user/Profile'
 import ShCart from './views/user/ShCart'
 
 import AdminRoute from './components/AdminRoute'
+import Edit from './views/admin/Edit'
 import Add from './views/admin/Add'
-import Panel from './views/admin/Panel'
+import PanelControl from './views/admin/PanelControl'
+import Footer from './views/Footer'
 
+import './styles/admin/common.css'
 
 const App = () => {
 
@@ -49,13 +52,10 @@ const App = () => {
                     } />
 
                     {/* Parte de la tienda todo publico */}
-                    <Route path='/store' element={
-                        <Outlet/>
-                    }>
+                    <Route path='/store' >
                         <Route path="home" element={<Home/>} />
                         <Route path="search/:search" element={<SearchProduct/> } />
                         <Route path="category/:category" element={<Category/> } />
-                        
                         <Route path="product/:id" element={<Product/>} />
                         <Route path='prueba' element={<PruebaComponente/> }/>
                     </Route>
@@ -78,11 +78,12 @@ const App = () => {
                         </AdminRoute>
                         
                     }>
-                        <Route path='panel' element={<Panel/> } />
+                        <Route path='panel' element={<PanelControl/> } />
                         <Route path="add" element={<Add/>} />
+                        <Route path="edit/:id" element={<Edit/>} />
                     </Route>
-                    
                 </Routes>
+                
             </div>
         </UserContext.Provider>
     )

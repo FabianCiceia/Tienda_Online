@@ -35,6 +35,7 @@
         gap: 5px;
     }
     .cart  {
+        margin: 10px 5px;
         width: 150px;
         height: 305px;
         border: #666 solid ;

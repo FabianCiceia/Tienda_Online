@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../../styles/add.css'
+
 const baseURL = "http://localhost:8000/api/product";
 
 const ProductForm = () => {
+  const [error, setError] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     description: '',
@@ -29,6 +31,14 @@ const ProductForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validación de campos obligatorios
+    if (!formData.name || !formData.description || !formData.price || !formData.category || !formData.stock || !formData.image) {
+      console.error('Todos los campos son obligatorios');
+      setError('Todos los campos son obligatorios')
+      return;
+    }
+
     try {
       const formDataToSend = new FormData();
       formDataToSend.append('name', formData.name);
@@ -40,16 +50,15 @@ const ProductForm = () => {
 
       const response = await axios.post(baseURL, formDataToSend, { withCredentials: true });
       console.log('Product created:', response.data);
-      // Aquí puedes agregar lógica adicional, como mostrar un mensaje de éxito o redirigir a otra página.
+      setError("Producto creado");
     } catch (error) {
       console.error('Error creating product:', error);
-      // Aquí puedes manejar el error, mostrar un mensaje al usuario, etc.
     }
   };
 
   return (
     <div className='add'>
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -91,10 +100,10 @@ const ProductForm = () => {
           accept="image/*"
           onChange={handleChange}
         />
+        <div>{error}</div>
         <button type="submit">Crear Producto</button>
       </form>
     </div>
-    
   );
 };
 

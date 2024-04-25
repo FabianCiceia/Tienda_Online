@@ -1,0 +1,15 @@
+.adminButtonEdit{
+    background-color: #ba251a;
+    margin: 10px 0;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: large;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

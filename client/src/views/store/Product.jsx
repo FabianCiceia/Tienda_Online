@@ -1,12 +1,22 @@
-import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useContext, useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import Axios from "../../hooks/useAxios"
 import Not_image from '../../assets/Not_image.jpg';
 import { CiHeart } from "react-icons/ci";
 import AddCart from '../../components/AddCart'
-
+import UserContext from '../../context/UserContext';
 import '../../styles/Product.css'
 function Product() {
+    const { user } = useContext(UserContext);
+    const navigate = useNavigate(); 
+    const link = (link)=>{
+        navigate(link)
+    }
+    const edit = () => {
+        if (user && user.role === 'admin') {
+            return <div className='adminButtonEdit' onClick={()=>link(`../../admin/edit/${id}`)} >Editar</div>;
+        }
+    }
     const { id } = useParams(); 
     const[cant, setCant] =useState(1);
     const[like, setLike] = useState(false);
@@ -50,9 +60,9 @@ function Product() {
                         <input type="number" min={1} className='ButtonCant' value={cant} onChange={handleChange}/>
                         <button className='ButtonCant'  onClick={()=>{(cant>= Number(data.product.stock))?null:setCant(cant+1)}}>+</button>
                     </div>
+                    {edit()}
                     <div className='buttonsAddFavor'>
                         <AddCart productId={id} quantity={cant} />
-                        
                         <button onClick={cliklike}  className={like ? 'favorCart redColor' : 'favorCart blackColor'}><CiHeart /></button>
                     </div>
                 </div>
