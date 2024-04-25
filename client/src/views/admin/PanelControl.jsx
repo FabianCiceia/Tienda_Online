@@ -8,7 +8,7 @@ function PanelControl() {
     return (
         <div className="panel">
         <button onClick={()=>link("../add")} className="panelButton">Agregar Producto</button>
-        <button onClick={()=>link("../edit")} className="panelButton">Editar Producto</button>
+        {/* <button onClick={()=>link("../edit")} className="panelButton">Editar Producto</button> */}
         </div>
     );
 }

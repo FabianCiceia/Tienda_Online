@@ -17,7 +17,7 @@
 }
 .category a {
     text-decoration: none;
-    color: #000;
+    color: var(--color-black);
     font-size: large ;
 }
 .newProduct{
@@ -28,6 +28,16 @@
 }
 .categorys{
     margin: 5px;
+}
+.categoryLink{
+    display: flex;
+    align-items: center;
+}
+.categoryLink:hover{
+    font-weight: 600;
+}
+.categoryLink >*{
+    margin: 0 3px;
 }
 @media only screen and (max-width: 950px) {
     .category{

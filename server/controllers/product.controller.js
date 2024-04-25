@@ -133,15 +133,12 @@ module.exports = {
         try {
             // Obtener el nombre de la imagen solicitada desde los parámetros de la URL
             const imageName = req.params.imageName;
-            
             // Ruta completa de la imagen
             const imagePath = path.join(__dirname, '..', 'storage', 'imgs', imageName);
-    
             // Verificar si la imagen existe
             if (!fs.existsSync(imagePath)) {
                 return res.status(404).json({ message: 'La imagen no fue encontrada' });
             }
-    
             // Devolver la imagen como una respuesta
             res.sendFile(imagePath);
         } catch (error) {
@@ -156,22 +153,6 @@ module.exports = {
                 res.status(400).json({ message: "Something went wrong", error: err })
             );
     },
-    // updateGamesProductById: (req, res) => {
-    //     ProductModel.findOne({ _id: req.params.id })
-    //     .then((oneSingleProduct) => {
-
-    //         console.log("GAME:", req.params.game) // 0
-    //         console.log("BODY",  req.body) //{ status: 'Playing' }
-
-    //         oneSingleProduct.games[req.params.game] = req.body.status
-    //         oneSingleProduct.save()
-
-    //         return res.status(200).json({ product: oneSingleProduct })
-    //     })
-    //     .catch((err) =>
-    //         res.status(400).json({ message: "Something went wrong", error: err })
-    //     );
-    // },
     deleteOneProductById: (req, res) => {
         ProductModel.deleteOne({ _id: req.params.id })
             .then((result) => res.status(200).json({ result: result }))

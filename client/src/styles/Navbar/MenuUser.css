@@ -1,0 +1,40 @@
+
+.menuUserContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 15px
+}
+.menuUser{
+    display: none;
+}
+.menuUser.open{
+    position: absolute;
+    background-color: white;
+    border: solid #cfcfcf 1px;
+    border-radius: 20px;
+    margin: 2px 0px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 200px;
+}
+.menuIcon{
+    margin: 0 5px ;
+    font-size: large;
+}
+.menuOption{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.menuOption:hover{
+    background-color: #cfcfcf;
+}
+.menuUser > *:last-child{
+    border-radius: 0 0 20px 20px ;
+}
+.menuUser> *:first-child{
+    border-radius:20px 20px 0 0;
+}

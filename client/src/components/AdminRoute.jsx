@@ -5,7 +5,7 @@ import UserContext from '../context/UserContext';
 
 const AdminRoute = (props) => {
     const {  user } = useContext(UserContext);
-    console.log(user.role);
+    // console.log(user.role);
     const { redirectPath = "/login", children } = props;
     // return (<div>Hola</div>)
     return <>{(user.role === 'user') ? <Navigate to={redirectPath} replace /> : children}</>;

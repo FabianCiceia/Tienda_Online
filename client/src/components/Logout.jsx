@@ -23,7 +23,7 @@ function Logout() {
 
     return (
         <div>
-            <a  className="navbarSelect" onClick={handleLogout}>Cerrar sesión</a>
+            <a  onClick={handleLogout}>Cerrar sesión</a>
         </div>
     );
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Axios from "../hooks/useAxios"
 import { Link } from 'react-router-dom';
+import { CiSignpostR1 } from "react-icons/ci";
+
 function HomeListCategory() {
     const { data, isLoading, error, setData } = Axios("http://localhost:8000/api/product/list/category");
     if (isLoading){
@@ -18,9 +20,13 @@ function HomeListCategory() {
     // }
     return (
         <div className='category'>
+            
             {
                 data.map((data, i) => (
-                    <Link className='categoryLink' to={`/store/category/${data}`} key={i}>{data}</Link>
+                    <div key={i} className='categoryLink'>
+                        <CiSignpostR1/>
+                        <Link to={`/store/category/${data}`} >{data}</Link>
+                    </div>
                 ))
             }
         </div>

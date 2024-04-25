@@ -130,7 +130,9 @@ module.exports = {
     addToCart,
     getCart,
     editToCart,
+
     register: (req, res) => {
+        req.body.role ='user';
         const user = new UserModel(req.body);
         user
             .save()
