@@ -1,5 +1,6 @@
 .containerSearchProduct{
     margin-bottom: 10px;
+    
 }
 
 .searchProductList{
@@ -8,11 +9,13 @@
     gap: 20px;
     justify-content: center;
     justify-items: center;
+    
 }
 .searchProduct{
     background-color: var(--color-gray-0);
     border-radius: 20px;
     width: min-content;
+    
 }
 .cart:hover{
     border-radius: 20px;

@@ -36,9 +36,9 @@ function Navbar() {
                     <div></div>
                     <div></div>
                 </div>
-                <div className='LogoContainer'>
+                {/* <div className='LogoContainer'>
                     <img src={Logo} alt="" className='Logo' />
-                </div>
+                </div> */}
                     <h1>En</h1>
                     <h1>Corto</h1>  
             </div>

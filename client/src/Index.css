@@ -19,10 +19,8 @@
     --color-gray-3: #b7b9be;
     --color-gray-4: #808289;
     --color-primary: #26b9d9;
-    --color-secondary: #26b9d9;
+    --color-secondary: #10768d;
     --color-red:red;
-
-
     color:var( --color-black);
 }
 .container{

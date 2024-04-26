@@ -72,7 +72,7 @@
     height: auto;
 }
 .addCart{
-    background-color:var(--color-primary);
+    background-color:var(--color-secondary);
     margin: 10px 0;
     height: 50px;
     width: 150px;
@@ -140,7 +140,7 @@
     margin: 0 10px;
 }
 .ProductCartShop{
-    background-color:var(--color-primary);
+    background-color:var(--color-secondary);
     margin: 10px 0;
     height: 40px;
     width: 100px;
