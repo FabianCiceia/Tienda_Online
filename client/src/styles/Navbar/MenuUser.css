@@ -11,8 +11,8 @@
 }
 .menuUser.open{
     position: absolute;
-    background-color: white;
-    border: solid #cfcfcf 1px;
+    background-color: var(--color-white);
+    border: solid var(--color-gray-2) 1px;
     border-radius: 20px;
     margin: 2px 0px;
     display: flex;
@@ -30,7 +30,7 @@
     align-items: center;
 }
 .menuOption:hover{
-    background-color: #cfcfcf;
+    background-color: var(--color-gray-2);
 }
 .menuUser > *:last-child{
     border-radius: 0 0 20px 20px ;

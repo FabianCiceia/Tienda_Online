@@ -1,5 +1,5 @@
 .container-categoryProducts{
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -9,6 +9,12 @@
     margin-top: 5px;
     margin-left: 10px;
     margin-bottom: 5px;
+}
+.categoryProducts button:hover{
+    background-color: var(--color-gray-1);
+}
+.categoryProducts button:active{
+    background-color: var(--color-gray-2);
 }
 .categoryProducts{
     justify-content: center;
@@ -38,7 +44,7 @@
         margin: 10px 5px;
         width: 150px;
         height: 305px;
-        border: #666 solid ;
+        border: var(--color-gray-3) solid ;
         border: 1px solid #ccc;
         border-radius: 5px;
     }

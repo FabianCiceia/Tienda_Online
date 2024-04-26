@@ -1,6 +1,6 @@
 
 .navbar{
-    background-color: #15A62D;
+    background-color: var(--color-primary);
     /* display: flex;
     align-items: center;
     justify-content: space-between; */
@@ -12,8 +12,17 @@
     margin: 5px;
     padding: 10px;
 }
+.LogoContainer{
+    margin-right: 5px;
+}
+.Logo{
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+    justify-content: space-between;
+}
 .navbar .navbarIcon{
-    color: #fff;
+    color: var(--color-white);
     margin-left: 15px;
     cursor: pointer;
     display: flex;
@@ -22,7 +31,7 @@
 
 .navbarSearch{
     display: flex;
-    background-color: #fcfcfc;
+    background-color: var(--color-white);
     border-radius: 20px;
     margin: 2px 10px;
     align-items: center;
@@ -54,10 +63,10 @@
 }
 
 .navbarSearch > .icon:hover{
-    color: rgb(95, 95, 95);
+    color: var(--color-gray-2);
 }
 .navbarSearch > .icon:active {
-    color: #274C77;
+    color: var(--color-gray-3);
 }
 
 .navbarLinks{
@@ -70,7 +79,7 @@
     background: none;
     border: none;
     font-size: large;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     text-decoration: none;
     padding: 0px 5px;
@@ -79,7 +88,7 @@
     display: none; 
 }
 .navbarSelect:hover{
-    color: #f0f0f0;
+    color: var(--color-gray-2);
 }
 .navbarSelect option{
     color: black;
@@ -90,13 +99,13 @@
     margin-right: 20px;
 }
 .navbarCart{
-    color: #fff;
+    color:  var(--color-white);
     font-size: xx-large;
     margin-right: 20px;
     cursor: pointer;
 }
 .navbarUser{
-    color: #fff;
+    color: var(--color-white);
     font-size: xx-large;
     cursor: pointer;
 }
@@ -110,7 +119,7 @@
     top: 100%;
     left: 0;
     z-index: 1; 
-    background-color: white;
+    background-color: var(--color-white);
     border-radius: 20px;
     margin: 2px 10px;
     overflow: hidden;
@@ -122,7 +131,7 @@
     
 }
 .searchItem:hover{
-    background-color: #cfffc9;
+    background-color: var(--color-gray-1);
     
 }
 .navbarPerfilMovile{
@@ -171,7 +180,7 @@
         position: absolute;
         width: 35px;
         height: 4px;
-        background-color: #fff;
+        background-color: var(--color-white);
         transition: all ease .3s;
         border-radius: 4px;
     }
@@ -202,7 +211,7 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        background-color: #ffffffc5;
+        background-color: var(--color-gray-1);
         animation-duration: 0.7s;
         animation-name: slidein;
     }

@@ -6,18 +6,25 @@ import { CiHeart } from "react-icons/ci";
 import AddCart from '../../components/AddCart'
 import UserContext from '../../context/UserContext';
 import '../../styles/Product.css'
+import Delete from '../../components/admin/Delete';
+
 function Product() {
     const { user } = useContext(UserContext);
     const navigate = useNavigate(); 
     const link = (link)=>{
         navigate(link)
     }
+    const { id } = useParams(); 
     const edit = () => {
         if (user && user.role === 'admin') {
-            return <div className='adminButtonEdit' onClick={()=>link(`../../admin/edit/${id}`)} >Editar</div>;
+            return(
+                <div className='adminButton'>
+                    <button onClick={()=>link(`../../admin/edit/${id}`)} >Editar</button>
+                    <Delete id={id}/>
+                </div>
+            );
         }
     }
-    const { id } = useParams(); 
     const[cant, setCant] =useState(1);
     const[like, setLike] = useState(false);
     const cliklike = ()=>{

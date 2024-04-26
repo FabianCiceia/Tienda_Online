@@ -13,7 +13,7 @@ ProductRouter.get("/category/:category", ProductController.getProductsByCategory
 ProductRouter.get("/list/category", ProductController.getAllCategories);
 ProductRouter.get('/search', ProductController.searchProducts);
 ProductRouter.get("/:id", ProductController.getOneProductById); 
-
+ProductRouter.delete("/delete/:id",authenticate, whitelist, ProductController.deleteOneProductById);
 
 
 module.exports = ProductRouter;

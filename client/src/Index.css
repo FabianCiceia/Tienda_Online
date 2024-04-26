@@ -11,16 +11,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    --color-white: #ffffff;
+    --color-white: #fafdfd;
     --color-black: #172b4d;
     --color-gray-0: #fbfbfb;
     --color-gray-1: #f4f5f7;
     --color-gray-2: #eaecef;
     --color-gray-3: #b7b9be;
     --color-gray-4: #808289;
-    --color-primary: #74a833;
-    --color-secondary: #8b8a17;
-
+    --color-primary: #26b9d9;
+    --color-secondary: #26b9d9;
+    --color-red:red;
 
 
     color:var( --color-black);
@@ -30,7 +30,7 @@
     max-width: 1200px;
 }
 body{
-    background-color: #E2E4EB;
+    background-color: #e5f6fc;
 }
 
 input[type=number]::-webkit-inner-spin-button,

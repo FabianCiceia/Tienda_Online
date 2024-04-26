@@ -10,7 +10,7 @@
     justify-items: center;
 }
 .searchProduct{
-    background-color: #fcfcfca4;
+    background-color: var(--color-gray-0);
     border-radius: 20px;
     width: min-content;
 }

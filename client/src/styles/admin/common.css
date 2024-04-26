@@ -1,20 +1,16 @@
-.adminButtonEdit{
-    background-color: #ba251a;
+.adminButton{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 10px;
     left: 10px;
-    margin: 10px 0;
-    height: 40px;
+}
+.adminButton button{
     width: 100px;
+    height: 30px;
+    background-color: #ba251a;
+    margin: 5px;
     border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: large;
-    margin-left: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .add {
     max-width: 600px;

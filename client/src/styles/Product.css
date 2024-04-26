@@ -31,7 +31,7 @@
     font-size: large;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: solid #767676 1px;
+    border-bottom: solid var(--color-gray-3) 1px;
 }
 
 .cartButtonCant {
@@ -61,7 +61,10 @@
     font-size: xx-large
 }
 .ButtonCant:hover{
-    background-color: rgb(232, 232, 232);
+    background-color: var(--color-gray-1);
+}
+.ButtonCant:active{
+    background-color: var(--color-gray-2);
 }
 .buttonsAddFavor{
     display: flex;
@@ -69,13 +72,13 @@
     height: auto;
 }
 .addCart{
-    background-color:#1ABA1A;
+    background-color:var(--color-primary);
     margin: 10px 0;
     height: 50px;
     width: 150px;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: var(--color-white);
     font-size: large;
     margin-right: 20px;
     cursor: pointer;
@@ -92,8 +95,8 @@
     justify-content: center;
 }
 .redColor {
-    background-color: #ff401d;
-    color: #e4e4e4;
+    background-color: var(--color-red);
+    color: var(--color-gray-1);
 }
 
 .blackColor {
@@ -103,7 +106,7 @@
 .ProductCart{
     display: flex;
     flex-direction: column;
-    border: #1ABA1A solid 1px; 
+    border: var(--color-primary) solid 1px; 
     border-radius: 10px;
 }
 .yourCart{
@@ -129,21 +132,21 @@
 .ProductCartSubTotal{
     margin: 10px;
     display: flex;
-    border-bottom: 1px solid #767676;
-    border-top: 1px solid #767676;
+    border-bottom: 1px solid var(--color-gray-3);
+    border-top: 1px solid var(--color-gray-3);
     padding: 5px 0;
 }
 .ProductCartSubTotal p{
     margin: 0 10px;
 }
 .ProductCartShop{
-    background-color:#1ABA1A;
+    background-color:var(--color-primary);
     margin: 10px 0;
     height: 40px;
     width: 100px;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: var(--color-white);
     font-size: large;
     margin-left: 10px;
     cursor: pointer;
