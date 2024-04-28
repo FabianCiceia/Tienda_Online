@@ -3,7 +3,7 @@ import '../styles/Navbar/Navbar.css'
 import { CiShoppingCart , CiUser } from "react-icons/ci";
 import Logo from '../assets/Logo.png'
 import { Link, useNavigate} from "react-router-dom";
-import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/Navbar/SearchBar';
 
 import { useContext } from 'react';
 import UserContext from '../context/UserContext';

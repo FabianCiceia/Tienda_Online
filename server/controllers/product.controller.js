@@ -8,40 +8,96 @@ module.exports = {
                 res.status(400).json({ message: "Something went wrong", error: err })
             );
     },
-
     searchProducts: (req, res) => {
-        const searchTerm = req.query.searchTerm; // Obtiene el término de búsqueda del parámetro de consulta de la solicitud
-        const page = parseInt(req.query.page) || 1; // Obtiene el número de página de la consulta de la solicitud, si no se proporciona, se establece en 1
+        const searchTerm = req.query.searchTerm; // Término de búsqueda
+        const category = req.query.category; // Categoría del producto
+        const costMin = parseFloat(req.query.costMin); // Costo mínimo del producto
+        const costMax = parseFloat(req.query.costMax); // Costo máximo del producto
+        const page = parseInt(req.query.page) || 1; // Número de página, por defecto 1
         const pageSize = 15; // Tamaño de página (número de resultados por página)
     
-        // Verifica si se proporcionó un término de búsqueda
-        if (!searchTerm || searchTerm.trim() === '') {
-            return res.status(400).json({ message: "Search term is required" });
+        // Objeto para construir la consulta
+        const query = {};
+    
+        // Verifica si se proporcionó un término de búsqueda y agrega filtro
+        if (searchTerm && searchTerm.trim() !== '') {
+            query.$or = [
+                { name: { $regex: searchTerm, $options: 'i' } }, // Búsqueda insensible a mayúsculas y minúsculas en el campo de nombre
+                { description: { $regex: searchTerm, $options: 'i' } } // Búsqueda insensible a mayúsculas y minúsculas en el campo de descripción
+            ];
+        }
+    
+        // Verifica si se proporcionó una categoría y agrega filtro
+        if (category && category.trim() !== '') {
+            query.category = category.trim();
+        }
+    
+        // Verifica si se proporcionó un costo mínimo y agrega filtro
+        if (!isNaN(costMin)) {
+            query.price = { $gte: costMin }; // Costo mayor o igual al mínimo proporcionado
+        }
+    
+        // Verifica si se proporcionó un costo máximo y agrega filtro
+        if (!isNaN(costMax)) {
+            if (query.price) {
+                query.price.$lte = costMax; // Costo menor o igual al máximo proporcionado
+            } else {
+                query.price = { $lte: costMax }; // Costo menor o igual al máximo proporcionado
+            }
         }
     
         // Calcula el índice de inicio y el límite de resultados para la página actual
         const startIndex = (page - 1) * pageSize;
         const endIndex = page * pageSize;
     
-        // Realiza la búsqueda de productos en tiempo real utilizando una expresión regular para buscar en el campo de nombre o descripción
-        ProductModel.find({
-            $or: [
-                { name: { $regex: searchTerm, $options: 'i' } }, // Búsqueda insensible a mayúsculas y minúsculas en el campo de nombre
-                { description: { $regex: searchTerm, $options: 'i' } } // Búsqueda insensible a mayúsculas y minúsculas en el campo de descripción
-            ]
-        })
-        .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
-        .skip(startIndex) // Omite los resultados anteriores a la página actual
-        .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
-        .then(products => {
-            // Envía los productos encontrados como respuesta al cliente
-            res.status(200).json({ products: products, currentPage: page, totalPages: Math.ceil(products.length / pageSize) });
-        })
-        .catch(err => {
-            // Maneja los errores de la base de datos
-            res.status(500).json({ message: "Error searching products", error: err });
-        });
+        // Realiza la búsqueda de productos con los filtros proporcionados
+        ProductModel.find(query)
+            .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
+            .skip(startIndex) // Omite los resultados anteriores a la página actual
+            .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
+            .then(products => {
+                // Envía los productos encontrados como respuesta al cliente
+                res.status(200).json({ products: products, currentPage: page, totalPages: Math.ceil(products.length / pageSize) });
+            })
+            .catch(err => {
+                // Maneja los errores de la base de datos
+                res.status(500).json({ message: "Error searching products", error: err });
+            });
     },
+    
+    // searchProducts: (req, res) => {
+    //     const searchTerm = req.query.searchTerm; // Obtiene el término de búsqueda del parámetro de consulta de la solicitud
+    //     const page = parseInt(req.query.page) || 1; // Obtiene el número de página de la consulta de la solicitud, si no se proporciona, se establece en 1
+    //     const pageSize = 15; // Tamaño de página (número de resultados por página)
+    
+    //     // Verifica si se proporcionó un término de búsqueda
+    //     if (!searchTerm || searchTerm.trim() === '') {
+    //         return res.status(400).json({ message: "Search term is required" });
+    //     }
+    
+    //     // Calcula el índice de inicio y el límite de resultados para la página actual
+    //     const startIndex = (page - 1) * pageSize;
+    //     const endIndex = page * pageSize;
+    
+    //     // Realiza la búsqueda de productos en tiempo real utilizando una expresión regular para buscar en el campo de nombre o descripción
+    //     ProductModel.find({
+    //         $or: [
+    //             { name: { $regex: searchTerm, $options: 'i' } }, // Búsqueda insensible a mayúsculas y minúsculas en el campo de nombre
+    //             { description: { $regex: searchTerm, $options: 'i' } } // Búsqueda insensible a mayúsculas y minúsculas en el campo de descripción
+    //         ]
+    //     })
+    //     .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
+    //     .skip(startIndex) // Omite los resultados anteriores a la página actual
+    //     .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
+    //     .then(products => {
+    //         // Envía los productos encontrados como respuesta al cliente
+    //         res.status(200).json({ products: products, currentPage: page, totalPages: Math.ceil(products.length / pageSize) });
+    //     })
+    //     .catch(err => {
+    //         // Maneja los errores de la base de datos
+    //         res.status(500).json({ message: "Error searching products", error: err });
+    //     });
+    // },
     
     
     getAllProducts: (req, res) => {

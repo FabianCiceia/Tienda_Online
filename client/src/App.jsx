@@ -22,6 +22,7 @@ import PanelControl from './views/admin/PanelControl'
 import Footer from './views/Footer'
 
 import './styles/admin/common.css'
+import './styles/components/container.css'
 
 const App = () => {
 
@@ -40,7 +41,7 @@ const App = () => {
     return (
         
         <UserContext.Provider value={objetoContexto}>
-            <div className='container'>
+            <div className='container-body'>
                 <Navbar/>
                 <Routes>
 

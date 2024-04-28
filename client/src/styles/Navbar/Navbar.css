@@ -31,7 +31,7 @@
 
 .navbarSearch{
     display: flex;
-    background-color: var(--color-white);
+    background-color: var(--color-container);
     border-radius: 20px;
     margin: 2px 10px;
     align-items: center;
@@ -120,7 +120,7 @@
     top: 100%;
     left: 0;
 
-    background-color: var(--color-white);
+    background-color: var(--color-container);
     border-radius: 20px;
     margin: 2px 10px;
     overflow: hidden;
@@ -182,7 +182,7 @@
         position: absolute;
         width: 35px;
         height: 4px;
-        background-color: var(--color-white);
+        background-color: var(--color-container);
         transition: all ease .3s;
         border-radius: 4px;
     }

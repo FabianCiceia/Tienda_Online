@@ -1,9 +1,6 @@
 .container-categoryProducts{
-    background-color: var(--color-white);
-    border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
-    padding: 10px;
 }
 .container-categoryProducts h1{
     margin-top: 5px;
@@ -45,7 +42,7 @@
         width: 150px;
         height: 305px;
         border: var(--color-gray-3) solid ;
-        border: 1px solid #ccc;
+        border: 1px solid var(--color-gray-1);
         border-radius: 5px;
     }
 }

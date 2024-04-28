@@ -2,7 +2,6 @@
 .containerCart{
     display: grid;
     grid-template-columns: 5fr 2fr;
-    /* background-color: #fff; */
     border-radius: 10px;
     margin: 5px;
     padding: 10px;
@@ -19,11 +18,8 @@
 }
 
 .listCart-container{
-    background-color: var(--color-white) ;
     display: flex;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 10px;
+    
 }
 
 .listCartDescripcion{
@@ -84,13 +80,9 @@
 .orderCart{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-white) ;
-    border-radius: 10px;
     position: -webkit-sticky;
     position: sticky;
     top: 10px;
-    padding: 20px;
-    margin-top: 5px;
     height: min-content;
 }
 .orderCartCost > div{

@@ -11,7 +11,7 @@
 }
 .menuUser.open{
     position: absolute;
-    background-color: var(--color-white);
+    background-color: var(--color-container);
     border: solid var(--color-gray-2) 1px;
     border-radius: 20px;
     margin: 2px 0px;

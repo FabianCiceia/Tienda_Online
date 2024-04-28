@@ -5,17 +5,21 @@
 
 .searchProductList{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 5px;
     justify-content: center;
     justify-items: center;
     
 }
 .searchProduct{
-    background-color: var(--color-gray-0);
+    background-color: var(--color-container);
+    color: var(--color-black);
     border-radius: 20px;
     width: min-content;
-    
+    padding: 5px;
+}
+.searchProduct:hover{
+    cursor: pointer;
 }
 .cart:hover{
     border-radius: 20px;
@@ -29,4 +33,10 @@
 .pagination a{
     font-size: large;
     cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    
+    .searchProductList{
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
 }

@@ -9,13 +9,13 @@ import '../../styles/Home.css';
 function Home() {
     return (
         <div className='home'>
-            <div className='homeCat'>
-                <HomeListCategory />
+            <div className='homeCat '>
+                <HomeListCategory  />
                 <ListNew/>
             </div>
             <div className='categorys'>
-                <CategoryProducts name="Capacitores" category="capacitor" />
-                <CategoryProducts name="microcontrolador" category="microcontrolador" />
+                <CategoryProducts name="Capacitor cerámico" category="Capacitor cerámico" />
+                <CategoryProducts name="Microcontroladores" category="Microcontroladores" />
             </div>
         </div>
     )

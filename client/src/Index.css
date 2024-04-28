@@ -20,15 +20,17 @@
     --color-gray-4: #808289;
     --color-primary: #26b9d9;
     --color-secondary: #10768d;
-    --color-red:red;
+    --color-red:red;    
+    --color-container:#fafdfd;
     color:var( --color-black);
 }
-.container{
+.container-body{
     width: 100%;
     max-width: 1200px;
 }
 body{
-    background-color: #e5f6fc;
+    --color-background: #e5f6fc;
+    background-color:var(--color-background);
 }
 
 input[type=number]::-webkit-inner-spin-button,

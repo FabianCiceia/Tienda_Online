@@ -69,7 +69,7 @@ function ShCart() {
                     ))
                 }
             </div>
-            <div className='orderCart'>
+            <div className='orderCart container'>
                 <h1>resumen del pedido</h1>
                 <div className='orderCartCost'>
                     <div>

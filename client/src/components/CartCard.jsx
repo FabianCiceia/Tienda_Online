@@ -80,7 +80,7 @@ function CartCard({products, setProduct}) {
         ((event.target.value) < 0  || (event.target.value) > Number(data.product.stock))?null:setCant(Number(event.target.value));
     };
     return (
-        <div className='listCart-container'>
+        <div className='listCart-container container'>
             <div className='listCartImg'>
                 <img src={data.product.imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
             </div>

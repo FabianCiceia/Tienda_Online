@@ -2,14 +2,10 @@
 .homeCat{
     display: grid;
     grid-template-columns: 2fr 9fr;
+    align-items: start;
 }
 
-.homeCat > *{
-    background-color: var(--color-white);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-}
+
 .category{
     display: flex;
     flex-direction: column;

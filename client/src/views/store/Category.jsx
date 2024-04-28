@@ -32,7 +32,7 @@ function SearchProduct() {
             <div className='searchProductList'>
                 {
                     data.products.map((product, i) => (
-                        <div className='searchProduct' key={i}>
+                        <div className='searchProduct container' key={i}>
                             <Card
                                 imageUrl={product.imageUrl}
                                 name={product.name}

@@ -48,7 +48,7 @@ function Product() {
         ((event.target.value) < 0  || (event.target.value) > Number(data.product.stock))?null:setCant(Number(event.target.value));
     };
     return (
-        <div className='product-container'>
+        <div className='product-container container'>
             <div className='productImg'>
                 <img src={data.product.imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
             </div>

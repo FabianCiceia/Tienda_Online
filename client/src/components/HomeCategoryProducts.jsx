@@ -15,7 +15,7 @@ function categoryProducts({ category, name }) {
     }
     if (error) {
         return (
-            <div>Esto va tardar más de lo pensado</div>
+            null
         )
     }
 
@@ -31,7 +31,7 @@ function categoryProducts({ category, name }) {
     };
 
     return (
-        <div className='container-categoryProducts'>
+        <div className='container-categoryProducts container'>
             <h1>{name}</h1>
         <div className='categoryProducts'>
             <button onClick={handlePrevPage} disabled={currentPage === 0}>{"<"}</button>

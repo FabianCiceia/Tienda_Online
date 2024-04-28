@@ -19,8 +19,8 @@ function HomeListCategory() {
     //     console.log(data)
     // }
     return (
-        <div className='category'>
-            
+        <div className='category container'>
+            <h1>Categorias</h1>
             {
                 data.map((data, i) => (
                     <div key={i} className='categoryLink'>

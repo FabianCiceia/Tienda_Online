@@ -17,7 +17,7 @@ function ListNew() {
         )
     }
     return (
-        <div className='newProduct'>
+        <div className='newProduct container'>
             {
                 data.products.map((product, i) => (
                     <div key={i}>
