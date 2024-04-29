@@ -10,13 +10,10 @@ module.exports = {
     },
     searchProducts: (req, res) => {
         const searchTerm = req.query.searchTerm; // Término de búsqueda
-        const category = req.query.category; // Categoría del producto
-        const costMin = parseFloat(req.query.costMin); // Costo mínimo del producto
-        const costMax = parseFloat(req.query.costMax); // Costo máximo del producto
         const page = parseInt(req.query.page) || 1; // Número de página, por defecto 1
         const pageSize = 15; // Tamaño de página (número de resultados por página)
     
-        // Objeto para construir la consulta
+        // Objeto para construir la consulta principal
         const query = {};
     
         // Verifica si se proporcionó un término de búsqueda y agrega filtro
@@ -27,43 +24,47 @@ module.exports = {
             ];
         }
     
-        // Verifica si se proporcionó una categoría y agrega filtro
-        if (category && category.trim() !== '') {
-            query.category = category.trim();
-        }
-    
-        // Verifica si se proporcionó un costo mínimo y agrega filtro
-        if (!isNaN(costMin)) {
-            query.price = { $gte: costMin }; // Costo mayor o igual al mínimo proporcionado
-        }
-    
-        // Verifica si se proporcionó un costo máximo y agrega filtro
-        if (!isNaN(costMax)) {
-            if (query.price) {
-                query.price.$lte = costMax; // Costo menor o igual al máximo proporcionado
-            } else {
-                query.price = { $lte: costMax }; // Costo menor o igual al máximo proporcionado
-            }
-        }
-    
-        // Calcula el índice de inicio y el límite de resultados para la página actual
-        const startIndex = (page - 1) * pageSize;
-        const endIndex = page * pageSize;
-    
-        // Realiza la búsqueda de productos con los filtros proporcionados
+        // Realiza la búsqueda de productos para obtener costMin y costMax
         ProductModel.find(query)
-            .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
-            .skip(startIndex) // Omite los resultados anteriores a la página actual
-            .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
             .then(products => {
-                // Envía los productos encontrados como respuesta al cliente
-                res.status(200).json({ products: products, currentPage: page, totalPages: Math.ceil(products.length / pageSize) });
+                // Encuentra el costo mínimo y el costo máximo de la lista de productos
+                const costMin = Math.min(...products.map(product => product.price));
+                const costMax = Math.max(...products.map(product => product.price));
+    
+                // Encuentra las categorías únicas de los productos encontrados
+                const categories = [...new Set(products.map(product => product.category))];
+    
+                // Construye la consulta principal usando costMin y costMax
+                if (!isNaN(costMin)) {
+                    query.price = { $gte: costMin };
+                }
+                if (!isNaN(costMax)) {
+                    if (query.price) {
+                        query.price.$lte = costMax;
+                    } else {
+                        query.price = { $lte: costMax };
+                    }
+                }
+    
+                // Ejecuta la consulta principal para obtener los productos paginados
+                return ProductModel.find(query)
+                    .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
+                    .skip((page - 1) * pageSize) // Omite los resultados anteriores a la página actual
+                    .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
+                    .then(products => {
+                        // Calcula el total de páginas en función del total de productos encontrados
+                        const totalPages = Math.ceil(products.length / pageSize);
+    
+                        // Envía los productos encontrados, la información de paginación, los costos mínimo y máximo y las categorías como respuesta al cliente
+                        res.status(200).json({ products: products, currentPage: page, totalPages: totalPages, costMin: costMin, costMax: costMax, categories: categories });
+                    });
             })
             .catch(err => {
                 // Maneja los errores de la base de datos
                 res.status(500).json({ message: "Error searching products", error: err });
             });
     },
+    
     
     // searchProducts: (req, res) => {
     //     const searchTerm = req.query.searchTerm; // Obtiene el término de búsqueda del parámetro de consulta de la solicitud
