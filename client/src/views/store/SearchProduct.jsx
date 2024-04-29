@@ -31,20 +31,25 @@ function SearchProduct() {
     
     return (
         <div className='containerSearchProduct'>
-            <div className='searchProductList'>
-                {
-                    data.products.map((product, i) => (
-                        <div className='searchProduct' key={i}>
-                            <Card
-                                imageUrl={product.imageUrl}
-                                name={product.name}
-                                price={product.price}
-                                stock={product.stock}
-                                id={product._id}
-                            />
-                        </div>
-                    ))
-                }
+            <div className='searchProducts'>
+                <div className='searchProductfilter'>
+                    
+                </div>
+                <div className='searchProductList'>
+                    {
+                        data.products.map((product, i) => (
+                            <div className='searchProduct' key={i}>
+                                <Card
+                                    imageUrl={product.imageUrl}
+                                    name={product.name}
+                                    price={product.price}
+                                    stock={product.stock}
+                                    id={product._id}
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
             <div className="pagination">
                 
