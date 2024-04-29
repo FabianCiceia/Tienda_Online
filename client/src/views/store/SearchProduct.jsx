@@ -2,10 +2,22 @@ import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Axios from "../../hooks/useAxios"
 import Card from '../../components/Card';
-import '../../styles/SearchProduct.css'
+import PriceRange from '../../components/SearchProduct/PriceRange'
+
+//estilado principal
+import '../../styles/SearchProduct/SearchProduct.css'
+//estilado de los filtro de la barra lateral
+import '../../styles/SearchProduct/Filter.css'
+import CategoryRange from '../../components/SearchProduct/CategoryRange';
+import { Divider } from 'antd';
+
 function SearchProduct() {
     const { search } = useParams();
     const[paguina, setPaguina] = useState(0);
+    const[category, setCategory] = useState([]);
+    const [minPrice, setMinPrice] = useState(0);
+    const [maxPrice, setMaxPrice] = useState(0);
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -24,16 +36,27 @@ function SearchProduct() {
         )
     }
 
-    // if (data){
-    //     console.log(data.products);
-    //     console.log(paguina)
-    // }
+    if (data){
+        console.log(data);
+    }
     
     return (
         <div className='containerSearchProduct'>
             <div className='searchProducts'>
                 <div className='searchProductfilter'>
-                    
+                    <PriceRange
+                        minPrice={minPrice}
+                        setMinPrice={setMinPrice}
+                        maxPrice={maxPrice}
+                        setMaxPrice={setMaxPrice}
+                        maxprice = {50000}
+                        minprice = {2000}
+                    />
+                    <Divider/>
+                    <CategoryRange
+                        setCategory={setCategory}
+                        category={category}
+                    />
                 </div>
                 <div className='searchProductList'>
                     {

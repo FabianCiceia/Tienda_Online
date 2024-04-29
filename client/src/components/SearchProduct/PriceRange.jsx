@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Slider, InputNumber, Row, Col } from 'antd';
 
-const PriceRangeSlider = () => {
-    const [minPrice, setMinPrice] = useState(0);
-    const [maxPrice, setMaxPrice] = useState(100);
+const PriceRange = ({maxprice = 0, minprice = 0}) => {
+    const [minPrice, setMinPrice] = useState(minprice);
+    const [maxPrice, setMaxPrice] = useState(maxprice);
 
     const handleMinPriceChange = (value) => {
         setMinPrice(value);
@@ -18,35 +18,48 @@ const PriceRangeSlider = () => {
         setMaxPrice(value[1]);
     };
 
+    const formatPrice = (value) => `Gs${value}`;
+    
     return (
-        <Row>
-            <Col span={6}>
+        <Row className='princeRange'>
+            <div className='input'>
+                <p>Precio minimo:</p>
                 <InputNumber
-                min={0}
+                min={minprice}
                 max={maxPrice}
                 value={minPrice}
+                prefix="Gs."
+                type='number'
+                step={100}
+                formatter={(value) => `${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, '.')}
                 onChange={handleMinPriceChange}
                 />
-            </Col>
-            <Col span={12}>
-                <Slider
-                range
-                min={0}
-                max={1000}
-                value={[minPrice, maxPrice]}
-                onChange={handleSliderChange}
-                />
-            </Col>
-            <Col span={6}>
-                <InputNumber
+            </div>
+            <Slider
+            className='slider'
+            range
+            min={minprice}
+            max={maxprice}
+            step={100}
+            value={[minPrice, maxPrice]}
+            onChange={handleSliderChange}
+            />
+            <div  className='input'>
+                <p>Precio maximo: </p>
+                <InputNumber 
+                className='number'
+                type='number'
                 min={minPrice}
-                max={1000}
+                max={maxprice}
                 value={maxPrice}
+                prefix="Gs."
+                step={100}
+                formatter={(value) => `${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, '.')}
                 onChange={handleMaxPriceChange}
                 />
-            </Col>
+            </div>
         </Row>
     );
 };
 
-export default PriceRangeSlider;
+export default PriceRange;
