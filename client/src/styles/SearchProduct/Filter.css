@@ -21,7 +21,9 @@
 .princeRange .slider{
     width: 90%;
 }
-
+.searchProductfilter button{
+    margin-top: 10px;
+}
 /* .categoryRange{
 
 } */
@@ -29,4 +31,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 5px;
+}
+.ant-pagination-options{
+    display: none !important;
 }

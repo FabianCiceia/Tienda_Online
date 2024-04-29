@@ -42,7 +42,7 @@ function SearchBar() {
     }, [searchTerm]);
 
     return (
-        <div className="searchContainer" onBlur={()=>handleBlur}>
+        <div className="searchContainer" >
             <div className="navbarSearch">
                 <div className="input">
                 <input 

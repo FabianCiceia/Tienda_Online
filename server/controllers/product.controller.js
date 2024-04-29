@@ -10,10 +10,13 @@ module.exports = {
     },
     searchProducts: (req, res) => {
         const searchTerm = req.query.searchTerm; // Término de búsqueda
+        const category = req.query.categories ? req.query.categories.split(',') : []; // Lista de categorías
+        const costMin = parseFloat(req.query.costMin); // Costo mínimo del producto
+        const costMax = parseFloat(req.query.costMax); // Costo máximo del producto
         const page = parseInt(req.query.page) || 1; // Número de página, por defecto 1
         const pageSize = 15; // Tamaño de página (número de resultados por página)
     
-        // Objeto para construir la consulta principal
+        // Objeto para construir la consulta
         const query = {};
     
         // Verifica si se proporcionó un término de búsqueda y agrega filtro
@@ -24,16 +27,16 @@ module.exports = {
             ];
         }
     
-        // Realiza la búsqueda de productos para obtener costMin y costMax
+        // Verifica si se proporcionó una categoría y agrega filtro
+
+    
+        // Realiza la búsqueda de productos con los filtros proporcionados para obtener costMin y costMax
         ProductModel.find(query)
             .then(products => {
                 // Encuentra el costo mínimo y el costo máximo de la lista de productos
-                const costMin = Math.min(...products.map(product => product.price));
-                const costMax = Math.max(...products.map(product => product.price));
-    
-                // Encuentra las categorías únicas de los productos encontrados
+                const priceMin = Math.min(...products.map(product => product.price));
+                const priceMax = Math.max(...products.map(product => product.price));
                 const categories = [...new Set(products.map(product => product.category))];
-    
                 // Construye la consulta principal usando costMin y costMax
                 if (!isNaN(costMin)) {
                     query.price = { $gte: costMin };
@@ -45,18 +48,37 @@ module.exports = {
                         query.price = { $lte: costMax };
                     }
                 }
-    
-                // Ejecuta la consulta principal para obtener los productos paginados
+                if (category.length > 0) {
+                    query.category = { $in: category }; // Filtra por categorías que estén en la lista proporcionada
+                }
+                // if (category && category.trim() !== '') {
+                //     query.category = category.trim();
+                // }
+                // Realiza la búsqueda de productos con los filtros proporcionados y los filtros de precio
                 return ProductModel.find(query)
-                    .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
-                    .skip((page - 1) * pageSize) // Omite los resultados anteriores a la página actual
-                    .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
-                    .then(products => {
+                    .then(filteredProducts => {
                         // Calcula el total de páginas en función del total de productos encontrados
-                        const totalPages = Math.ceil(products.length / pageSize);
+                        const totalPages = Math.ceil(filteredProducts.length / pageSize);
     
-                        // Envía los productos encontrados, la información de paginación, los costos mínimo y máximo y las categorías como respuesta al cliente
-                        res.status(200).json({ products: products, currentPage: page, totalPages: totalPages, costMin: costMin, costMax: costMax, categories: categories });
+                        // Calcula el índice de inicio y el límite de resultados para la página actual
+                        const startIndex = (page - 1) * pageSize;
+                        const endIndex = page * pageSize;
+    
+                        // Obtén solo los productos para la página actual
+                        const currentProducts = filteredProducts.slice(startIndex, endIndex);
+    
+                        // Encuentra las categorías únicas de los productos encontrados
+                        
+    
+                        // Envía los productos encontrados y la información de paginación como respuesta al cliente
+                        res.status(200).json({ 
+                            products: currentProducts, 
+                            currentPage: page, 
+                            totalPages: totalPages, 
+                            priceMin: priceMin, 
+                            priceMax: priceMax, 
+                            categories: categories 
+                        });
                     });
             })
             .catch(err => {

@@ -1,0 +1,12 @@
+.button-primary{
+    background-color: var(--color-primary);
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-white);
+    font-size: large;
+    cursor: pointer;
+}
+.button-primary:active{
+    background-color: var(--color-secondary);
+}
