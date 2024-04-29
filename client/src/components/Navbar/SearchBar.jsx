@@ -53,7 +53,7 @@ function SearchBar() {
                     onChange={handleChange} 
                     placeholder='Buscar producto'/>
                 </div> 
-                <CiSearch className='icon' />
+                <CiSearch onClick={()=>navigate(`../store/search/${searchTerm}`)} className='icon' />
             </div>
             <div className='searchResult'>
                 {searchResults.map((product) => (
