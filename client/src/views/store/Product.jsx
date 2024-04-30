@@ -56,7 +56,7 @@ function Product() {
                 <div>
                     <div>
                     <h1>{data.product.name}</h1>
-                    <p>${data.product.price}</p>
+                    <p>₲ {data.product.price}</p>
                     <p>{data.product.stock ? "✅ En stock" : "❌No hay stock"} ({data.product.stock})</p>
                     </div>
                     <h2>{data.product.description}</h2>
@@ -80,13 +80,13 @@ function Product() {
                     <img src={data.product.imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
                     <div>
                         <h3>{data.product.name}</h3>
-                        <p>{cant} x ${data.product.price}</p>
+                        <p>{cant} x ₲{data.product.price}</p>
                         
                     </div>
                 </div>
                 <div className='ProductCartSubTotal'>
                     <p>Sub Total: </p>
-                    <p>${(cant * data.product.price).toFixed(2)}</p>
+                    <p>₲ {(cant * data.product.price)}</p>
                 </div>
                 <div>
                     <button className='ProductCartShop'>Comprar</button>

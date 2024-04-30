@@ -73,13 +73,13 @@ function ShCart() {
                 <h1>resumen del pedido</h1>
                 <div className='orderCartCost'>
                     <div>
-                        <p>Sub total: </p><p>${(total)}</p>
+                        <p>Sub total: </p><p>₲ {(total)}</p>
                     </div>
                     <div>
-                        <p>Impuestos estimados: </p><p>${(tax)}</p>
+                        <p>Impuestos estimados: </p><p>₲ {(tax)}</p>
                     </div>
                     <div>
-                        <p>Total a pagar: </p><p>${Number(total+tax).toFixed(2)}</p>
+                        <p>Total a pagar: </p><p>₲ {Number(total+tax).toFixed(0)}</p>
                     </div>
                 </div>
                 <div className='orderCartBuy'>

@@ -89,7 +89,7 @@ function CartCard({products, setProduct}) {
                     <h1>{data.product.name}</h1>
                     <button className='deleteProductCart' onClick={() =>{deleteProduct(data.product._id)}}><CiTrash /></button>
                 </div>
-                <p>${data.product.price}</p>
+                <p>₲ {data.product.price}</p>
                 <div className='listCartCant'>
                     {
                         (cant==1)?<button className='deleteProductCartMovile' onClick={() =>{deleteProduct(data.product._id)}}><CiTrash /></button>:<button onClick={()=>{(cant==1 )?null:buttonPress(data.product._id, (cant-1))}}>-</button>

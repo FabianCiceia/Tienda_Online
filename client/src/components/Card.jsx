@@ -28,7 +28,7 @@ function Card({imageUrl, name, stock, price, id}) {
                 <h1>{name}</h1>
             </div>
             <div>
-                <h2>{price}</h2>
+                <h2>₲ {price}</h2>
                 {stockOn()}
             </div>
         </div>
