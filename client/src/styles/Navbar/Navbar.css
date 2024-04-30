@@ -138,7 +138,7 @@
     background-color: var(--color-gray-1);
     
 }
-.searchBackground.open {
+.searchBackgroundopen {
     background-color: #0000002d;
     display: block;
     width: 100%;
