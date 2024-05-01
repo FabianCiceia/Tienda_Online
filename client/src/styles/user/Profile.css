@@ -1,0 +1,23 @@
+.userCard {
+    height: 320px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userCard_head {
+    display: flex;
+    align-items: center;
+}
+
+.userCard_body p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.userImage {
+    height: 80px;
+    width: 80px;
+}
