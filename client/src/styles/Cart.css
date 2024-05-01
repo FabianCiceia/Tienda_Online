@@ -112,6 +112,23 @@
 .listCart > *{
     width: 100%;
 }
+
+@media only screen and (max-width: 950px) {
+    .cart  {
+        margin: 10px 5px;
+        width: 150px;
+        height: 305px;
+        border: 1px solid var(--color-gray-1);
+        border-radius: 5px;
+    }
+    .cart img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        justify-content: space-between;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .containerCart{
         display: flex;
@@ -137,5 +154,18 @@
     }
     .deleteProductCartMovile > *{
         font-size: x-large;
+    }
+    .cart  {
+        width: 150px;
+        height: 305px;
+        /* border: 1px solid var(--color-gray-3); */
+        /* border-radius: 5px; */
+        
+    }
+    .cart img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        justify-content: space-between;
     }
 }

@@ -24,9 +24,7 @@
 .searchProduct:hover{
     cursor: pointer;
 }
-.cart:hover{
-    border-radius: 20px;
-}
+
 .pagination{
     padding: 10px;
     display: flex;

@@ -14,8 +14,8 @@ function Home() {
                 <ListNew/>
             </div>
             <div className='categorys'>
-                <CategoryProducts name="Capacitor cerámico" category="Capacitor cerámico" />
                 <CategoryProducts name="Microcontroladores" category="Microcontroladores" />
+                <CategoryProducts name="Capacitor cerámico" category="Capacitor cerámico" />
             </div>
         </div>
     )

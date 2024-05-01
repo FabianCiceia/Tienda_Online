@@ -25,7 +25,7 @@ function Card({imageUrl, name, stock, price, id}) {
         <div className='cart' onClick={()=>{navigate(`../product/${id}`)}}>
             <div>
                 <img src={imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
-                <h1>{name}</h1>
+                <h1>{name.length > 20 ? name.substring(0, 20) + '...' : name}</h1>
             </div>
             <div>
                 <h2>₲ {price}</h2>
