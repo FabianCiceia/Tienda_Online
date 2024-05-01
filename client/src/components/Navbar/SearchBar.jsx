@@ -62,6 +62,7 @@ function SearchBar() {
                     </div>
                 ))}
             </div>
+            <div onClick={()=>setSearchResults([])} className={`searchBackground${(searchResults.length>0) ? 'open' : ''}`}></div>
         </div>
     );
     
