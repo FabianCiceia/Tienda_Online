@@ -23,7 +23,6 @@ function SearchProduct() {
     const [maxPrice, setMaxPrice] = useState(0);
 
     const onChange = (page) => {
-        console.log(page);
         setPage(page);
         window.scrollTo({
             top: 0,
@@ -42,11 +41,7 @@ function SearchProduct() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-    if (data){
-        // console.log(data);
-        
-    }
-    // console.log(category);
+
     const a = "http://tudominio.com/api/products/search?searchTerm=laptop&category=electronics&costMin=500&costMax=1500&page=2";
     const filter = () => {
         axios
@@ -61,11 +56,9 @@ function SearchProduct() {
                 withCredentials: true
             })
             .then((response) => {
-                console.log(response.data);
                 setData(response.data);
             })
             .catch((error) => {
-                console.log(error);
             });
     };
     

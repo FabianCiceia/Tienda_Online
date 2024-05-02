@@ -23,7 +23,6 @@ function SearchProduct() {
         )
     }
     if(data){
-        console.log(data);
     }
 
     return (

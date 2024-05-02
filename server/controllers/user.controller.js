@@ -152,10 +152,10 @@ module.exports = {
         UserModel.findOne({ email: req.body.email })
             .then(user => {
                 if (user === null) {
-                    res.status(400).json({ msg: "invalid login attempt user" });
+                    res.status(400).json({ msg: "Usuario no encontrado" });
                 } else {
                     if (req.body.password === undefined) {
-                        res.status(400).json({ msg: "invalid login attempt password" });
+                        res.status(400).json({ msg: "Contraseña incorrecta" });
                     }
                     console.log(req.body)
                     if (req.body.password === user.password) {
@@ -178,7 +178,7 @@ module.exports = {
                             })
                             .json({ msg: "success!", user: userInfo, newJWT });
                     } else {
-                        res.status(401).json({ msg: "invalid login attempt" });
+                        res.status(401).json({ msg: "Contraseña no valida para este usuario" });
                     }
                 }
             })

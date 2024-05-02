@@ -29,7 +29,6 @@ function Product() {
     const[like, setLike] = useState(false);
     const cliklike = ()=>{
         setLike(!like);
-        // console.log(like)
     }
 
     const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/${id}`);

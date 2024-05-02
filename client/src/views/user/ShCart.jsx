@@ -7,21 +7,19 @@ function ShCart() {
     const[total, setTotal] = useState()
     const[tax, setTax] = useState();
     function obtenerTotal() {
-        // console.log(pront);
+
         axios
         .get(`http://localhost:8000/api/auth/cart/total`, { withCredentials: true })
         .then(res => {
             setTotal(Number(res.data.total.toFixed(2)));
             setTax(Number(res.data.tax.toFixed(2)))
-            // console.log(res.data);
         })
         .catch(err => {
-            console.log(err);
+            return;
         })
     }
     const baseURL =`http://localhost:8000/api/auth/cart/edit`;
     function addData(pront) {
-        // console.log(pront);
         axios
         .post(`${baseURL}`, pront, { withCredentials: true })
         .then(res => {
@@ -37,7 +35,6 @@ function ShCart() {
                 icon: "error",
                 title: `Ha ocurrido un error`,
             });
-            console.log(err);
         })
     }
     const { data, isLoading, error, setData } = Axios("http://localhost:8000/api/auth/cart/list");
@@ -54,9 +51,7 @@ function ShCart() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-    if(data){
-        // console.log(data)
-    }
+
     return (
         <div className='containerCart'>
             <div className='listCart'>

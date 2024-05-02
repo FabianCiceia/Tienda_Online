@@ -885,3 +885,113 @@
   "__v": 0
 }
 ]
+
+
+
+[
+    {
+        "_id": "662bfd5ca5d1c5ff862292c9",
+        "name": "ESP32-CH340C-Type-C",
+        "description": "Microcontrolador ESP32 con chip CH340C y conector Tipo-C",
+        "price": 70000,
+        "category": "Microcontroladores",
+        "stock": 1,
+        "imageUrl": "http://localhost:8000/uploads/esp32.png"
+    },
+    {
+        "_id": "662bfd5ca5d1c5ff862292ca",
+        "name": "ESP8266 CH340 MOD",
+        "description": "Módulo de microcontrolador ESP8266 con chip CH340",
+        "price": 45000,
+        "category": "Microcontroladores",
+        "stock": 1,
+        "imageUrl": "http://localhost:8000/uploads/esp8266.png"
+    },
+    {
+        "_id": "662bfd5ca5d1c5ff862292cb",
+        "name": "Arduino UNO SMD",
+        "description": "Placa de desarrollo Arduino UNO SMD",
+        "price": 80000,
+        "category": "Microcontroladores",
+        "stock": 1,
+        "imageUrl": "http://localhost:8000/uploads/Arduino_uno.png"
+    },
+    {
+        "_id": "662bfd5ca5d1c5ff862292cc",
+        "name": "Arduino UNO R3",
+        "description": "Placa de desarrollo Arduino UNO R3",
+        "price": 120000,
+        "category": "Microcontroladores",
+        "stock": 1,
+        "imageUrl": "http://localhost:8000/uploads/arduino-uno-r3.png"
+    },
+    {
+        "_id": "662bfd5ca5d1c5ff862292cd",
+        "name": "Arduino Nano 3.0 Atmega328 Type-C",
+        "description": "Placa de desarrollo Arduino Nano 3.0 con microcontrolador Atmega328 y conector Tipo-C",
+        "price": 60000,
+        "category": "Microcontroladores",
+        "stock": 1,
+        "imageUrl": "http://localhost:8000/uploads/arduino_nano.png"
+    },
+    {
+        "_id": "663282488ffcbae0b5144f4e",
+        "name": "Arduino Mega 2560 Rev3",
+        "description": "El Arduino Mega 2560 es una placa microcontroladora basada en el ATmega2560 . Tiene 54 pines de entrada/salida digitales (de los cuales 15 se pueden usar como salidas PWM), 16 entradas analógicas, 4 UART (puertos serie de hardware), un oscilador de cristal de 16 MHz, una conexión USB, un conector de alimentación, un encabezado ICSP, y un botón de reinicio.",
+        "price": 180000,
+        "category": "Microcontroladores",
+        "stock": 8,
+        "imageUrl": "http://localhost:8000/uploads/image-1714586184140-485092899.png",
+        "createdAt": "2024-05-01T17:56:24.154Z",
+        "updatedAt": "2024-05-01T17:56:24.154Z",
+        "__v": 0
+    },
+    {
+        "_id": "663282708ffcbae0b5144f50",
+        "name": "ESP32 con pantalla LCD",
+        "description": "El Arduino Mega 2560 es una placa microcontroladora basada en el ATmega2560 . Tiene 54 pines de entrada/salida digitales (de los cuales 15 se pueden usar como salidas PWM), 16 entradas analógicas, 4 UART (puertos serie de hardware), un oscilador de cristal de 16 MHz, una conexión USB, un conector de alimentación, un encabezado ICSP, y un botón de reinicio.",
+        "price": 260000,
+        "category": "Microcontroladores",
+        "stock": 10,
+        "imageUrl": "http://localhost:8000/uploads/image-1714586224097-243412654.png",
+        "createdAt": "2024-05-01T17:57:04.107Z",
+        "updatedAt": "2024-05-01T17:57:04.107Z",
+        "__v": 0
+    },
+    {
+        "_id": "6632829f8ffcbae0b5144f5c",
+        "name": "Joystick de circuito integrado electrónico inteligente",
+        "description": "Tablero de rompecabezas de enchufe directo, NO se necesita soldadura. Cinco botones momentáneos (botón selectivo de 4 + joystick, al igual que el botón pulsador analógico de playstation 3). Joystick pulgar de dos ejes",
+        "price": 100000,
+        "category": "Microcontroladores",
+        "stock": 20,
+        "imageUrl": "http://localhost:8000/uploads/image-1714586271944-97977323.png",
+        "createdAt": "2024-05-01T17:57:51.949Z",
+        "updatedAt": "2024-05-01T17:57:51.949Z",
+        "__v": 0
+    },
+    {
+        "_id": "663282bf8ffcbae0b5144f5e",
+        "name": "Escudo Ethernet escudo W5100 R3 UNO Mega 2560 1280 328 UNR R3 W5100 Placa de desarrollo para arduino",
+        "description": "Módulo de expansión de red Ethernet W5100, puede convertirse en un simple servidor Web o un control de red para leer y escribir interfaz digital y analógica y otras aplicaciones de red. IDE se puede utilizar directamente en los archivos de la Biblioteca Ethernet se puede lograr con un simple servidor web.  Mientras tanto, la versión es compatible con el lector de tarjetas mini SD (tarjeta TF)  La placa de expansión utiliza un diseño apilable, se puede enchufar directamente, mientras que nuestras otras placas de expansión también se pueden enchufar.",
+        "price": 100000,
+        "category": "Microcontroladores",
+        "stock": 20,
+        "imageUrl": "http://localhost:8000/uploads/image-1714586303179-904438347.png",
+        "createdAt": "2024-05-01T17:58:23.183Z",
+        "updatedAt": "2024-05-01T17:58:23.183Z",
+        "__v": 0
+    },
+    {
+        "_id": "663282d78ffcbae0b5144f60",
+        "name": "Modulo ESP32 con botones",
+        "description": "puede convertirse en un simple servidor Web o un control de red para leer y escribir interfaz digital y analógica y otras aplicaciones de red. IDE se puede utilizar directamente en los archivos de la Biblioteca Ethernet se puede lograr con un simple servidor web.  Mientras tanto, la versión es compatible con el lector de tarjetas mini SD (tarjeta TF)  La placa de expansión utiliza un diseño apilable, se puede enchufar directamente, mientras que nuestras otras placas de expansión también se pueden enchufar.",
+        "price": 100000,
+        "category": "Microcontroladores",
+        "stock": 20,
+        "imageUrl": "http://localhost:8000/uploads/image-1714586327122-214209769.png",
+        "createdAt": "2024-05-01T17:58:47.124Z",
+        "updatedAt": "2024-05-01T17:58:47.124Z",
+        "__v": 0
+    }
+]
