@@ -205,36 +205,22 @@
     .menuBurgerButton div:first-child{
         top: 0;
     }
-    
-    .menuBurger {
-        display: none;
-    }
-    .menuBurger.open {
-        display: grid;
-        grid-template-columns: 6fr 2fr;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 4; 
-        width: 100%;
-        height: 100vh;
-        justify-content: space-around;
-        backdrop-filter: blur(0.6px);
-    }   
-    .menuBurger.open .menuBurgerlinks {
+    .menuBurgerlinks {
         display: flex;
         flex-direction: column;
         padding: 10px;
         background-color: var(--color-gray-1);
         animation-duration: 0.7s;
         animation-name: slidein;
+        
     }
-    .menuBurger.open .menuBurgerlinks *{
+    .menuBurgerlinks *{
         margin-top: 10px;
+        
     }
     .menuBurgerUser{
         display: flex;
-        margin-left: 5px;
+        /* margin-left: 5px; */
         cursor: pointer;
         display: flex;
         align-items: center;

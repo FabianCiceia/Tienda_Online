@@ -1,34 +1,43 @@
-import '../styles/user/CardCartUser.css'
+import React, { useState } from 'react';
+import { Button, Drawer, Radio, Space } from 'antd';
 
-import Axios from '../hooks/useAxios';
-import React from 'react'
-import { CiShoppingCart } from "react-icons/ci";
-import CardProfile from './user/CardProfile';
+const App = ({open, setOpen}) => {
+  // const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState('left');
 
-import UserCart from './user/UserCart';
+  const showDrawer = () => {
+    setOpen(true);
+  };
 
-const PruebaComponente = () => {
+  const onClose = () => {
+    setOpen(false);
+  };
 
-  // const { data, isLoading, error, setData } = Axios("http://localhost:8000/api/auth/cart/list");
-  // if (isLoading) {
-  //   return (
-  //     <div>Cargando</div>
-  //   )
-  // }
-  // if (error) {
-  //   return (
-  //     <div>Esto va tardar mas de lo pensado</div>
-  //   )
-  // }
-  // if (data) {
-
-  // }
+  const onChange = (e) => {
+    setPlacement(e.target.value);
+  };
 
   return (
     <>
-      No hay nada que ver aqui :)
+      <Space>
+        <Button type="primary" onClick={showDrawer}>
+          Open
+        </Button>
+      </Space>
+      <Drawer
+        title="Basic Drawer"
+        placement={'left'}
+        closable={false}
+        onClose={onClose}
+        visible={open}
+        key={'left'}
+      >
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Drawer>
     </>
-  )
-}
+  );
+};
 
-export default PruebaComponente
+export default App;
