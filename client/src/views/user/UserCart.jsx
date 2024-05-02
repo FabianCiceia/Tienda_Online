@@ -25,7 +25,7 @@ const UserCart = (product) => {
                 <h4>{data.product.name}</h4>
                 <p>{data.product.description}</p>
             </div>
-
+            <p>Precio Unitario: {data.product.price}</p>
         </>
     )
 }
