@@ -4,7 +4,7 @@ import Axios from '../../hooks/useAxios';
 import React from 'react'
 import { CiShoppingCart } from "react-icons/ci";
 import CardProfile from './CardProfile';
-
+import { Link } from "react-router-dom";
 import UserCart from './UserCart';
 
 const Profile = () => {
@@ -40,7 +40,7 @@ const Profile = () => {
             ))
           }
           <div className='cardFooterUser'>
-            <button type="button" className='button-primary'>Ir al carrito</button>
+           <Link to={"../cart"}> <button type="button" className='button-primary'>Ir al carrito</button></Link>
           </div>
         </div>
 
