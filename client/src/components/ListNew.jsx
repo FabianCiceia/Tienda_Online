@@ -17,20 +17,23 @@ function ListNew() {
         )
     }
     return (
-        <div className='newProduct container'>
-            {
-                data.products.map((product, i) => (
-                    <div key={i}>
-                        <Card
-                            imageUrl={product.imageUrl} 
-                            name={product.name}
-                            price={product.price}
-                            stock={product.stock}
-                            id={product._id}
-                        />
-                    </div>
-                ))
-            }
+        <div className='container'>
+            <h1>Nuevos</h1>
+            <div className='newProduct '>
+                {
+                    data.products.map((product, i) => (
+                        <div key={i}>
+                            <Card
+                                imageUrl={product.imageUrl} 
+                                name={product.name}
+                                price={product.price}
+                                stock={product.stock}
+                                id={product._id}
+                            />
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
     

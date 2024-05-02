@@ -70,7 +70,7 @@ function Product() {
                     {edit()}
                     <div className='buttonsAddFavor'>
                         <AddCart productId={id} quantity={cant} />
-                        <button onClick={cliklike}  className={like ? 'favorCart redColor' : 'favorCart blackColor'}><CiHeart /></button>
+                        {/* <button onClick={cliklike}  className={like ? 'favorCart redColor' : 'favorCart blackColor'}><CiHeart /></button> */}
                     </div>
                 </div>
             </div>
