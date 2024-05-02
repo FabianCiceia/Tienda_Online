@@ -199,7 +199,7 @@ module.exports = {
             price: req.body.price,
             category: req.body.category,
             stock: req.body.stock,
-            imageUrl: `http://localhost:8000/api/uploads/${imageName}` // Asignar el nombre de la imagen a req.body.imageUrl
+            imageUrl: `http://44.220.152.238/api/uploads/${imageName}` // Asignar el nombre de la imagen a req.body.imageUrl
         });
         // console.log(newProduct);
         ProductModel.create(newProduct)
