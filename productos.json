@@ -1,0 +1,1025 @@
+[
+  {
+    "name": "ESP32-CH340C-Type-C",
+    "description": "Microcontrolador ESP32 con chip CH340C y conector Tipo-C",
+    "price": 70000,
+    "category": "Microcontroladores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/esp32.png"
+  },
+  {
+    "name": "ESP8266 CH340 MOD",
+    "description": "Módulo de microcontrolador ESP8266 con chip CH340",
+    "price": 45000,
+    "category": "Microcontroladores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/esp8266.png"
+  },
+  {
+    "name": "Arduino UNO SMD",
+    "description": "Placa de desarrollo Arduino UNO SMD",
+    "price": 80000,
+    "category": "Microcontroladores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/Arduino_uno.png"
+  },
+  {
+    "name": "Arduino UNO R3",
+    "description": "Placa de desarrollo Arduino UNO R3",
+    "price": 120000,
+    "category": "Microcontroladores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/arduino-uno-r3.png"
+  },
+  {
+    "name": "Arduino Nano 3.0 Atmega328 Type-C",
+    "description": "Placa de desarrollo Arduino Nano 3.0 con microcontrolador Atmega328 y conector Tipo-C",
+    "price": 60000,
+    "category": "Microcontroladores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/arduino_nano.png"
+  },
+  {
+    "name": "Elevador de voltaje XL6009",
+    "description": "Módulo elevador de voltaje XL6009",
+    "price": 23000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "Resuctor de voltaje LM2596",
+    "description": "Módulo reductor de voltaje LM2596",
+    "price": 15000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "AMS1117-1.2",
+    "description": "Regulador de voltaje AMS1117-1.2",
+    "price": 5000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "AMS1117-1.5",
+    "description": "Regulador de voltaje AMS1117-1.5",
+    "price": 5000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "AMS1117-1.8",
+    "description": "Regulador de voltaje AMS1117-1.8",
+    "price": 5000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "AMS1117-2.5",
+    "description": "Regulador de voltaje AMS1117-2.5",
+    "price": 5000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "AMS1117-3.3",
+    "description": "Regulador de voltaje AMS1117-3.3",
+    "price": 5000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "AMS1117-5.0",
+    "description": "Regulador de voltaje AMS1117-5.0",
+    "price": 5000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "AMS1117-ADJ",
+    "description": "Regulador de voltaje AMS1117 ajustable",
+    "price": 5000,
+    "category": "Reguladores de voltaje",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/regulador_voltaje.png"
+  },
+  {
+    "name": "S9012",
+    "description": "Transistor S9012",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "S9015",
+    "description": "Transistor S9015",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "S8550",
+    "description": "Transistor S8550",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "2n5401",
+    "description": "Transistor 2n5401",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "2n3906",
+    "description": "Transistor 2n3906",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "A1015",
+    "description": "Transistor A1015",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "A92",
+    "description": "Transistor A92",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "A733",
+    "description": "Transistor A733",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "Germanium",
+    "description": "Transistor de Germanio",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "S9013",
+    "description": "Transistor S9013",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "S9014",
+    "description": "Transistor S9014",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "S9018",
+    "description": "Transistor S9018",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "S8050",
+    "description": "Transistor S8050",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "C1845",
+    "description": "Transistor C1845",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "2n5551",
+    "description": "Transistor 2n5551",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "2n3904",
+    "description": "Transistor 2n3904",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "A42",
+    "description": "Transistor A42",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "C945",
+    "description": "Transistor C945",
+    "price": 1000,
+    "category": "Transistores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/transistor.png"
+  },
+  {
+    "name": "1pf",
+    "description": "Capacitor cerámico 1pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "2pf",
+    "description": "Capacitor cerámico 2pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "3pf",
+    "description": "Capacitor cerámico 3pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "5pf",
+    "description": "Capacitor cerámico 5pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "10pf",
+    "description": "Capacitor cerámico 10pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "15pf",
+    "description": "Capacitor cerámico 15pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "22pf",
+    "description": "Capacitor cerámico 22pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "30pf",
+    "description": "Capacitor cerámico 30pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "33pf",
+    "description": "Capacitor cerámico 33pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "47pf",
+    "description": "Capacitor cerámico 47pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "68pf",
+    "description": "Capacitor cerámico 68pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "75pf",
+    "description": "Capacitor cerámico 75pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "82pf",
+    "description": "Capacitor cerámico 82pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "100pf",
+    "description": "Capacitor cerámico 100pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "150pf",
+    "description": "Capacitor cerámico 150pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "220pf",
+    "description": "Capacitor cerámico 220pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "330pf",
+    "description": "Capacitor cerámico 330pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "470pf",
+    "description": "Capacitor cerámico 470pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "680pf",
+    "description": "Capacitor cerámico 680pF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "1nf",
+    "description": "Capacitor cerámico 1nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "1.5nf",
+    "description": "Capacitor cerámico 1.5nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "2.2nf",
+    "description": "Capacitor cerámico 2.2nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "3.3nf",
+    "description": "Capacitor cerámico 3.3nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "4.7nf",
+    "description": "Capacitor cerámico 4.7nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "6.8nf",
+    "description": "Capacitor cerámico 6.8nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "10nf",
+    "description": "Capacitor cerámico 10nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "15nf",
+    "description": "Capacitor cerámico 15nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "22nf",
+    "description": "Capacitor cerámico 22nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "47nf",
+    "description": "Capacitor cerámico 47nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "68nf",
+    "description": "Capacitor cerámico 68nF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "0.1uf",
+    "description": "Capacitor cerámico 0.1uF",
+    "price": 500,
+    "category": "Capacitor cerámico",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/condensador.png"
+  },
+  {
+    "name": "Led 5mm Rojo",
+    "description": "Diodo Led de 5mm color Rojo",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 5mm Azul",
+    "description": "Diodo Led de 5mm color Azul",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 5mm Blanco",
+    "description": "Diodo Led de 5mm color Blanco",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 5mm Verde",
+    "description": "Diodo Led de 5mm color Verde",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 5mm Amarillo",
+    "description": "Diodo Led de 5mm color Amarillo",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 3mm Rojo",
+    "description": "Diodo Led de 3mm color Rojo",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 3mm Azul",
+    "description": "Diodo Led de 3mm color Azul",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 3mm Blanco",
+    "description": "Diodo Led de 3mm color Blanco",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 3mm Verde",
+    "description": "Diodo Led de 3mm color Verde",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "Led 3mm Amarillo",
+    "description": "Diodo Led de 3mm color Amarillo",
+    "price": 500,
+    "category": "Diodos Led",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/led.png"
+  },
+  {
+    "name": "0 Ω",
+    "description": "Resistencia de 0 Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "0.5Ω",
+    "description": "Resistencia de 0.5Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "1Ω",
+    "description": "Resistencia de 1Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "2.2Ω",
+    "description": "Resistencia de 2.2Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "3.3Ω",
+    "description": "Resistencia de 3.3Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "4.7Ω",
+    "description": "Resistencia de 4.7Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "5.6Ω",
+    "description": "Resistencia de 5.6Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "6.8Ω",
+    "description": "Resistencia de 6.8Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "8.2Ω",
+    "description": "Resistencia de 8.2Ω",
+    "price": 300,
+    "category": "Resistencias",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/resistencia.png"
+  },
+  {
+    "name": "100Ω",
+    "description": "Potenciómetro de 100Ω",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "500Ω",
+    "description": "Potenciómetro de 500Ω",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "1KΩ",
+    "description": "Potenciómetro de 1KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "2KΩ",
+    "description": "Potenciómetro de 2KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "5KΩ",
+    "description": "Potenciómetro de 5KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "10KΩ",
+    "description": "Potenciómetro de 10KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "20KΩ",
+    "description": "Potenciómetro de 20KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "50KΩ",
+    "description": "Potenciómetro de 50KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "100KΩ",
+    "description": "Potenciómetro de 100KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "200KΩ",
+    "description": "Potenciómetro de 200KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "500KΩ",
+    "description": "Potenciómetro de 500KΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "1MΩ",
+    "description": "Potenciómetro de 1MΩ",
+    "price": 3000,
+    "category": "Potenciómetro",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/potenciometro.png"
+  },
+  {
+    "name": "NE555P",
+    "description": "Circuito integrado NE555P",
+    "price": 3000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "LM324N",
+    "description": "Circuito integrado LM324N",
+    "price": 10000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "LM393N",
+    "description": "Circuito integrado LM393N",
+    "price": 10000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "UA741",
+    "description": "Circuito integrado UA741",
+    "price": 5000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "ULN2803",
+    "description": "Circuito integrado ULN2803",
+    "price": 5000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "LM358",
+    "description": "Circuito integrado LM358",
+    "price": 5000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "LM386",
+    "description": "Circuito integrado LM386",
+    "price": 10000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "NE5532",
+    "description": "Circuito integrado NE5532",
+    "price": 5000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "ULN2003",
+    "description": "Circuito integrado ULN2003",
+    "price": 8000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "PC817",
+    "description": "Circuito integrado PC817",
+    "price": 3000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "JRC4558",
+    "description": "Circuito integrado JRC4558",
+    "price": 5000,
+    "category": "Circuitos integrados",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/integrado.png"
+  },
+  {
+    "name": "MQ-2",
+    "description": "Sensor de gas MQ-2",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-3",
+    "description": "Sensor de gas MQ-3",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-4",
+    "description": "Sensor de gas MQ-4",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-5",
+    "description": "Sensor de gas MQ-5",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-6",
+    "description": "Sensor de gas MQ-6",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-7",
+    "description": "Sensor de gas MQ-7",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-8",
+    "description": "Sensor de gas MQ-8",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-9",
+    "description": "Sensor de gas MQ-9",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "MQ-135",
+    "description": "Sensor de gas MQ-135",
+    "price": 30000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "DHT22",
+    "description": "Sensor de temperatura y humedad DHT22",
+    "price": 50000,
+    "category": "Sensores",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/sensor.png"
+  },
+  {
+    "name": "Cargador bateria 18650 1A 5V Type-C protect",
+    "description": "Cargador de batería para 18650 con protección, 1A 5V, con conector Type-C",
+    "price": 25000,
+    "category": "Módulos",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/modulo.png"
+  },
+  {
+    "name": "Mini Bluetooth 5.0 para audio",
+    "description": "Módulo Mini Bluetooth 5.0 para audio",
+    "price": 50000,
+    "category": "Módulos",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/modulo.png"
+  },
+  {
+    "name": "Module Micro SIM800L",
+    "description": "Módulo Micro SIM800L",
+    "price": 120000,
+    "category": "Módulos",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/modulo.png"
+  },
+  {
+    "name": "Voltimetro 100V 10A",
+    "description": "Módulo voltímetro de 100V 10A",
+    "price": 50000,
+    "category": "Módulos",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/modulo.png"
+  },
+  {
+    "name": "L298N",
+    "description": "Módulo L298N",
+    "price": 30000,
+    "category": "Módulos",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/modulo.png"
+  },
+  {
+    "name": "Mosfet IRF520 Driver",
+    "description": "Módulo Mosfet IRF520 Driver",
+    "price": 20000,
+    "category": "Módulos",
+    "stock": 1,
+    "imageUrl": "http://localhost:8000/api/uploads/modulo.png"
+  },
+  {
+      "name": "Arduino Mega 2560 Rev3",
+      "description": "El Arduino Mega 2560 es una placa microcontroladora basada en el ATmega2560 . Tiene 54 pines de entrada/salida digitales (de los cuales 15 se pueden usar como salidas PWM), 16 entradas analógicas, 4 UART (puertos serie de hardware), un oscilador de cristal de 16 MHz, una conexión USB, un conector de alimentación, un encabezado ICSP, y un botón de reinicio.",
+      "price": 180000,
+      "category": "Microcontroladores",
+      "stock": 8,
+      "imageUrl": "http://localhost:8000/api/uploads/image-1714586184140-485092899.png",
+      "createdAt": "2024-05-01T17:56:24.154Z",
+      "updatedAt": "2024-05-01T17:56:24.154Z",
+      "__v": 0
+  },
+  {
+      "name": "ESP32 con pantalla LCD",
+      "description": "El Arduino Mega 2560 es una placa microcontroladora basada en el ATmega2560 . Tiene 54 pines de entrada/salida digitales (de los cuales 15 se pueden usar como salidas PWM), 16 entradas analógicas, 4 UART (puertos serie de hardware), un oscilador de cristal de 16 MHz, una conexión USB, un conector de alimentación, un encabezado ICSP, y un botón de reinicio.",
+      "price": 260000,
+      "category": "Microcontroladores",
+      "stock": 10,
+      "imageUrl": "http://localhost:8000/api/uploads/image-1714586224097-243412654.png",
+      "createdAt": "2024-05-01T17:57:04.107Z",
+      "updatedAt": "2024-05-01T17:57:04.107Z",
+      "__v": 0
+  },
+  {
+      "name": "Joystick de circuito integrado electrónico inteligente",
+      "description": "Tablero de rompecabezas de enchufe directo, NO se necesita soldadura. Cinco botones momentáneos (botón selectivo de 4 + joystick, al igual que el botón pulsador analógico de playstation 3). Joystick pulgar de dos ejes",
+      "price": 100000,
+      "category": "Microcontroladores",
+      "stock": 20,
+      "imageUrl": "http://localhost:8000/api/uploads/image-1714586271944-97977323.png",
+      "createdAt": "2024-05-01T17:57:51.949Z",
+      "updatedAt": "2024-05-01T17:57:51.949Z",
+      "__v": 0
+  },
+  {
+      "name": "Escudo Ethernet escudo W5100 R3 UNO Mega 2560 1280 328 UNR R3 W5100 Placa de desarrollo para arduino",
+      "description": "Módulo de expansión de red Ethernet W5100, puede convertirse en un simple servidor Web o un control de red para leer y escribir interfaz digital y analógica y otras aplicaciones de red. IDE se puede utilizar directamente en los archivos de la Biblioteca Ethernet se puede lograr con un simple servidor web.  Mientras tanto, la versión es compatible con el lector de tarjetas mini SD (tarjeta TF)  La placa de expansión utiliza un diseño apilable, se puede enchufar directamente, mientras que nuestras otras placas de expansión también se pueden enchufar.",
+      "price": 100000,
+      "category": "Microcontroladores",
+      "stock": 20,
+      "imageUrl": "http://localhost:8000/api/uploads/image-1714586303179-904438347.png",
+      "createdAt": "2024-05-01T17:58:23.183Z",
+      "updatedAt": "2024-05-01T17:58:23.183Z",
+      "__v": 0
+  },
+  {
+      "name": "Modulo ESP32 con botones",
+      "description": "puede convertirse en un simple servidor Web o un control de red para leer y escribir interfaz digital y analógica y otras aplicaciones de red. IDE se puede utilizar directamente en los archivos de la Biblioteca Ethernet se puede lograr con un simple servidor web.  Mientras tanto, la versión es compatible con el lector de tarjetas mini SD (tarjeta TF)  La placa de expansión utiliza un diseño apilable, se puede enchufar directamente, mientras que nuestras otras placas de expansión también se pueden enchufar.",
+      "price": 100000,
+      "category": "Microcontroladores",
+      "stock": 20,
+      "imageUrl": "http://localhost:8000/api/uploads/image-1714586327122-214209769.png",
+      "createdAt": "2024-05-01T17:58:47.124Z",
+      "updatedAt": "2024-05-01T17:58:47.124Z",
+      "__v": 0
+  }
+]
