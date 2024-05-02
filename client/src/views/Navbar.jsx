@@ -40,8 +40,10 @@ function Navbar() {
                 {/* <div className='LogoContainer'>
                     <img src={Logo} alt="" className='Logo' />
                 </div> */}
+                <div onClick={()=>link("./")}>
                     <h1>En</h1>
                     <h1>Corto</h1>  
+                </div>
             </div>
             <div className='navbarPerfilMovile' >
 

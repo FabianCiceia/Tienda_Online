@@ -9,8 +9,6 @@ import { Drawer} from 'antd';
 import Logout from './Logout';
 
 const MenuBurger = ({open, setOpen}) => {
-    // const [open, setOpen] = useState(false);
-
     const { user } = useContext(UserContext);
     const navigate = useNavigate(); 
     const link = (link)=>{

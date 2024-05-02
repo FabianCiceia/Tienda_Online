@@ -9,7 +9,7 @@ import '../../styles/SearchProduct/SearchProduct.css'
 //estilado de los filtro de la barra lateral
 import '../../styles/SearchProduct/Filter.css'
 import CategoryRange from '../../components/SearchProduct/CategoryRange';
-import { Divider, Pagination } from 'antd';
+import { Divider, Drawer, Pagination } from 'antd';
 
 function SearchProduct() {
     const { search } = useParams();
@@ -22,6 +22,7 @@ function SearchProduct() {
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(0);
 
+    const [open,setOpen] = useState(true)
     const onChange = (page) => {
         setPage(page);
         window.scrollTo({
@@ -41,6 +42,13 @@ function SearchProduct() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
+    const onClose = () => {
+        setOpen(false);
+        filter();
+    };
+    const showDrawer = () => {
+        setOpen(true);
+    };
 
     const a = "http://tudominio.com/api/products/search?searchTerm=laptop&category=electronics&costMin=500&costMax=1500&page=2";
     const filter = () => {
@@ -65,8 +73,37 @@ function SearchProduct() {
     return (
         <div className='containerSearchProduct'>
             <div className='searchProducts'>
-                <div className='searchProductfilter'>
+                <div className='searchProductfilterMovile'>
+                    <button className='button-primary' onClick={showDrawer}>Filtros</button>
+                    <Drawer
+                        title="Menu"
+                        placement={'left'}
+                        closable={false}
+                        onClose={onClose}
+                        visible={open}
+                        key={'left'}
+                    >
+                        <PriceRange
+                        data={data}
+                        minPrice={minPrice}
+                        setMinPrice={setMinPrice}
+                        maxPrice={maxPrice}
+                        setMaxPrice={setMaxPrice}
+                        rangeMaxPrice = {data.priceMax}
+                        rangeMinPrice = {data.priceMin}
+                        setvaluefilter={setvaluefilter}
+                        valuefilter={valuefilter}
+                    />
 
+                    <Divider/>
+                    <CategoryRange
+                        setCategory={setCategory}
+                        category={category}
+                        plainOptions = {data.categories}
+                    />
+                    </Drawer>
+                </div>
+                <div className='searchProductfilter'>
                     <PriceRange
                         data={data}
                         minPrice={minPrice}
