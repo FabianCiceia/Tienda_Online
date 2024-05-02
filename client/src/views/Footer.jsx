@@ -1,38 +1,41 @@
+import '../styles/Footer.css'
+
 import React from 'react'
 import { CiFacebook, CiInstagram, CiTwitter } from 'react-icons/ci'
+import { Link } from "react-router-dom";
 
-function PruebaComponente() {
+function Footer() {
     return (
-        <div>
-            <div>
-                <div>
-                    <h1>venta de componentes electronicos</h1>
-                    <h1>phon9321847012938</h1>
+        <div className='containerFooter'>
+            <div className='info'>
+                <div className='infoPhone'>
+                    <h3>venta de componentes<br /> electronicos</h3>
+                    <h4>(025) XXXX 25 16</h4>
                 </div>
 
-                <div>
-                    <h3>Encarnacion paraguay</h3>
-                    <h3>Contactanos: encorto@gmail.com</h3>
+                <div className='infoContacto'>
+                    <h5>Encarnacion - Paraguay</h5>
+                    <h4>Contáctanos: encorto@gmail.com</h4>
                     <div>
-                        <CiFacebook />
-                        <CiInstagram />
-                        <CiTwitter />
+                    <Link to={"#"} className='link'> <CiFacebook className='imaRedes'/></Link>
+                    <Link to={"#"} className='link'><CiInstagram className='imaRedes'/></Link>
+                    <Link to={"#"} className='link'> <CiTwitter className='imaRedes'/></Link>
                     </div>
                 </div>
 
-                <div>
-                    <h3>Categorias</h3>
-                    <p>Capacitor ceramico</p>
-                    <p>Circuito integrado</p>
-                    <p>Diodo led</p>
-                    <p>Microcontrolador</p>
+                <div className='infoLink'>
+                    <h4>Categorias</h4>
+                    <Link to={"#"} className='link'>Capacitor ceramico</Link>
+                    <Link to={"#"} className='link'>Circuito integrado</Link>
+                    <Link to={"#"} className='link'>Diodo led</Link>
+                    <Link to={"#"} className='link'>Microcontrolador</Link>
                 </div>
             </div>
-            <div>
+            <div className='copyright'>
                 <p>Copyright © 2024 EnCorto</p>
             </div>
         </div>
     )
 }
 
-export default PruebaComponente
+export default Footer

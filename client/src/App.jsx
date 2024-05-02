@@ -11,6 +11,7 @@ import SearchProduct from './views/store/SearchProduct'
 import Category from './views/store/Category'
 import PruebaComponente from './views/PruebaComponente'
 
+
 import PrivateRoute from './components/PrivateRoute'
 import Profile from './views/user/Profile'
 import ShCart from './views/user/ShCart'
@@ -38,12 +39,12 @@ const App = () => {
         setUser,
         setUserKeyValue
     }
-    
+
     return (
-        
+
         <UserContext.Provider value={objetoContexto}>
             <div className='container-body'>
-                <Navbar/>
+                <Navbar />
                 <Routes>
 
                     <Route path="/" element={<Navigate to="/store/home" />} />
@@ -55,37 +56,37 @@ const App = () => {
 
                     {/* Parte de la tienda todo publico */}
                     <Route path='/store' >
-                        <Route path="home" element={<Home/>} />
-                        <Route path="search/:search" element={<SearchProduct/> } />
-                        <Route path="category/:category" element={<Category/> } />
-                        <Route path="product/:id" element={<Product/>} />
-                        <Route path='prueba' element={<PruebaComponente/> }/>
+                        <Route path="home" element={<Home />} />
+                        <Route path="search/:search" element={<SearchProduct />} />
+                        <Route path="category/:category" element={<Category />} />
+                        <Route path="product/:id" element={<Product />} />
+                        <Route path='prueba' element={<PruebaComponente />} />
                     </Route>
 
                     {/* Parte del usuario solo para cuando se logea */}
                     <Route path="/user/" element={
                         <PrivateRoute>
-                            <Outlet/>
+                            <Outlet />
                         </PrivateRoute>
-                        
+
                     }>
-                        <Route path='cart' element={<ShCart/>}/>
-                        <Route path='profile' element={<Profile/> }/>
+                        <Route path='cart' element={<ShCart />} />
+                        <Route path='profile' element={<Profile />} />
                     </Route>
 
                     {/* Parte para administrador solo admins */}
                     <Route path="/admin/" element={
                         <AdminRoute>
-                            <Outlet/>
+                            <Outlet />
                         </AdminRoute>
-                        
+
                     }>
-                        <Route path='panel' element={<PanelControl/> } />
-                        <Route path="add" element={<Add/>} />
-                        <Route path="edit/:id" element={<Edit/>} />
+                        <Route path='panel' element={<PanelControl />} />
+                        <Route path="add" element={<Add />} />
+                        <Route path="edit/:id" element={<Edit />} />
                     </Route>
                 </Routes>
-                
+                <Footer />
             </div>
         </UserContext.Provider>
     )
