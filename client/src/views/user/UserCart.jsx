@@ -4,7 +4,6 @@ import Not_image from '../../assets/Not_image.jpg';
 
 const UserCart = (product) => {
     const { id } = product
-    console.log(id)
     const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/${id}`);
     if (isLoading) {
         return (
@@ -17,7 +16,7 @@ const UserCart = (product) => {
         )
     }
     if (data) {
-        console.log(data)
+
     }
     return (
         <>

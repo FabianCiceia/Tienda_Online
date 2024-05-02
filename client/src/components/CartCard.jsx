@@ -51,29 +51,29 @@ function CartCard({products, setProduct}) {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-    // const deleteProduct = (productId)=>{
-    //     Swal.fire({
-    //         title: "Estas seguro ?",
-    //         text: "Vas a eliminar el producto del carrito",
-    //         icon: "warning",
-    //         showCancelButton: true,
-    //         confirmButtonColor: "#3085d6",
-    //         cancelButtonColor: "#d33",
-    //         confirmButtonText: "Eliminar"
-    //     }).then((result) => {
-    //         if (result.isConfirmed) {
-    //             const data = {
-    //                 productId: productId,
-    //                 quantity: 0
-    //             };
-    //             addData(data);
-    //             Swal.fire({
-    //                 icon: "success",
-    //             });
-    //         }
-    //     });
+    const deleteProduct = (productId)=>{
+        Swal.fire({
+            title: "Estas seguro ?",
+            text: "Vas a eliminar el producto del carrito",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Eliminar"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const data = {
+                    productId: productId,
+                    quantity: 0
+                };
+                addData(data);
+                Swal.fire({
+                    icon: "success",
+                });
+            }
+        });
 
-    // }
+    }
     // console.log(data)
 
     const handleChange = (event) => {

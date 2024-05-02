@@ -70,13 +70,13 @@ UserSchema.pre('validate', function (next) {
     next();
 });
 
-UserSchema.pre('save', function (next) {
-    bcrypt.hash(this.password, 10)
-        .then(hash => {
-            this.password = hash;
-            next();
-        });
-});
+// UserSchema.pre('save', function (next) {
+//     bcrypt.hash(this.password, 10)
+//         .then(hash => {
+//             this.password = hash;
+//             next();
+//         });
+// });
 
 UserSchema.plugin(uniqueValidator, { message: "Email already in use" });
 

@@ -38,10 +38,31 @@
 .searchProductfilter{
     margin: 5px;
 }
-
+.searchProductfilterMovile{
+    display: none;
+}
+@media only screen and (max-width: 950px) {
+    .searchProductList{
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+}
 @media only screen and (max-width: 768px) {
     
     .searchProductList{
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        width: 100vi;
+    }
+    .searchProductfilter{
+        display: none;
+    }
+    .searchProducts{
+        display: flex;
+        flex-direction: column;
+    }
+    .searchProductfilterMovile{
+        display: flex;
+    }
+    .searchProductfilterMovile button {
+        width: 100%;
+        margin: 5px;
     }
 }

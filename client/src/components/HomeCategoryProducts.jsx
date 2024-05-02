@@ -117,11 +117,6 @@ export default function SimpleSlider({ category, name ='Categoria' }) {
     if (error) {
         return null;
     }
-
-    if (data){
-        // console.log(data);
-    }
-
     const settings = {
         dots: false,
         touchMove:false,

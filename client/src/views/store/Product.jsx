@@ -29,7 +29,6 @@ function Product() {
     const[like, setLike] = useState(false);
     const cliklike = ()=>{
         setLike(!like);
-        // console.log(like)
     }
 
     const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/${id}`);
@@ -70,7 +69,7 @@ function Product() {
                     {edit()}
                     <div className='buttonsAddFavor'>
                         <AddCart productId={id} quantity={cant} />
-                        <button onClick={cliklike}  className={like ? 'favorCart redColor' : 'favorCart blackColor'}><CiHeart /></button>
+                        {/* <button onClick={cliklike}  className={like ? 'favorCart redColor' : 'favorCart blackColor'}><CiHeart /></button> */}
                     </div>
                 </div>
             </div>

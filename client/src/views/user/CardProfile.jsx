@@ -10,7 +10,6 @@ import { CiUser } from 'react-icons/ci';
 function CardProfile() {
   const { user } = useContext(UserContext);
 
-  console.log(user)
   return (
     <div className='container userCard'>
       <div className='userCard_head'>       

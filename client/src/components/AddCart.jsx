@@ -25,7 +25,7 @@ function AddCart({ productId, quantity} ) {
                 icon: "error",
                 title: `Ha ocurrido un error`,
             });
-            console.log(err);
+            // console.log(err);
         })
     }
 

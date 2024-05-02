@@ -57,7 +57,7 @@ editToCart = async (req, res) => {
         } else {
             return res.status(500).json({ error: 'Internal server error' });
         }
-        user.$__skipValidation = true;
+        // user.$__skipValidation = true;
         const updatedUser = await user.save({ validateBeforeSave: false });
         return res.status(200).json({ cart: user.Card });
     } catch (error) {
@@ -152,43 +152,38 @@ module.exports = {
         UserModel.findOne({ email: req.body.email })
             .then(user => {
                 if (user === null) {
-                    res.status(400).json({ msg: "invalid login attempt user" });
+                    res.status(400).json({ msg: "Usuario no encontrado" });
                 } else {
                     if (req.body.password === undefined) {
-                        res.status(400).json({ msg: "invalid login attempt password" });
+                        res.status(400).json({ msg: "Contraseña incorrecta" });
                     }
                     console.log(req.body)
-                    bcrypt
-                        .compare(req.body.password, user.password)
-                        .then(passwordIsValid => {
-                            console.log("passwordIsValid: ", passwordIsValid, );
-                            if (passwordIsValid) {
-                                const userInfo = {
-                                    _id: user._id,
-                                    role: user.role,
-                                    firstName: user.firstName,
-                                    lastName: user.lastName,
-                                    email: user.email,
-                                };
-                                console.log("userInfo: ", userInfo);
-/*************************************************************************************************************************/
-                                const newJWT = jwt.sign(userInfo,  process.env.JWT_SECRET)
-                                console.log("newJWT: ", newJWT);
-                                res
-                                    .status(200)
-                                    .cookie("usertoken", newJWT, {
-                                        httpOnly: true,
-                                        expires: new Date(Date.now() + 900000000),
-                                    })
-                                    .json({ msg: "success!", user: userInfo, newJWT });
-                            } else {
-                                res.status(401).json({ msg: "invalid login attempt" });
-                            }
-                        })
-                        .catch(err => res.status(401).json({ msg: "invalid login attempt", error: err }));
+                    if (req.body.password === user.password) {
+                        const userInfo = {
+                            _id: user._id,
+                            role: user.role,
+                            firstName: user.firstName,
+                            lastName: user.lastName,
+                            email: user.email,
+                        };
+                        console.log("userInfo: ", userInfo);
+    /*************************************************************************************************************************/
+                        const newJWT = jwt.sign(userInfo, process.env.JWT_SECRET)
+                        console.log("newJWT: ", newJWT);
+                        res
+                            .status(200)
+                            .cookie("usertoken", newJWT, {
+                                httpOnly: true,
+                                expires: new Date(Date.now() + 900000000),
+                            })
+                            .json({ msg: "success!", user: userInfo, newJWT });
+                    } else {
+                        res.status(401).json({ msg: "Contraseña no valida para este usuario" });
+                    }
                 }
             })
             .catch(err => res.status(401).json({ error: err }));
     },
+    
     
 }

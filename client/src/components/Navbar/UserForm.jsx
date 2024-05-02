@@ -82,7 +82,7 @@ const UserForm = ({formType}) => {
                 <Form>
 
                     {errors?.general && (
-                        <div className="alert alert-danger" role="alert">
+                        <div className="" style={{color:'red'}} role="alert">
                             {errors.general}
                         </div>
                     )}
