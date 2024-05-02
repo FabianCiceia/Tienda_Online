@@ -30,12 +30,13 @@ function Navbar() {
     return (
         
         <div className='navbar'>
-            <div onClick={()=>navigate("./store/home")} className='navbarIcon'>
+            <div className='navbarIcon'>
                 <div  className='menuBurgerButton' onClick={()=>setMenuOpen(!menuOpen)}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
+                <MenuBurger open={menuOpen} setOpen={setMenuOpen}/>
                 {/* <div className='LogoContainer'>
                     <img src={Logo} alt="" className='Logo' />
                 </div> */}
@@ -45,7 +46,6 @@ function Navbar() {
             <div className='navbarPerfilMovile' >
 
                 <CiShoppingCart onClick={()=>link("./user/cart")} className='navbarCart' />
-                <MenuBurger open={menuOpen} setOpen={setMenuOpen}/>
 
             </div>
             <SearchBar/>

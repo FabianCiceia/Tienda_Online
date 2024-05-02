@@ -55,7 +55,7 @@ const MenuBurger = ({open, setOpen}) => {
                     <CiUser  className=''/>
                     <p>{(user)?user.firstName:"Iniciar Seccion"}</p>
                 </div>
-                <Link onClick={()=>Link('./')} className='menuBurgerlink'>Inicio</Link>
+                <Link onClick={()=>{Link('./')}} className='menuBurgerlink'>Inicio</Link>
                 <a href="https://wa.me/00000" className='menuBurgerlink' target="_blank" rel="noopener noreferrer">Contacto</a>
                 {logout()}
             </div>

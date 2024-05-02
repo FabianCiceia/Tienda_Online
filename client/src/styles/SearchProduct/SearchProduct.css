@@ -42,6 +42,10 @@
 @media only screen and (max-width: 768px) {
     
     .searchProductList{
+        width: 100vi;
         grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+    .searchProductfilter{
+        display: none;
     }
 }
