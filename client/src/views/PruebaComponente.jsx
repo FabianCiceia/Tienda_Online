@@ -1,6 +1,9 @@
+import '../styles/user/CardCartUser.css'
+
 import Axios from '../hooks/useAxios';
 import React from 'react'
-
+import { CiShoppingCart } from "react-icons/ci";
+import CardProfile from './user/CardProfile';
 
 import UserCart from './user/UserCart';
 
@@ -23,17 +26,27 @@ const PruebaComponente = () => {
 
   return (
     <>
-      <div className='container productCard'>
-        {
-          data.cart.slice(0, 3).map((data, i) => (
-            <div key={i}  >
-             <UserCart id={data.product} />
-            </div>
-          ))
-        }
-      </div>
-      <div>
+      <div className='profileUser'>
 
+
+        <div className='container productCard'>
+          <div className='cardTitleUser'>
+            <CiShoppingCart className='cartLogo' />
+            <h2> Productos en tu carrito</h2>
+          </div >
+          {
+            data.cart.slice(0, 3).map((data, i) => (
+              <div key={i} className='cardImagen'>
+                <UserCart id={data.product} />
+              </div>
+            ))
+          }
+          <div className='cardFooterUser'>
+            <button type="button" className='button-primary'>Ir al carrito</button>
+          </div>
+        </div>
+
+        <CardProfile />
       </div>
     </>
   )

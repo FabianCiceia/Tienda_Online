@@ -39,7 +39,7 @@ function MenuUser({open, setOpen}) {
                 <div className='menuUserPerfile menuOption'
                     onClick={()=>{
                         if(user){
-                            link("../user/perfile");
+                            link("../user/profile");
                             setOpen(false);
                         }else{
                             link("../login");
