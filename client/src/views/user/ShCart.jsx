@@ -59,15 +59,6 @@ function ShCart() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-
-    const handleOverlayClick = (event) => {
-        if (event.target.classList.contains('modal-overlay')) {
-            setIsOpen(false);
-        }
-    };
-
-
-
     return (
         <div className='containerCart'>
             <div className='listCart'>

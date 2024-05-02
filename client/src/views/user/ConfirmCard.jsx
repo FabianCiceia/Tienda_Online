@@ -6,7 +6,7 @@ import UserCart from './UserCart';
 import { useContext } from 'react';
 import UserContext from '../../context/UserContext';
 import { CiUser } from 'react-icons/ci';
-
+import Not_image from '../../assets/Not_image.jpg';
 const ConfirmCard = ({ total, tax, producto }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { user } = useContext(UserContext);
