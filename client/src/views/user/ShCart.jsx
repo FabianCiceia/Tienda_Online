@@ -10,8 +10,8 @@ import ConfirmCard from './ConfirmCard';
 
 
 function ShCart() {
-    const [total, setTotal] = useState()
-    const [tax, setTax] = useState();
+    const [total, setTotal] = useState(0)
+    const [tax, setTax] = useState(0);
 
 
     function obtenerTotal() {
