@@ -15,7 +15,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/uploads", cors(corsOptions), express.static(path.join(__dirname, "uploads")));
+app.use("/api/uploads", cors(corsOptions), express.static(path.join(__dirname, "uploads")));
 
 app.use( express.json() );
 app.use( express.urlencoded({ extended: true }) );
