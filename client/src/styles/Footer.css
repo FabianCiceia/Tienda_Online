@@ -1,22 +1,32 @@
 
 .containerFooter{
-    background-color: var(--color-primary);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    color: var(--color-gray-2);
+    background-color: var(--color-gray-3);
+    margin: 0;
+    padding: 10px 0;
+    color: var(--color-black);
+    width: 100%;
+
+}
+
+
+.containerFooter > section {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .info{
     display: flex;
+    width: 1200px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
     margin-bottom: 5px;
 }
 
 .copyright{
-    border-top: 1px solid var(--color-gray-3);
     text-align: center;
     font-size: 12px;
 }
@@ -31,8 +41,8 @@
 }
 
 .infoPhone h4, .infoContacto h4, .infoLink h4{
-    color: var(--color-black);
     text-align: center;
+
 }
 
 .imaRedes{
@@ -46,7 +56,7 @@
 }
 
 .link{
-    color: var(--color-gray-2);
+    color: var(--color-secondary);
     text-decoration: none;
     font-size: 15px;
 }

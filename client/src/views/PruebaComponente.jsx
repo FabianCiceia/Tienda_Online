@@ -16,6 +16,22 @@ const App = ({open, setOpen}) => {
   const onChange = (e) => {
     setPlacement(e.target.value);
   };
+const PruebaComponente = () => {
+
+  const { data, isLoading, error, setData } = Axios("http://localhost:8000/api/auth/cart/list");
+  if (isLoading) {
+    return (
+      <div>Cargando</div>
+    )
+  }
+  if (error) {
+    return (
+      <div>Esto va tardar mas de lo pensado</div>
+    )
+  }
+  if (data) {
+    //console.log(data)
+  }
 
   return (
     <>

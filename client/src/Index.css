@@ -27,6 +27,8 @@
 .container-body{
     width: 100%;
     max-width: 1200px;
+    min-height: calc(100vh - 137px);
+    flex: 1;
 }
 body{
     --color-background: #e5f6fc;

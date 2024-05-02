@@ -86,8 +86,8 @@ const App = () => {
                         <Route path="edit/:id" element={<Edit />} />
                     </Route>
                 </Routes>
-                <Footer />
             </div>
+                <Footer />
         </UserContext.Provider>
     )
 }
