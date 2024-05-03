@@ -8,7 +8,6 @@
 
 }
 
-
 .containerFooter > section {
     display: flex;
     align-content: center;
@@ -22,8 +21,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
     margin-bottom: 5px;
+    max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
 }
 
 .copyright{
@@ -42,7 +42,6 @@
 
 .infoPhone h4, .infoContacto h4, .infoLink h4{
     text-align: center;
-
 }
 
 .imaRedes{
@@ -59,4 +58,18 @@
     color: var(--color-secondary);
     text-decoration: none;
     font-size: 15px;
+}
+
+
+/* Responsivo */
+.infoPhone, .infoContacto, .infoLink{
+    /* flex: 1; Permite que los elementos ocupen todo el espacio disponible horizontalmente */
+    margin: 10px; /* Añade un poco de espacio entre los elementos */
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
 }
