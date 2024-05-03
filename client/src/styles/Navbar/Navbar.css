@@ -211,28 +211,20 @@
         padding: 10px;
         background-color: var(--color-gray-1);
         animation-duration: 0.7s;
-        animation-name: slidein;
         
     }
     .menuBurgerlinks *{
-        margin-top: 10px;
-        
+        margin-top: 15px;
+        font-size:large;
     }
     .menuBurgerUser{
         display: flex;
-        /* margin-left: 5px; */
         cursor: pointer;
         display: flex;
         align-items: center;
         font-size: large;
     }
-    .closeMenuBurger{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        animation-duration: 0.7s;
-        animation-name: zoom;
-    }
+
 }
 
 
