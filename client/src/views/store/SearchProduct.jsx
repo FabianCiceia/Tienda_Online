@@ -22,7 +22,7 @@ function SearchProduct() {
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(0);
 
-    const [open,setOpen] = useState(true)
+    const [open,setOpen] = useState(false)
     const onChange = (page) => {
         setPage(page);
         window.scrollTo({

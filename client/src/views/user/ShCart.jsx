@@ -10,8 +10,8 @@ import ConfirmCard from './ConfirmCard';
 
 
 function ShCart() {
-    const [total, setTotal] = useState()
-    const [tax, setTax] = useState();
+    const [total, setTotal] = useState(0)
+    const [tax, setTax] = useState(0);
 
 
     function obtenerTotal() {
@@ -59,15 +59,6 @@ function ShCart() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-
-    const handleOverlayClick = (event) => {
-        if (event.target.classList.contains('modal-overlay')) {
-            setIsOpen(false);
-        }
-    };
-
-
-
     return (
         <div className='containerCart'>
             <div className='listCart'>
