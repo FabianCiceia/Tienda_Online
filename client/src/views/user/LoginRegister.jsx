@@ -22,7 +22,7 @@ const LoginRegister = () => {
                     <div className="register">
                         <UserForm formType="registro" />
                     </div>
-                    <p className="changeLogin">YA TIENES UNA CUENTA ? <a onClick={()=>useRegistre(true)}>INICIAR SECIÓN</a></p>
+                    <p className="changeLogin">YA TIENES UNA CUENTA ? <a onClick={()=>useRegistre(true)}>INICIAR SESION</a></p>
                 </div>
             </div>
             
