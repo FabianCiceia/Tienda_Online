@@ -16,7 +16,7 @@ import PrivateRoute from './components/PrivateRoute'
 import Profile from './views/user/Profile'
 import ShCart from './views/user/ShCart'
 
-import AdminRoute from './components/AdminRoute'
+import AdminRoute from './components/admin/AdminRoute'
 import Edit from './views/admin/Edit'
 import Add from './views/admin/Add'
 import PanelControl from './views/admin/PanelControl'

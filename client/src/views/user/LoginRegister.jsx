@@ -1,5 +1,5 @@
 import { useState } from "react"
-import UserForm from "../../components/Navbar/UserForm"
+import UserForm from "../../components/navbar/UserForm"
 import '../../styles/LoginRegister.css'
 const LoginRegister = () => {
     const [registre , useRegistre] = useState(true);

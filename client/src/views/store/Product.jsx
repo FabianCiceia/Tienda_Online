@@ -3,11 +3,12 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Axios from "../../hooks/useAxios"
 import Not_image from '../../assets/Not_image.jpg';
 import { CiHeart } from "react-icons/ci";
-import AddCart from '../../components/AddCart'
+import AddCart from '../../components/commun/AddCart'
 import UserContext from '../../context/UserContext';
 import '../../styles/Product.css'
 import Delete from '../../components/admin/Delete';
-import ConfirmCard from '../user/ConfirmCard';
+import UseImg from '../../hooks/UseImg';
+// import ConfirmCard from '../user/ConfirmCard';
 
 function Product() {
     const { user } = useContext(UserContext);
@@ -43,14 +44,18 @@ function Product() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
+    if(data){
+        console.log(data);
+    }
 
     const handleChange = (event) => {
         ((event.target.value) < 0 || (event.target.value) > Number(data.product.stock)) ? null : setCant(Number(event.target.value));
     };
     return (
         <div className='product-container container'>
+            
             <div className='productImg'>
-                <img src={data.product.imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
+                <img src={UseImg(data.product.imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
             </div>
             <div className='productDescripcion'>
                 <div>
@@ -77,7 +82,7 @@ function Product() {
             <div className='ProductCart'>
                 <p className='yourCart'>Your Cart</p>
                 <div className='ProductCartProduct'>
-                    <img src={data.product.imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
+                    <img src={UseImg(data.product.imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
                     <div>
                         <h3>{data.product.name}</h3>
                         <p>{cant} x ₲{data.product.price}</p>
@@ -89,7 +94,6 @@ function Product() {
                     <p>₲ {(cant * data.product.price)}</p>
                 </div>
                 <div>
-                    <ConfirmCard total={cant * data.product.price} tax={0.15 * data.product.price} producto={data}/>
                 </div>
             </div>
         </div>

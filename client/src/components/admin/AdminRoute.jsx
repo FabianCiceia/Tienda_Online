@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { useContext } from "react";
-import UserContext from '../context/UserContext';
+import UserContext from '../../context/UserContext';
 
 const AdminRoute = (props) => {
     const {  user } = useContext(UserContext);

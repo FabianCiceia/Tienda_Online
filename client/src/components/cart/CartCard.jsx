@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 // import { useParams } from 'react-router-dom'
-import Axios from "../hooks/useAxios"
-import Not_image from '../assets/Not_image.jpg';
+import Axios from "../../hooks/useAxios"
+import Not_image from '../../assets/Not_image.jpg';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { CiTrash } from "react-icons/ci";
+import UseImg from '../../hooks/UseImg';
 
 function CartCard({products, setProduct}) {
     // const {  } = useParams(); 
@@ -82,7 +83,7 @@ function CartCard({products, setProduct}) {
     return (
         <div className='listCart-container container'>
             <div className='listCartImg'>
-                <img src={data.product.imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
+                <img src={UseImg(data.product.imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
             </div>
             <div className='listCartDescripcion'>
                 <div className='title'>

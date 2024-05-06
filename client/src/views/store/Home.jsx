@@ -1,7 +1,7 @@
 import React from 'react';
-import HomeListCategory from '../../components/HomeListCategory';
-import CategoryProducts from '../../components/HomeCategoryProducts';
-import ListNew from '../../components/ListNew';
+import HomeListCategory from '../../components/home/HomeListCategory';
+import CategoryProducts from '../../components/home/HomeCategoryProducts';
+import ListNew from '../../components/home/ListNew';
 import '../../styles/Home.css';
 
 // import Footer from './Footer';

@@ -39,6 +39,7 @@ const MenuBurger = ({open, setOpen}) => {
             onClose={onClose}
             visible={open}
             key={'left'}
+            width={'80%'}
         >
             <div className='menuBurgerlinks'>
                 <div className='menuBurgerUser' 

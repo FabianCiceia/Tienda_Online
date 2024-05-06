@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import axios from "axios";
 import Swal from 'sweetalert2'
 import { useNavigate } from "react-router-dom";
-import UserContext from '../context/UserContext';
+import UserContext from '../../context/UserContext';
 
 function AddCart({ productId, quantity} ) {
     const navigate = useNavigate(); 

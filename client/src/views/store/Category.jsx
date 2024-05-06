@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Axios from "../../hooks/useAxios"
-import Card from '../../components/Card';
+import Card from '../../components/commun/Card';
 function SearchProduct() {
     const { category } = useParams();
     const[paguina, setPaguina] = useState(1);

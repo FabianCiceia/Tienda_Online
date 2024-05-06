@@ -23,6 +23,7 @@ app.use( express.urlencoded({ extended: true }) );
 require("./config/mongoose.config");
 
 const ProductRouter = require("./routes/product.routes");
+
 app.use("/api/product", ProductRouter);
 
 const UserRouter = require("./routes/user.routes");

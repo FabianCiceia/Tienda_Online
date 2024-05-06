@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import Not_image from '../assets/Not_image.jpg';
+import Not_image from '../../assets/Not_image.jpg';
 import { FiCheckSquare } from "react-icons/fi";
+import UseImg from '../../hooks/UseImg';
 
 function Card({imageUrl, name, stock, price, id}) {
     const stockOn = ()=> {
@@ -24,7 +25,8 @@ function Card({imageUrl, name, stock, price, id}) {
     return (
         <div className='cart' onClick={()=>{navigate(`../product/${id}`)}}>
             <div>
-                <img src={imageUrl} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
+                
+                <img src={UseImg(imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
                 <h1>{name.length > 20 ? name.substring(0, 20) + '...' : name}</h1>
             </div>
             <div>

@@ -3,7 +3,7 @@ import '../../styles/user/CardCartUser.css'
 import Axios from '../../hooks/useAxios';
 import React from 'react'
 import { CiShoppingCart } from "react-icons/ci";
-import CardProfile from './CardProfile';
+// import CardProfile from './CardProfile';
 import { Link } from "react-router-dom";
 import UserCart from './UserCart';
 
@@ -38,11 +38,10 @@ const Profile = () => {
             ))
           }
           <div className='cardFooterUser'>
-           <Link to={"../cart"}> <button type="button" className='button-primary'>Ir al carrito</button></Link>
+          <Link to={"../cart"}> <button type="button" className='button-primary'>Ir al carrito</button></Link>
           </div>
         </div>
-
-        <CardProfile />
+        {/* <CardProfile /> */}
       </div>
     </>
   )

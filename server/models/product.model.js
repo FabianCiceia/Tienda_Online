@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 const ProductSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -25,7 +26,7 @@ const ProductSchema = new mongoose.Schema({
         min: [0, "El stock del producto no puede ser negativo"],
     },
     imageUrl: {
-        type: String,
+        type: [String],
         required: false, 
     }
 }, { timestamps: true });

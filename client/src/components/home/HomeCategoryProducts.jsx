@@ -1,60 +1,3 @@
-// import React, { useState } from 'react';
-// import Axios from "../hooks/useAxios";
-// // import { Link } from 'react-router-dom';
-
-// import Card from './Card';
-// import '../styles/CategoryProducts.css'
-// function categoryProducts({ category, name }) {
-//     const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/category/${category}`);
-//     const [currentPage, setCurrentPage] = useState(0);
-
-//     if (isLoading) {
-//         return (
-//             <div>Cargando</div>
-//         )
-//     }
-//     if (error) {
-//         return (
-//             null
-//         )
-//     }
-
-//     const productsPerPage = 4;
-//     const totalPages = Math.ceil(data.products.length / productsPerPage);
-
-//     const handleNextPage = () => {
-//         setCurrentPage(currentPage + 1);
-//     };
-
-//     const handlePrevPage = () => {
-//         setCurrentPage(currentPage - 1);
-//     };
-
-//     return (
-//         <div className='container-categoryProducts container'>
-//             <h1>{name}</h1>
-//         <div className='categoryProducts'>
-//             <button onClick={handlePrevPage} disabled={currentPage === 0}>{"<"}</button>
-//             {
-//                 data.products.slice(currentPage * productsPerPage, (currentPage + 1) * productsPerPage).map((product, i) => (
-//                     <div key={i}>
-//                         <Card
-//                             imageUrl={product.imageUrl}
-//                             name={product.name}
-//                             price={product.price}
-//                             stock={product.stock}
-//                             id={product._id}
-//                         />
-//                     </div>
-//                 ))
-//             }
-//             <button onClick={handleNextPage} disabled={currentPage === totalPages - 1}>{">"}</button>
-//         </div>
-//         </div>
-//     )
-// }
-
-// export default categoryProducts;
 
 
 // // http://localhost:8000/api/product/newest
@@ -62,10 +5,10 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Axios from "../hooks/useAxios";
-import Card from "../components/Card";
+import Axios from "../../hooks/useAxios";
+import Card from "../commun/Card";
 // import '../styles/prueba.css'
-import '../styles/CategoryProducts.css'
+import '../../styles/CategoryProducts.css'
 // Componente para el botón de siguiente (NextArrow)
 const NextArrow = (props) => {
     const { onClick, style } = props;

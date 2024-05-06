@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import '../styles/Navbar/Navbar.css'
+import '../styles/navbar/Navbar.css'
 import { CiShoppingCart , CiUser } from "react-icons/ci";
 import Logo from '../assets/Logo.png'
 import { Link, useNavigate} from "react-router-dom";
-import SearchBar from '../components/Navbar/SearchBar';
+import SearchBar from '../components/navbar/SearchBar';
 
 import { useContext } from 'react';
 import UserContext from '../context/UserContext';
-import MenuBurger from '../components/Navbar/MenuBurger';
-import MenuUser from '../components/Navbar/MenuUser';
+import MenuBurger from '../components/navbar/MenuBurger';
+import MenuUser from '../components/navbar/MenuUser';
 function Navbar() {
     const { user } = useContext(UserContext);
     const navigate = useNavigate(); 

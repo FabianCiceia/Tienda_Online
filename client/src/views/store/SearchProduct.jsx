@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Axios from "../../hooks/useAxios"
-import Card from '../../components/Card';
-import PriceRange from '../../components/SearchProduct/PriceRange'
+import Card from '../../components/commun/Card';
+import PriceRange from '../../components/search/PriceRange'
 import axios from "axios";
 //estilado principal
-import '../../styles/SearchProduct/SearchProduct.css'
+import '../../styles/search/SearchProduct.css'
 //estilado de los filtro de la barra lateral
-import '../../styles/SearchProduct/Filter.css'
-import CategoryRange from '../../components/SearchProduct/CategoryRange';
+import '../../styles/search/Filter.css'
+import CategoryRange from '../../components/search/CategoryRange';
 import { Divider, Drawer, Pagination } from 'antd';
 
 function SearchProduct() {
@@ -82,6 +82,7 @@ function SearchProduct() {
                         onClose={onClose}
                         visible={open}
                         key={'left'}
+                        width={'80%'}
                     >
                         <PriceRange
                         data={data}

@@ -3,9 +3,10 @@ import '../../styles/Cart.css'
 
 import React, { useEffect, useState } from 'react'
 import Axios from "../../hooks/useAxios"
-import CardCart from '../../components/CartCard';
+import CardCart from '../../components/cart/CartCard';
 import axios from 'axios';
-import ConfirmCard from './ConfirmCard';
+import UseImg from '../../hooks/UseImg';
+// import ConfirmCard from './ConfirmCard';
 
 
 
@@ -85,7 +86,9 @@ function ShCart() {
                     </div>
                 </div>
                 <div className='orderCartBuy'>
-                    <ConfirmCard total={total} tax={tax} />
+                    
+                    {/* <ConfirmCard total={total} tax={tax} /> */}
+                    <button className='button-primary' >Confirmar </button>
                 </div>
             </div>
         </div>
