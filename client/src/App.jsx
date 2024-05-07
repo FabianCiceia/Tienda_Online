@@ -25,7 +25,7 @@ import Footer from './views/Footer'
 import './styles/admin/common.css'
 import './styles/components/container.css'
 import './styles/components/button.css'
-
+import './styles/Card.css'
 const App = () => {
 
     const userDetails = JSON.parse(localStorage.getItem("user"));

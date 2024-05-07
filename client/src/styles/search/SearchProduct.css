@@ -2,13 +2,20 @@
     margin-bottom: 10px;
     
 }
+
+.searchProductfilterMovile .filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:larger;
+}
 .searchProducts{
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 .searchProductList{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 5px;
     justify-content: center;
     justify-items: center;

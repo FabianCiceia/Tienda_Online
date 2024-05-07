@@ -3,7 +3,7 @@ import Axios from "../../hooks/useAxios"
 import { Link } from 'react-router-dom';
 import Not_image from '../../assets/Not_image.jpg'
 import Card from '../commun/Card';
-import '../../styles/Card.css'
+
 function ListNew() {
     const { data, isLoading, error, setData } = Axios("http://localhost:8000/api/product/newest");
     console.log(data)

@@ -49,6 +49,7 @@ function HomeListCategory() {
                     onClose={onClose}
                     visible={open}
                     key={'left'}
+                    className='Drawer'
                 >
                     {
                         data.map((data, i) => (

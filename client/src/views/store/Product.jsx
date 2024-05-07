@@ -2,12 +2,13 @@ import React, { useContext, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Axios from "../../hooks/useAxios"
 import Not_image from '../../assets/Not_image.jpg';
-import { CiHeart } from "react-icons/ci";
+// import { CiHeart } from "react-icons/ci";
 import AddCart from '../../components/commun/AddCart'
 import UserContext from '../../context/UserContext';
 import '../../styles/Product.css'
 import Delete from '../../components/admin/Delete';
 import UseImg from '../../hooks/UseImg';
+// import PruebaComponente from '../PruebaComponente';
 // import ConfirmCard from '../user/ConfirmCard';
 
 function Product() {
@@ -53,8 +54,8 @@ function Product() {
     };
     return (
         <div className='product-container container'>
-            
             <div className='productImg'>
+            {/* <PruebaComponente/> */}
                 <img src={UseImg(data.product.imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
             </div>
             <div className='productDescripcion'>
@@ -66,7 +67,7 @@ function Product() {
                     </div>
                     <h2>{data.product.description}</h2>
                 </div>
-                <div>
+                <div className='containerButtonsProduct'>
                     <div className='cartButtonCant'>
                         <button className='ButtonCant' onClick={() => { (cant == 1) ? null : setCant(cant - 1) }}>-</button>
                         <input type="number" min={1} className='ButtonCant' value={cant} onChange={handleChange} />
@@ -93,23 +94,12 @@ function Product() {
                     <p>Sub Total: </p>
                     <p>₲ {(cant * data.product.price)}</p>
                 </div>
-                <div>
+                <div className='buttonshop'>
+                    <button className='button-primary '>Comprar</button>
                 </div>
             </div>
         </div>
     )
 }
-// const data = {
-//     "product": {
-//         "_id": "661dba5d2e8f7c1b9a4ee0b9",
-//         "name": "ESP8266",
-//         "description": "Módulo de Wi-Fi de bajo costo y alto rendimiento para conectar dispositivos a Internet de forma inalámbrica.",
-//         "price": 5.99,
-//         "category": "microcontrolador",
-//         "stock": 100,
-//         "imageUrl": "https://m.media-amazon.com/images/I/617T2JKnxiL._AC_UF1000,1000_QL80_.jpg",
-//         "createdAt": "2024-04-14T00:00:00.000Z",
-//         "updatedAt": "2024-04-14T00:00:00.000Z"
-//     }
-// }
+
 export default Product

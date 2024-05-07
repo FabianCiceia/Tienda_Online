@@ -40,6 +40,7 @@ const MenuBurger = ({open, setOpen}) => {
             visible={open}
             key={'left'}
             width={'80%'}
+            className='Drawer'
         >
             <div className='menuBurgerlinks'>
                 <div className='menuBurgerUser' 

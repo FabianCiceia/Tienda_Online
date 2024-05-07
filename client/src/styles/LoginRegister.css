@@ -103,3 +103,27 @@
     transform: translateY(0.2rem);
 }
 
+@media only screen and (max-width: 950px) {
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .inputmin{
+        min-width:auto;
+    }
+    .inputLogin{
+        width: 100%;
+        max-width:none;
+    }
+    .formText{
+        width: 100%;
+    }
+    .formNameLast{
+        flex-direction: column;
+        
+    }
+    .containerLogin{
+        width: 100%;
+    }
+}

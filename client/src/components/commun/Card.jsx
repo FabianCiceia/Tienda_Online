@@ -23,7 +23,7 @@ function Card({imageUrl, name, stock, price, id}) {
     }
     const navigate = useNavigate(); 
     return (
-        <div className='cart' onClick={()=>{navigate(`../product/${id}`)}}>
+        <div className='card' onClick={()=>{navigate(`../product/${id}`)}}>
             <div>
                 
                 <img src={UseImg(imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />

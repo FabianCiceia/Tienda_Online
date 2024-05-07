@@ -10,7 +10,7 @@ import '../../styles/search/SearchProduct.css'
 import '../../styles/search/Filter.css'
 import CategoryRange from '../../components/search/CategoryRange';
 import { Divider, Drawer, Pagination } from 'antd';
-
+import { CiFilter } from "react-icons/ci";
 function SearchProduct() {
     const { search } = useParams();
     const[page, setPage] = useState(0);
@@ -74,15 +74,16 @@ function SearchProduct() {
         <div className='containerSearchProduct'>
             <div className='searchProducts'>
                 <div className='searchProductfilterMovile'>
-                    <button className='button-primary' onClick={showDrawer}>Filtros</button>
+                    <button className='button-primary filter' onClick={showDrawer}><CiFilter />Filtros</button>
                     <Drawer
-                        title="Menu"
+                        title="Filtros"
                         placement={'left'}
                         closable={false}
                         onClose={onClose}
                         visible={open}
                         key={'left'}
                         width={'80%'}
+                        className='Drawer'
                     >
                         <PriceRange
                         data={data}

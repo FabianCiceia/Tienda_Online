@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Axios from "../../hooks/useAxios";
 import Card from "../commun/Card";
+import { AiOutlineArrowRight, AiOutlineArrowLeft  } from "react-icons/ai";
 // import '../styles/prueba.css'
 import '../../styles/CategoryProducts.css'
 // Componente para el botón de siguiente (NextArrow)
@@ -15,11 +16,11 @@ const NextArrow = (props) => {
 
     return (
         <button 
-        className="pruebaButton" 
+        className="categoriaButton" 
         onClick={onClick}
-        style={{ ...style, display: "block", color:'#000'}}
+        style={{ ...style}}
         >
-        {">"}
+        <AiOutlineArrowRight/>
         </button>
     );
 };
@@ -29,11 +30,11 @@ const PrevArrow = (props) => {
     const { onClick, style } = props;
     return (
         <button 
-        className="pruebaButton" 
+        className="categoriaButton" 
         onClick={onClick}
-        style={{ ...style, display: "block"}}
+        style={{ ...style}}
         >
-        {"<"}
+        <AiOutlineArrowLeft/>
         </button>
     );
 };
@@ -45,7 +46,7 @@ const contentStyle = {
     textAlign: 'center',
     background: '#364d79',
     margin:'0 10px',
-
+    
 };
 
 // Componente principal
@@ -68,34 +69,35 @@ export default function SimpleSlider({ category, name ='Categoria' }) {
         speed: 700,
         autoplaySpeed: 3000,
         autoplay: true,
-        slidesToShow: 4,
-        slidesToScroll: 3,
+        slidesToShow: 5,
+        slidesToScroll: 4,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        pauseOnHover: true,
         responsive: [
         {
             breakpoint: 1024,
             settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             touchMove:true,
             infinite: true,
             }
         },
         {
-            breakpoint: 678,
+            breakpoint: 680,
             settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            // initialSlide: 2,
             touchMove:true,
             }
         },
         {
             breakpoint: 480,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
             touchMove:true,
             }
         }
@@ -105,7 +107,7 @@ export default function SimpleSlider({ category, name ='Categoria' }) {
     return (
         <div className="container">
             <h1>{name}</h1>
-            <div className="container prueba">
+            <div className="containerProductoCategoria">
                 <Slider {...settings}>
                 {data.products.map((product, i) => (
                     <div className='productocategoria'  key={i}>

@@ -7,7 +7,7 @@ const LoginRegister = () => {
     if(registre){
         return(
             <div className="containerBody">
-                <div>
+                <div className="containerLogin">
                     <h1 className="titleLogin">Bienvenido</h1>
                     <UserForm formType="login" />
                     <p className="changeLogin">NUEVO USUARIO ? <a onClick={()=>useRegistre(false)}>REGISTRARSE</a></p>
