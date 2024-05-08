@@ -14,9 +14,10 @@ import { CiFilter } from "react-icons/ci";
 function SearchProduct() {
     const { search } = useParams();
     const[page, setPage] = useState(0);
+    const[pageSize,serPageSize] = useState(20)
     const[valuefilter, setvaluefilter] = useState(true);
-    const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/search?searchTerm=${search}&page=${page}`);
-
+    const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/search?searchTerm=${search}&page=${page}&pageSize=${pageSize}`);
+    //pageSize es la cantidad de productos a traer
     //variables para el filtro
     const[category, setCategory] = useState([]);
     const [minPrice, setMinPrice] = useState(0);
@@ -49,8 +50,6 @@ function SearchProduct() {
     const showDrawer = () => {
         setOpen(true);
     };
-
-    const a = "http://tudominio.com/api/products/search?searchTerm=laptop&category=electronics&costMin=500&costMax=1500&page=2";
     const filter = () => {
         axios
             .get(`http://localhost:8000/api/product/search`, {
@@ -60,6 +59,7 @@ function SearchProduct() {
                     costMin: minPrice,
                     costMax: maxPrice,
                     categories: category.join(','), 
+                    // pageSize: 3,
                 },
                 withCredentials: true
             })
