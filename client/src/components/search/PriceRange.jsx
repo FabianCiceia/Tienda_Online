@@ -4,6 +4,7 @@ import { Slider, InputNumber, Row, Col } from 'antd';
 const PriceRange = ({rangeMaxPrice = 100000, rangeMinPrice = 0, minPrice , setMinPrice , maxPrice, setMaxPrice, setvaluefilter,valuefilter}) => {
     useEffect(()=>{
         setMinPrice(rangeMinPrice);
+        console.log('MinPrince: ', rangeMinPrice)
         setMaxPrice(rangeMaxPrice);
         setvaluefilter(false);
     },[valuefilter]);

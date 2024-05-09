@@ -23,7 +23,6 @@ function Footer() {
                             <Link to={"#"} className='link'> <CiTwitter className='imaRedes' /></Link>
                         </div>
                     </div>
-
                     <div className='infoLink'>
                         <h4>Categorias</h4>
                         <Link to={"./store/category/Capacitor%20cerámico"} className='link'>Capacitor ceramico</Link>

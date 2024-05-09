@@ -16,12 +16,12 @@ function SearchProduct() {
     const[page, setPage] = useState(0);
     const[pageSize,serPageSize] = useState(20)
     const[valuefilter, setvaluefilter] = useState(true);
-    const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/search?searchTerm=${search}&page=${page}&pageSize=${pageSize}`);
-    //pageSize es la cantidad de productos a traer
-    //variables para el filtro
+    const [data, setData] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
     const[category, setCategory] = useState([]);
-    const [minPrice, setMinPrice] = useState(0);
-    const [maxPrice, setMaxPrice] = useState(0);
+    const [minPrice, setMinPrice] = useState(null);
+    const [maxPrice, setMaxPrice] = useState(null);
 
     const [open,setOpen] = useState(false)
     const onChange = (page) => {
@@ -31,8 +31,42 @@ function SearchProduct() {
             behavior: "smooth"
         });
     };
+    
+        const onClose = () => {
+            setOpen(false);
+            filter();
+        };
+        const showDrawer = () => {
+            setOpen(true);
+        };
 
-
+    const filter = () => {
+        axios
+            .get(`http://localhost:8000/api/product/search`, {
+                params: {
+                    searchTerm: search,
+                    page: page,
+                    costMin: minPrice,
+                    costMax: maxPrice,
+                    categories: category.join(','), 
+                    pageSize: 20,
+                },
+                withCredentials: true
+            })
+            .then((response) => {
+                setData(response.data);
+                setIsLoading(false);
+            })
+            .catch((error) => {
+                setError(error);
+                setIsLoading(false);
+                console.log(error);
+            });
+    };
+    useEffect(()=>{
+        filter();
+        setvaluefilter(true);
+    },[search]);
     if (isLoading){
         return(
             <div>Cargando</div>
@@ -43,33 +77,10 @@ function SearchProduct() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-    const onClose = () => {
-        setOpen(false);
-        filter();
-    };
-    const showDrawer = () => {
-        setOpen(true);
-    };
-    const filter = () => {
-        axios
-            .get(`http://localhost:8000/api/product/search`, {
-                params: {
-                    searchTerm: search,
-                    page: page,
-                    costMin: minPrice,
-                    costMax: maxPrice,
-                    categories: category.join(','), 
-                    // pageSize: 3,
-                },
-                withCredentials: true
-            })
-            .then((response) => {
-                setData(response.data);
-            })
-            .catch((error) => {
-            });
-    };
-    
+    if(data){
+        console.log(data);
+        
+    }
     return (
         <div className='containerSearchProduct'>
             <div className='searchProducts'>

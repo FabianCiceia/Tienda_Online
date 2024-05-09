@@ -6,7 +6,6 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import { CiTrash } from "react-icons/ci";
 import UseImg from '../../hooks/UseImg';
-
 function CartCard({products, setProduct}) {
     // const {  } = useParams(); 
     const baseURL =`http://localhost:8000/api/auth/cart/edit`;

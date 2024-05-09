@@ -15,8 +15,6 @@ module.exports = {
         const costMax = parseFloat(req.query.costMax); // Costo máximo del producto
         const page = parseInt(req.query.page) || 1; // Número de página, por defecto 1
         const pageSize = parseInt(req.query.pageSize) || 20; // Tamaño de página (número de resultados por página)
-        console.log(req.query.pageSize);
-        // Objeto para construir la consulta
         const query = {};
     
         // Verifica si se proporcionó un término de búsqueda y agrega filtro

@@ -5,9 +5,7 @@ import React, { useEffect, useState } from 'react'
 import Axios from "../../hooks/useAxios"
 import CardCart from '../../components/cart/CartCard';
 import axios from 'axios';
-import UseImg from '../../hooks/UseImg';
-// import ConfirmCard from './ConfirmCard';
-
+import "../../styles/Cart.css"
 
 
 function ShCart() {
@@ -32,12 +30,7 @@ function ShCart() {
         axios
             .post(`${baseURL}`, pront, { withCredentials: true })
             .then(res => {
-                // Swal.fire({
-                //     icon: "success",
-                //     title: `fue cargado correctamente`,
-                // });
                 setCant(pront.quantity);
-                // navigate("");
             })
             .catch(err => {
                 Swal.fire({
