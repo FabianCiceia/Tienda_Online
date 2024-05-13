@@ -15,5 +15,7 @@ ProductRouter.get('/search', ProductController.searchProducts);
 ProductRouter.get("/:id", ProductController.getOneProductById); 
 ProductRouter.delete("/delete/:id",authenticate, whitelist, ProductController.deleteOneProductById);
 
+ProductRouter.post('/import-products',authenticate, whitelist,ProductController.json);
+
 
 module.exports = ProductRouter;

@@ -1,6 +1,33 @@
 const { ProductModel } = require("../models/product.model");
+const json =  async (req, res) => {
+    try {
+        // Verifica que el cuerpo de la solicitud contenga productos
+        if (!req.body || !Array.isArray(req.body.products)) {
+            return res.status(400).json({ message: 'Formato de datos incorrecto, se esperaba un array de productos.' });
+        }
 
+        // Extrae los productos desde el cuerpo de la solicitud
+        const products = req.body.products;
+
+        // Valida y guarda cada producto en la base de datos
+        const savedProducts = [];
+        for (const productData of products) {
+            const product = new ProductModel(productData);
+            const savedProduct = await product.save();
+            savedProducts.push(savedProduct);
+        }
+
+        // Responde con los productos guardados
+        return res.status(201).json({ message: 'Productos importados exitosamente', products: savedProducts });
+
+    } catch (error) {
+        // Maneja cualquier error durante el proceso
+        console.error(error);
+        return res.status(500).json({ message: 'Error al importar los productos', error: error.message });
+    }
+}
 module.exports = {
+    json,
     getOneProductById: (req, res) => {
         ProductModel.findOne({ _id: req.params.id })
             .then((oneSingleProduct) => res.status(200).json({ product: oneSingleProduct }))
@@ -86,40 +113,7 @@ module.exports = {
     },
     
     
-    // searchProducts: (req, res) => {
-    //     const searchTerm = req.query.searchTerm; // Obtiene el término de búsqueda del parámetro de consulta de la solicitud
-    //     const page = parseInt(req.query.page) || 1; // Obtiene el número de página de la consulta de la solicitud, si no se proporciona, se establece en 1
-    //     const pageSize = 15; // Tamaño de página (número de resultados por página)
-    
-    //     // Verifica si se proporcionó un término de búsqueda
-    //     if (!searchTerm || searchTerm.trim() === '') {
-    //         return res.status(400).json({ message: "Search term is required" });
-    //     }
-    
-    //     // Calcula el índice de inicio y el límite de resultados para la página actual
-    //     const startIndex = (page - 1) * pageSize;
-    //     const endIndex = page * pageSize;
-    
-    //     // Realiza la búsqueda de productos en tiempo real utilizando una expresión regular para buscar en el campo de nombre o descripción
-    //     ProductModel.find({
-    //         $or: [
-    //             { name: { $regex: searchTerm, $options: 'i' } }, // Búsqueda insensible a mayúsculas y minúsculas en el campo de nombre
-    //             { description: { $regex: searchTerm, $options: 'i' } } // Búsqueda insensible a mayúsculas y minúsculas en el campo de descripción
-    //         ]
-    //     })
-    //     .sort({ relevanceScore: -1 }) // Ordena los resultados por relevancia en orden descendente
-    //     .skip(startIndex) // Omite los resultados anteriores a la página actual
-    //     .limit(pageSize) // Limita la cantidad de resultados devueltos a la página actual
-    //     .then(products => {
-    //         // Envía los productos encontrados como respuesta al cliente
-    //         res.status(200).json({ products: products, currentPage: page, totalPages: Math.ceil(products.length / pageSize) });
-    //     })
-    //     .catch(err => {
-    //         // Maneja los errores de la base de datos
-    //         res.status(500).json({ message: "Error searching products", error: err });
-    //     });
-    // },
-    
+
     
     getAllProducts: (req, res) => {
         ProductModel.find()
