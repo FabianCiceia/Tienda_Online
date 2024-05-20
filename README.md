@@ -45,6 +45,11 @@ El proyecto de la tienda virtual cuenta con las siguientes páginas y funcionali
   ![Funcionalidad de búsqueda](imgs/Imagen(7).png)
 - **Filtrado de productos**: Por precio y categoría.
   ![Filtrado de productos](imgs/Imagen(5).png)
+- **Pagina adaptable a móviles**
+  <br>
+  <img src="./imgs/Imagen(8).png" alt="Pagina adaptable a móviles" style="border: 2px solid black;">
+  <img src="./imgs/Imagen(9).png" alt="Pagina adaptable a móviles" style="border: 2px solid black;">
+  <img src="./imgs/Imagen(10).png" alt="Pagina adaptable a móviles" style="border: 2px solid black;">
 
 ## Instalación
 
