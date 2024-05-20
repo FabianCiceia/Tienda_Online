@@ -53,6 +53,6 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 Este proyecto fue desarrollado por:
 
-- [@FabianCiceia]([https://github.com/usuario2](https://github.com/FabianCiceia))
+- [@FabianCiceia](https://github.com/FabianCiceia)
 - [@FacundoMM](https://github.com/FacundoMM)
 
