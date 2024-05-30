@@ -35,10 +35,21 @@ El backend de la tienda está construido con Node.js y Express, e incluye las si
 El proyecto de la tienda virtual cuenta con las siguientes páginas y funcionalidades principales:
 
 - **Página principal**: Muestra una selección de productos destacados.
+  ![Página principal](imgs/Imagen(3).png)
 - **Página de producto**: Permite ver detalles específicos de un producto.
+   ![Página de producto](imgs/Imagen(4).png)
 - **Página de registro y inicio de sesión**: Para usuarios nuevos o existentes.
+  ![Página de registro y inicio de sesión](imgs/Imagen(1).png)
+  ![Página de registro y inicio de sesión](imgs/Imagen(2).png)
 - **Funcionalidad de búsqueda**: Permite buscar productos por nombre.
+  ![Funcionalidad de búsqueda](imgs/Imagen(7).png)
 - **Filtrado de productos**: Por precio y categoría.
+  ![Filtrado de productos](imgs/Imagen(5).png)
+- **Pagina adaptable a móviles**
+  <br>
+  <img src="./imgs/Imagen(8).png" alt="Pagina adaptable a móviles" style="border: 2px solid black;">
+  <img src="./imgs/Imagen(9).png" alt="Pagina adaptable a móviles" style="border: 2px solid black;">
+  <img src="./imgs/Imagen(10).png" alt="Pagina adaptable a móviles" style="border: 2px solid black;">
 
 ## Instalación
 
