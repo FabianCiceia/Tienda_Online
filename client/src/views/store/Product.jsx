@@ -8,6 +8,7 @@ import UserContext from '../../context/UserContext';
 import '../../styles/Product.css'
 import Delete from '../../components/admin/Delete';
 import UseImg from '../../hooks/UseImg';
+import ProductCarousel from '../PruebaComponente';
 // import PruebaComponente from '../PruebaComponente';
 // import ConfirmCard from '../user/ConfirmCard';
 
@@ -18,6 +19,7 @@ function Product() {
         navigate(link)
     }
     const { id } = useParams();
+    
     const edit = () => {
         if (user && user.role === 'admin') {
             return (
@@ -55,7 +57,6 @@ function Product() {
     return (
         <div className='product-container container'>
             <div className='productImg'>
-            {/* <PruebaComponente/> */}
                 <img src={UseImg(data.product.imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
             </div>
             <div className='productDescripcion'>
