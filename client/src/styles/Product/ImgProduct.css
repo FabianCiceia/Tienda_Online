@@ -1,0 +1,19 @@
+
+.slick-dots li{
+    /* height: 45px; */
+    width: 60px;
+}
+.ImgPaging{
+    text-decoration: none;
+    /* height: 45px; */
+    width: 60px;
+}
+.ImgPaging img{
+    /* height: 45px; */
+    width: 60px;
+
+    overflow: clip;
+}
+.slick-active .ImgPaging{
+    background-color: red;
+}

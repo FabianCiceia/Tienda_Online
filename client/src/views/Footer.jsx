@@ -10,7 +10,7 @@ function Footer() {
             <section>
                 <div className='info'>
                     <div className='infoPhone'>
-                        <h3>VENTA DE COMPONENTES<br /> ELECTRONICOS</h3>
+                        <h3>VENTA DE COMPONENTES ELECTRONICOS</h3>
                         <h4>(025) XXXX 25 16</h4>
                     </div>
 

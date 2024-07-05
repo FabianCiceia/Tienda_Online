@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import '../styles/navbar/Navbar.css'
 import { CiShoppingCart , CiUser } from "react-icons/ci";
-import Logo from '../assets/Logo.png'
+// import Logo from '../assets/Logo.png'
 import { Link, useNavigate} from "react-router-dom";
 import SearchBar from '../components/navbar/SearchBar';
 
-import { useContext } from 'react';
-import UserContext from '../context/UserContext';
+// import { useContext } from 'react';
+// import UserContext from '../context/UserContext';
 import MenuBurger from '../components/navbar/MenuBurger';
 import MenuUser from '../components/navbar/MenuUser';
 function Navbar() {
-    const { user } = useContext(UserContext);
+    // const { user } = useContext(UserContext);
     const navigate = useNavigate(); 
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -19,11 +19,11 @@ function Navbar() {
         navigate(link)
     }
 
-    const admin = () => {
-        if (user && user.role === 'admin') {
-            return <div onClick={()=>link("./admin/panel")} className='navbarSelect'>Admin</div>;
-        }
-    }
+    // const admin = () => {
+    //     if (user && user.role === 'admin') {
+    //         return <div onClick={()=>link("./admin/panel")} className='navbarSelect'>Admin</div>;
+    //     }
+    // }
     
 
 
@@ -54,7 +54,7 @@ function Navbar() {
             <div className='navbarLinks'>
                 <Link className='navbarSelect' to={"../store/home"}>Inicio</Link>
                 <a href="#" className='navbarSelect'>Contacto</a>
-                {admin()}
+                {/* {admin()} */}
                 
             </div>
             <div className='navbarPerfil' >

@@ -20,16 +20,16 @@ function Product() {
     }
     const { id } = useParams();
     
-    const edit = () => {
-        if (user && user.role === 'admin') {
-            return (
-                <div className='adminButton'>
-                    <button onClick={() => link(`../../admin/edit/${id}`)} >Editar</button>
-                    <Delete id={id} />
-                </div>
-            );
-        }
-    }
+    // const edit = () => {
+    //     if (user && user.role === 'admin') {
+    //         return (
+    //             <div className='adminButton'>
+    //                 <button onClick={() => link(`../../admin/edit/${id}`)} >Editar</button>
+    //                 <Delete id={id} />
+    //             </div>
+    //         );
+    //     }
+    // }
     const [cant, setCant] = useState(1);
     const [like, setLike] = useState(false);
     const cliklike = () => {
@@ -74,7 +74,7 @@ function Product() {
                         <input type="number" min={1} className='ButtonCant' value={cant} onChange={handleChange} />
                         <button className='ButtonCant' onClick={() => { (cant >= Number(data.product.stock)) ? null : setCant(cant + 1) }}>+</button>
                     </div>
-                    {edit()}
+                    {/* {edit()} */}
                     <div className='buttonsAddFavor'>
                         <AddCart productId={id} quantity={cant} />
                         {/* <button onClick={cliklike}  className={like ? 'favorCart redColor' : 'favorCart blackColor'}><CiHeart /></button> */}

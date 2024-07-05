@@ -4,6 +4,7 @@ import UserContext from './context/UserContext'
 
 import PublicRoute from './components/PublicRoute'
 import Navbar from './views/Navbar'
+import Footer from './views/Footer'
 import LoginRegister from './views/user/LoginRegister'
 import Home from './views/store/Home'
 import Product from './views/store/Product'
@@ -16,11 +17,11 @@ import PrivateRoute from './components/PrivateRoute'
 import Profile from './views/user/Profile'
 import ShCart from './views/user/ShCart'
 
-import AdminRoute from './components/admin/AdminRoute'
-import Edit from './views/admin/Edit'
-import Add from './views/admin/Add'
-import PanelControl from './views/admin/PanelControl'
-import Footer from './views/Footer'
+
+// import AdminRoute from './components/admin/AdminRoute'
+// import Edit from './views/admin/Edit'
+// import Add from './views/admin/Add'
+// import PanelControl from './views/admin/PanelControl'
 
 import './styles/admin/common.css'
 import './styles/components/container.css'
@@ -75,7 +76,7 @@ const App = () => {
                     </Route>
 
                     {/* Parte para administrador solo admins */}
-                    <Route path="/admin/" element={
+                    {/* <Route path="/admin/" element={
                         <AdminRoute>
                             <Outlet />
                         </AdminRoute>
@@ -84,7 +85,7 @@ const App = () => {
                         <Route path='panel' element={<PanelControl />} />
                         <Route path="add" element={<Add />} />
                         <Route path="edit/:id" element={<Edit />} />
-                    </Route>
+                    </Route> */}
                 </Routes>
             </div>
                 <Footer />
