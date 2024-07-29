@@ -15,3 +15,7 @@ logs/
 # Ignorar archivos de sistema
 .DS_Store
 Thumbs.db
+
+
+# Imagenes del server
+server/uploads
