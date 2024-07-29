@@ -11,7 +11,7 @@ import UseImg from '../../hooks/UseImg';
 import ProductCarousel from '../PruebaComponente';
 // import PruebaComponente from '../PruebaComponente';
 // import ConfirmCard from '../user/ConfirmCard';
-
+import ImgProduct from '../../components/product/ImgProduct'
 function Product() {
     const { user } = useContext(UserContext);
     const navigate = useNavigate();
@@ -56,9 +56,8 @@ function Product() {
     };
     return (
         <div className='product-container container'>
-            <div className='productImg'>
-                <img src={UseImg(data.product.imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} />
-            </div>
+                <ImgProduct/>
+                {/* <img src={UseImg(data.product.imageUrl[0])} alt="" onError={(e) => { e.target.onerror = null; e.target.src = Not_image }} /> */}
             <div className='productDescripcion'>
                 <div>
                     <div>

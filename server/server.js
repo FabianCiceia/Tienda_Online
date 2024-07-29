@@ -9,7 +9,7 @@ app.use(cookieParser());
 
 const corsOptions = {
     credentials: true, // Allow credentials (cookies) to be sent to/from origin
-    origin: ['http://localhost:5173','https://nljnbvkt-5173.brs.devtunnels.ms/'], // Allow only this origin
+    origin: ['http://localhost:5173','https://nljnbvkt-5173.brs.devtunnels.ms/',    '*'], // Allow only this origin
     methods: 'GET, POST, PUT, PATCH, DELETE', // Allow these methods
 };
 

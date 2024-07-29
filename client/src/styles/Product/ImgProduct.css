@@ -1,19 +1,59 @@
+.primary-image{
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+}
+.primary-image > div {
+    height: 100% !important;
+    width: 100% !important;
+}
+.primary-image img {
+    /* width: 100% !important; */
+    object-fit: fill;
+    
+}
 
-.slick-dots li{
-    /* height: 45px; */
-    width: 60px;
+.list-images{
+    display: flex;
 }
-.ImgPaging{
-    text-decoration: none;
-    /* height: 45px; */
-    width: 60px;
+.list-images > *{
+    margin-left: 5px;
 }
-.ImgPaging img{
-    /* height: 45px; */
+.image-list{
     width: 60px;
+    height: 60px;
+    
+}
+.image-list img{
+    width: 100%;
+    /* height: auto; */
+    object-fit: cover; /* o contain, fill, según prefieras */
+}
+.image-list {
+    transition: all 0.3s ease-in-out;
+}
 
-    overflow: clip;
+.image-list-focus {
+    border: rgb(190, 190, 190) solid 1px;
+    border-radius: 4px;
+    transform: scale(1.1); /* Slightly enlarges the focused image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for emphasis */
 }
-.slick-active .ImgPaging{
-    background-color: red;
+/* ImgProduct.css */
+
+.custom-cursor-zoom {
+    cursor: zoom-in; /* Cambia a cualquier cursor que prefieras */
+}
+
+@media only screen and (max-width: 950px) {
+    .list-images{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .primary-image{
+        /* width: auto; */
+        margin: 0;
+    }
 }
