@@ -10,6 +10,7 @@ import Card from "../commun/Card";
 import { AiOutlineArrowRight, AiOutlineArrowLeft  } from "react-icons/ai";
 // import '../styles/prueba.css'
 import '../../styles/CategoryProducts.css'
+import LoadingNew from "../skeleton/LoadingNew";
 // Componente para el botón de siguiente (NextArrow)
 const NextArrow = (props) => {
     const { onClick, style } = props;
@@ -55,7 +56,7 @@ export default function SimpleSlider({ category, name ='Categoria' }) {
     const { data, isLoading, error, setData } = Axios(`http://localhost:8000/api/product/category/${category}`);
     
     if (isLoading) {
-        return <div>Cargando</div>;
+        return <div><LoadingNew/></div>;
     }
     
     if (error) {

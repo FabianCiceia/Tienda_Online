@@ -14,7 +14,6 @@ import { CiFilter } from "react-icons/ci";
 function SearchProduct() {
     const { search } = useParams();
     const[page, setPage] = useState(0);
-    const[pageSize,serPageSize] = useState(20)
     const[valuefilter, setvaluefilter] = useState(true);
     const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +29,7 @@ function SearchProduct() {
             top: 0,
             behavior: "smooth"
         });
+        filter();
     };
     
         const onClose = () => {

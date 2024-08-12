@@ -15,6 +15,8 @@
 
 .list-images{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .list-images > *{
     margin-left: 5px;
@@ -22,7 +24,8 @@
 .image-list{
     width: 60px;
     height: 60px;
-    
+    min-width: 60px;
+    min-height: 60px;
 }
 .image-list img{
     width: 100%;

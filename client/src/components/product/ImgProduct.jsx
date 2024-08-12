@@ -9,15 +9,7 @@ function CustomPaging() {
 
     useEffect(() => {
         setImage("http://localhost:8000/api/uploads/imagen-1.webp");
-        setListImage([
-            "http://localhost:8000/api/uploads/imagen-1.webp",
-            "http://localhost:8000/api/uploads/ESP3202.png",
-            "http://localhost:8000/api/uploads/ESP3203.png",
-            "http://localhost:8000/api/uploads/voltimetro.png",
-            "http://localhost:8000/api/uploads/cargador_bateria.png",
-            "http://localhost:8000/api/uploads/ESP3205.png",
-            // "http://localhost:8000/api/uploads/ESP3204.png"
-        ]);
+        setListImage(Array.from({ length: 6 }, (_, i) => `http://localhost:8000/api/uploads/a (${1 + i * 8}).jpg`));
     }, []);
 
     const handleImageClick = (img) => {

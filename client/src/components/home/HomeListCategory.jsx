@@ -3,6 +3,7 @@ import Axios from "../../hooks/useAxios"
 import { Link } from 'react-router-dom';
 import { CiSignpostR1 } from "react-icons/ci";
 import { Drawer } from 'antd';
+import LoadingCategory from '../skeleton/LoafingCategory';
 
 function HomeListCategory() {
     const { data, isLoading, error, setData } = Axios("http://localhost:8000/api/product/list/category");
@@ -16,7 +17,7 @@ function HomeListCategory() {
     };
     if (isLoading){
         return(
-            <div>Cargando</div>
+            <div><LoadingCategory/></div>
         )
     }
     if (error){
@@ -24,9 +25,10 @@ function HomeListCategory() {
             <div>Esto va tardar mas de lo pensado</div>
         )
     }
-    // if(data){
-    //     console.log(data)
-    // }
+    
+    if(data){
+        console.log(data)
+    }
     return (
         <div>
             <div className='category container'>
